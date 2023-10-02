@@ -1,4 +1,5 @@
-# LRS-FEI
+# LRS-FEI Skupna 12
+Pavol Lukáč & Gergely Göndör
 
 ## Setup simulation with LRS-Ubuntu image
 1. Open terminator with LRS layout. 
