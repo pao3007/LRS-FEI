@@ -1,0 +1,24 @@
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function ‘char TemplateDroneControl::getch()’:
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:85:32: warning: missing initializer for member ‘termios::c_oflag’ [-Wmissing-field-initializers]
+   85 |         struct termios old = {0};
+      |                                ^
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:85:32: warning: missing initializer for member ‘termios::c_cflag’ [-Wmissing-field-initializers]
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:85:32: warning: missing initializer for member ‘termios::c_lflag’ [-Wmissing-field-initializers]
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:85:32: warning: missing initializer for member ‘termios::c_line’ [-Wmissing-field-initializers]
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:85:32: warning: missing initializer for member ‘termios::c_cc’ [-Wmissing-field-initializers]
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:85:32: warning: missing initializer for member ‘termios::c_ispeed’ [-Wmissing-field-initializers]
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:85:32: warning: missing initializer for member ‘termios::c_ospeed’ [-Wmissing-field-initializers]
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function ‘void TemplateDroneControl::send_takeoff_land_request(float, bool)’:
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:171:81: error: ‘future’ was not declared in this scope; did you mean ‘std::future’?
+  171 |         if (rclcpp::spin_until_future_complete(this->get_node_base_interface(), future) ==
+      |                                                                                 ^~~~~~
+      |                                                                                 std::future
+In file included from /opt/ros/foxy/include/rclcpp/executors.hpp:18,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+                 from /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:1:
+/usr/include/c++/9/future:125:11: note: ‘std::future’ declared here
+  125 |     class future;
+      |           ^~~~~~
+make[2]: *** [CMakeFiles/template_drone_control_node.dir/build.make:63: CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/template_drone_control_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

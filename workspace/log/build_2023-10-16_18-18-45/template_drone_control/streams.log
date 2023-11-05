@@ -1,0 +1,22 @@
+[0.031s] Invoking command in '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control -- -j12 -l12
+[0.108s] [35m[1mScanning dependencies of target template_drone_control_node[0m
+[0.158s] [ 50%] [32mBuilding CXX object CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o[0m
+[6.887s] In file included from /opt/ros/foxy/include/rclcpp/client.hpp:40,
+[6.888s]                  from /opt/ros/foxy/include/rclcpp/callback_group.hpp:23,
+[6.888s]                  from /opt/ros/foxy/include/rclcpp/any_executable.hpp:20,
+[6.888s]                  from /opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24,
+[6.888s]                  from /opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18,
+[6.888s]                  from /opt/ros/foxy/include/rclcpp/executor_options.hpp:20,
+[6.888s]                  from /opt/ros/foxy/include/rclcpp/executor.hpp:33,
+[6.888s]                  from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26,
+[6.888s]                  from /opt/ros/foxy/include/rclcpp/executors.hpp:21,
+[6.888s]                  from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+[6.889s]                  from /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:1:
+[6.889s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function ‘void TemplateDroneControl::send_land_request()’:
+[6.890s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:145:98: error: ‘using element_type = struct mavros_msgs::srv::CommandTOL_Response_<std::allocator<void> >’ {aka ‘struct mavros_msgs::srv::CommandTOL_Response_<std::allocator<void> >’} has no member named ‘result_str’; did you mean ‘result’?
+[6.891s]   145 |                 RCLCPP_ERROR(this->get_logger(), "Failed to send takeoff command: %s", response->result_str.c_str());
+[6.892s]       |                                                                                                  ^~~~~~~~~~
+[6.892s] make[2]: *** [CMakeFiles/template_drone_control_node.dir/build.make:63: CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o] Error 1
+[6.892s] make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/template_drone_control_node.dir/all] Error 2
+[6.892s] make: *** [Makefile:141: all] Error 2
+[6.895s] Invoked command in '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control -- -j12 -l12

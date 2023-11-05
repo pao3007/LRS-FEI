@@ -1,0 +1,81 @@
+[35m[1mScanning dependencies of target template_drone_control_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o[0m
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In constructor ‘TemplateDroneControl::TemplateDroneControl()’:
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:31:9: error: ‘local_pos_sub_’ was not declared in this scope; did you mean ‘local_pos_pub_’?
+   31 |         local_pos_sub_ = this->create_subscription<geometry_msgs::msg::PoseStamped>(
+      |         ^~~~~~~~~~~~~~
+      |         local_pos_pub_
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:32:82: error: ‘local_pos_cb’ is not a member of ‘TemplateDroneControl’
+   32 |             "/mavros/local_position/pose", qos, std::bind(&TemplateDroneControl::local_pos_cb, this, std::placeholders::_1));
+      |                                                                                  ^~~~~~~~~~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:55:15: error: expected ‘(’ before ‘!’ token
+   55 |         while !guided_mode_set{
+      |               ^
+      |               (
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:55:31: error: expected ‘)’ before ‘{’ token
+   55 |         while !guided_mode_set{
+      |               ~               ^
+      |                               )
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:56:23: error: expected ‘;’ before ‘do’
+   56 |             sleep(0.5)
+      |                       ^
+      |                       ;
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:66:45: error: expected ‘;’ before ‘do’
+   66 |         send_takeoff_land_request(1.0, true)
+      |                                             ^
+      |                                             ;
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:70:17: error: ‘terminate’ was not declared in this scope; did you mean ‘std::terminate’?
+   70 |         while (!terminate) {
+      |                 ^~~~~~~~~
+      |                 std::terminate
+In file included from /usr/include/c++/9/new:40,
+                 from /usr/include/c++/9/ext/new_allocator.h:33,
+                 from /usr/include/x86_64-linux-gnu/c++/9/bits/c++allocator.h:33,
+                 from /usr/include/c++/9/bits/allocator.h:46,
+                 from /usr/include/c++/9/memory:63,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:1:
+/usr/include/c++/9/exception:76:8: note: ‘std::terminate’ declared here
+   76 |   void terminate() _GLIBCXX_USE_NOEXCEPT __attribute__ ((__noreturn__));
+      |        ^~~~~~~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:71:13: error: ‘c’ was not declared in this scope
+   71 |             c = getch(); // Non-blocking key press detection
+      |             ^
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:74:54: error: expected ‘;’ before ‘}’ token
+   74 |                 send_takeoff_land_request(0.0, false)
+      |                                                      ^
+      |                                                      ;
+   75 |             } else if (c == 'q') {
+      |             ~                                         
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function ‘char TemplateDroneControl::getch()’:
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:85:32: warning: missing initializer for member ‘termios::c_oflag’ [-Wmissing-field-initializers]
+   85 |         struct termios old = {0};
+      |                                ^
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:85:32: warning: missing initializer for member ‘termios::c_cflag’ [-Wmissing-field-initializers]
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:85:32: warning: missing initializer for member ‘termios::c_lflag’ [-Wmissing-field-initializers]
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:85:32: warning: missing initializer for member ‘termios::c_line’ [-Wmissing-field-initializers]
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:85:32: warning: missing initializer for member ‘termios::c_cc’ [-Wmissing-field-initializers]
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:85:32: warning: missing initializer for member ‘termios::c_ispeed’ [-Wmissing-field-initializers]
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:85:32: warning: missing initializer for member ‘termios::c_ospeed’ [-Wmissing-field-initializers]
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function ‘void TemplateDroneControl::state_cb(mavros_msgs::msg::State_<std::allocator<void> >::SharedPtr)’:
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:105:9: error: ‘state_’ was not declared in this scope; did you mean ‘state_cb’?
+  105 |         state_ = current_state_.mode.c_str()
+      |         ^~~~~~
+      |         state_cb
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:107:21: error: expected primary-expression before ‘==’ token
+  107 |         if (state_) == "GUIDED"{
+      |                     ^~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function ‘void TemplateDroneControl::send_takeoff_land_request(float, bool)’:
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:155:81: error: ‘future’ was not declared in this scope; did you mean ‘std::future’?
+  155 |         if (rclcpp::spin_until_future_complete(this->get_node_base_interface(), future) ==
+      |                                                                                 ^~~~~~
+      |                                                                                 std::future
+In file included from /opt/ros/foxy/include/rclcpp/executors.hpp:18,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+                 from /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:1:
+/usr/include/c++/9/future:125:11: note: ‘std::future’ declared here
+  125 |     class future;
+      |           ^~~~~~
+make[2]: *** [CMakeFiles/template_drone_control_node.dir/build.make:63: CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/template_drone_control_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,47 @@
+[0.020s] Invoking command in '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control -- -j12 -l12
+[0.081s] [35m[1mScanning dependencies of target template_drone_control_node[0m
+[0.129s] [ 50%] [32mBuilding CXX object CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o[0m
+[6.225s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function ‘void TemplateDroneControl::rotate_drone(float, float, float, float, float)’:
+[6.225s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:155:25: error: redeclaration of ‘tf2::Quaternion q’
+[6.225s]   155 |         tf2::Quaternion q(
+[6.226s]       |                         ^
+[6.226s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:148:25: note: ‘tf2::Quaternion q’ previously declared here
+[6.227s]   148 |         tf2::Quaternion q;
+[6.229s]       |                         ^
+[6.229s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:166:9: error: ‘yaw_err’ was not declared in this scope
+[6.229s]   166 |         yaw_err = abs(current_yaw - target_yaw);
+[6.229s]       |         ^~~~~~~
+[6.229s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function ‘void TemplateDroneControl::local_pos_cb(geometry_msgs::msg::PoseStamped_<std::allocator<void> >::SharedPtr)’:
+[6.229s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:192:19: error: expected unqualified-id before ‘.’ token
+[6.229s]   192 |         GlobalPose.x = StartPose.x - current_local_pos_.pose.position.x;
+[6.229s]       |                   ^
+[6.230s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:193:19: error: expected unqualified-id before ‘.’ token
+[6.230s]   193 |         GlobalPose.y = StartPose.y - current_local_pos_.pose.position.y;
+[6.230s]       |                   ^
+[6.230s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:194:19: error: expected unqualified-id before ‘.’ token
+[6.230s]   194 |         GlobalPose.z = StartPose.z + current_local_pos_.pose.position.z;
+[6.230s]       |                   ^
+[6.230s] In file included from /opt/ros/foxy/include/rclcpp/client.hpp:40,
+[6.230s]                  from /opt/ros/foxy/include/rclcpp/callback_group.hpp:23,
+[6.230s]                  from /opt/ros/foxy/include/rclcpp/any_executable.hpp:20,
+[6.230s]                  from /opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24,
+[6.230s]                  from /opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18,
+[6.230s]                  from /opt/ros/foxy/include/rclcpp/executor_options.hpp:20,
+[6.230s]                  from /opt/ros/foxy/include/rclcpp/executor.hpp:33,
+[6.230s]                  from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26,
+[6.230s]                  from /opt/ros/foxy/include/rclcpp/executors.hpp:21,
+[6.230s]                  from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+[6.230s]                  from /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:1:
+[6.231s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:203:89: error: expected primary-expression before ‘.’ token
+[6.231s]   203 |         RCLCPP_INFO(this->get_logger(), "Current Local Position: %f, %f, %f", GlobalPose.x, GlobalPose.position.y, GlobalPose.position.z);
+[6.231s]       |                                                                                         ^
+[6.231s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:203:103: error: expected primary-expression before ‘.’ token
+[6.231s]   203 |         RCLCPP_INFO(this->get_logger(), "Current Local Position: %f, %f, %f", GlobalPose.x, GlobalPose.position.y, GlobalPose.position.z);
+[6.231s]       |                                                                                                       ^
+[6.231s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:203:126: error: expected primary-expression before ‘.’ token
+[6.231s]   203 |         RCLCPP_INFO(this->get_logger(), "Current Local Position: %f, %f, %f", GlobalPose.x, GlobalPose.position.y, GlobalPose.position.z);
+[6.231s]       |                                                                                                                              ^
+[6.231s] make[2]: *** [CMakeFiles/template_drone_control_node.dir/build.make:63: CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o] Error 1
+[6.231s] make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/template_drone_control_node.dir/all] Error 2
+[6.231s] make: *** [Makefile:141: all] Error 2
+[6.233s] Invoked command in '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control -- -j12 -l12

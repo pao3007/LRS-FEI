@@ -1,0 +1,196 @@
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:507:1: error: expected ‘}’ at end of input
+  507 | }
+      | ^
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:20:1: note: to match this ‘{’
+   20 | {
+      | ^
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In constructor ‘TemplateDroneControl::TemplateDroneControl()’:
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:25:9: error: ‘state_sub_’ was not declared in this scope
+   25 |         state_sub_ = this->create_subscription<mavros_msgs::msg::State>(
+      |         ^~~~~~~~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:26:66: error: ‘state_cb’ is not a member of ‘TemplateDroneControl’
+   26 |             "mavros/state", 10, std::bind(&TemplateDroneControl::state_cb, this, std::placeholders::_1));
+      |                                                                  ^~~~~~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:27:9: error: ‘arming_client_’ was not declared in this scope; did you mean ‘rmw_client_t’?
+   27 |         arming_client_ = this->create_client<mavros_msgs::srv::CommandBool>("mavros/cmd/arming");
+      |         ^~~~~~~~~~~~~~
+      |         rmw_client_t
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:28:9: error: ‘set_mode_client_’ was not declared in this scope
+   28 |         set_mode_client_ = this->create_client<mavros_msgs::srv::SetMode>("mavros/set_mode");
+      |         ^~~~~~~~~~~~~~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:29:9: error: ‘takeoff_client_’ was not declared in this scope
+   29 |         takeoff_client_ = this->create_client<mavros_msgs::srv::CommandTOL>("mavros/cmd/takeoff");
+      |         ^~~~~~~~~~~~~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:30:9: error: ‘land_client_’ was not declared in this scope
+   30 |         land_client_ = this->create_client<mavros_msgs::srv::CommandTOL>("mavros/cmd/land");
+      |         ^~~~~~~~~~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:31:9: error: ‘local_pos_pub_’ was not declared in this scope
+   31 |         local_pos_pub_ = this->create_publisher<geometry_msgs::msg::PoseStamped>("mavros/setpoint_position/local", 10);
+      |         ^~~~~~~~~~~~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:37:9: error: ‘local_pos_sub_’ was not declared in this scope
+   37 |         local_pos_sub_ = this->create_subscription<geometry_msgs::msg::PoseStamped>(
+      |         ^~~~~~~~~~~~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:38:82: error: ‘local_pos_cb’ is not a member of ‘TemplateDroneControl’
+   38 |             "/mavros/local_position/pose", qos, std::bind(&TemplateDroneControl::local_pos_cb, this, std::placeholders::_1));
+      |                                                                                  ^~~~~~~~~~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:41:33: error: ‘current_state_’ was not declared in this scope
+   41 |         while (rclcpp::ok() && !current_state_.connected)
+      |                                 ^~~~~~~~~~~~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:47:17: error: ‘terminate’ was not declared in this scope; did you mean ‘std::terminate’?
+   47 |         while (!terminate) {
+      |                 ^~~~~~~~~
+      |                 std::terminate
+In file included from /usr/include/c++/9/new:40,
+                 from /usr/include/c++/9/ext/new_allocator.h:33,
+                 from /usr/include/x86_64-linux-gnu/c++/9/bits/c++allocator.h:33,
+                 from /usr/include/c++/9/bits/allocator.h:46,
+                 from /usr/include/c++/9/memory:63,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+                 from /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:1:
+/usr/include/c++/9/exception:76:8: note: ‘std::terminate’ declared here
+   76 |   void terminate() _GLIBCXX_USE_NOEXCEPT __attribute__ ((__noreturn__));
+      |        ^~~~~~~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:48:17: error: ‘isCharAvailable’ was not declared in this scope
+   48 |             if (isCharAvailable()) {
+      |                 ^~~~~~~~~~~~~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:53:21: error: ‘send_land_request’ was not declared in this scope
+   53 |                     send_land_request(0.0);
+      |                     ^~~~~~~~~~~~~~~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:56:21: error: ‘send_takeoff_request’ was not declared in this scope; did you mean ‘rmw_take_request’?
+   56 |                     send_takeoff_request(1.0);
+      |                     ^~~~~~~~~~~~~~~~~~~~
+      |                     rmw_take_request
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function ‘void TemplateDroneControl::send_manual_coords()’:
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:97:40: error: ‘hard_precision’ was not declared in this scope
+   97 |         send_position_command(x, y, z, hard_precision);
+      |                                        ^~~~~~~~~~~~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function ‘void TemplateDroneControl::move_to_position()’:
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:104:34: error: ‘list_of_points’ was not declared in this scope
+  104 |         for (const auto& point : list_of_points) {
+      |                                  ^~~~~~~~~~~~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:108:29: error: ‘soft_precision’ was not declared in this scope; did you mean ‘precision’?
+  108 |                 precision = soft_precision;
+      |                             ^~~~~~~~~~~~~~
+      |                             precision
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:110:29: error: ‘hard_precision’ was not declared in this scope; did you mean ‘precision’?
+  110 |                 precision = hard_precision;
+      |                             ^~~~~~~~~~~~~~
+      |                             precision
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:115:17: error: ‘send_land_request’ was not declared in this scope
+  115 |                 send_land_request(0);
+      |                 ^~~~~~~~~~~~~~~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function ‘void TemplateDroneControl::land_takeoff()’:
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:126:9: error: ‘send_land_request’ was not declared in this scope
+  126 |         send_land_request(0);
+      |         ^~~~~~~~~~~~~~~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:128:9: error: ‘send_takeoff_request’ was not declared in this scope; did you mean ‘rmw_take_request’?
+  128 |         send_takeoff_request(1.0);
+      |         ^~~~~~~~~~~~~~~~~~~~
+      |         rmw_take_request
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function ‘std::tuple<float, float> TemplateDroneControl::transform_global_to_local(float, float)’:
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:146:21: error: ‘start_pose’ was not declared in this scope
+  146 |         local_x = -(start_pose.x - x);
+      |                     ^~~~~~~~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function ‘void TemplateDroneControl::send_position_command(float, float, float, float)’:
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:154:14: error: ‘armed_check’ was not declared in this scope
+  154 |         if (!armed_check){
+      |              ^~~~~~~~~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:155:13: error: ‘send_arming_request’ was not declared in this scope
+  155 |             send_arming_request(true);
+      |             ^~~~~~~~~~~~~~~~~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:157:14: error: ‘takeoff_check’ was not declared in this scope
+  157 |         if (!takeoff_check && global_pose.z < hard_precision){
+      |              ^~~~~~~~~~~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:157:31: error: ‘global_pose’ was not declared in this scope
+  157 |         if (!takeoff_check && global_pose.z < hard_precision){
+      |                               ^~~~~~~~~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:157:47: error: ‘hard_precision’ was not declared in this scope
+  157 |         if (!takeoff_check && global_pose.z < hard_precision){
+      |                                               ^~~~~~~~~~~~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:158:13: error: ‘send_takeoff_request’ was not declared in this scope; did you mean ‘rmw_take_request’?
+  158 |             send_takeoff_request(1.0);
+      |             ^~~~~~~~~~~~~~~~~~~~
+      |             rmw_take_request
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:160:48: error: ‘global_pose’ was not declared in this scope
+  160 |         tf2::Quaternion q = rotate_drone(x, y, global_pose.x, global_pose.y, 0.075, z);
+      |                                                ^~~~~~~~~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:165:19: error: ‘current_local_pos_’ was not declared in this scope
+  165 |         e_x = abs(current_local_pos_.pose.position.x - x);
+      |                   ^~~~~~~~~~~~~~~~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:189:13: error: ‘local_pos_pub_’ was not declared in this scope
+  189 |             local_pos_pub_->publish(msg);
+      |             ^~~~~~~~~~~~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function ‘tf2::Quaternion TemplateDroneControl::rotate_drone(float, float, float, float, float, float)’:
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:199:23: error: ‘start_pose’ was not declared in this scope
+  199 |         target_yaw += start_pose.yaw;
+      |                       ^~~~~~~~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:214:13: error: ‘current_local_pos_’ was not declared in this scope
+  214 |             current_local_pos_.pose.orientation.x,
+      |             ^~~~~~~~~~~~~~~~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:239:13: error: ‘local_pos_pub_’ was not declared in this scope
+  239 |             local_pos_pub_->publish(msg);
+      |             ^~~~~~~~~~~~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:247:5: error: a function-definition is not allowed here before ‘{’ token
+  247 |     {
+      |     ^
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:273:5: error: a function-definition is not allowed here before ‘{’ token
+  273 |     {
+      |     ^
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:302:36: error: a function-definition is not allowed here before ‘{’ token
+  302 |     void set_mode(std::string mode){
+      |                                    ^
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:324:5: error: a function-definition is not allowed here before ‘{’ token
+  324 |     {
+      |     ^
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:365:5: error: a function-definition is not allowed here before ‘{’ token
+  365 |     {
+      |     ^
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:402:5: error: a function-definition is not allowed here before ‘{’ token
+  402 |     {
+      |     ^
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:442:28: error: a function-definition is not allowed here before ‘{’ token
+  442 |     bool isCharAvailable() {
+      |                            ^
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:497:11: error: redeclaration of ‘float current_yaw’
+  497 |     float current_yaw;
+      |           ^~~~~~~~~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:223:15: note: ‘float current_yaw’ previously declared here
+  223 |         float current_yaw = yaw;
+      |               ^~~~~~~~~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:476:16: warning: unused variable ‘global_pose’ [-Wunused-variable]
+  476 |     GlobalPose global_pose;
+      |                ^~~~~~~~~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:489:10: warning: unused variable ‘guided_mode_set’ [-Wunused-variable]
+  489 |     bool guided_mode_set;
+      |          ^~~~~~~~~~~~~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:490:10: warning: unused variable ‘armed_check’ [-Wunused-variable]
+  490 |     bool armed_check;
+      |          ^~~~~~~~~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:491:10: warning: unused variable ‘land_check’ [-Wunused-variable]
+  491 |     bool land_check;
+      |          ^~~~~~~~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:492:10: warning: unused variable ‘takeoff_check’ [-Wunused-variable]
+  492 |     bool takeoff_check;
+      |          ^~~~~~~~~~~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:493:11: warning: unused variable ‘hard_precision’ [-Wunused-variable]
+  493 |     float hard_precision = 0.03;
+      |           ^~~~~~~~~~~~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:494:11: warning: unused variable ‘soft_precision’ [-Wunused-variable]
+  494 |     float soft_precision = 0.075;
+      |           ^~~~~~~~~~~~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:495:10: warning: unused variable ‘c’ [-Wunused-variable]
+  495 |     char c;
+      |          ^
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:496:10: warning: unused variable ‘terminate’ [-Wunused-variable]
+  496 |     bool terminate = false;
+      |          ^~~~~~~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:498:9: warning: unused variable ‘pob_each’ [-Wunused-variable]
+  498 |     int pob_each = 0;
+      |         ^~~~~~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: At global scope:
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:507:1: error: expected unqualified-id at end of input
+  507 | }
+      | ^
+make[2]: *** [CMakeFiles/template_drone_control_node.dir/build.make:63: CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/template_drone_control_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

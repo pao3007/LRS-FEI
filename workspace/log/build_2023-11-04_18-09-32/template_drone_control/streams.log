@@ -1,0 +1,30 @@
+[0.014s] Invoking command in '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control -- -j12 -l12
+[0.061s] [35m[1mScanning dependencies of target template_drone_control_node[0m
+[0.084s] [ 50%] [32mBuilding CXX object CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o[0m
+[6.878s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function ‘void TemplateDroneControl::send_position_command(float, float, float, float)’:
+[6.878s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:157:14: warning: structured bindings only available with ‘-std=c++17’ or ‘-std=gnu++17’
+[6.878s]   157 |         auto [new_x, new_y] = transform_global_to_local(x, y);
+[6.878s]       |              ^
+[6.888s] [100%] [32m[1mLinking CXX executable template_drone_control_node[0m
+[7.193s] [100%] Built target template_drone_control_node
+[7.203s] Invoked command in '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control -- -j12 -l12
+[7.229s] Invoking command in '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control
+[7.241s] -- Install configuration: ""
+[7.241s] -- Installing: /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/install/template_drone_control/lib/template_drone_control/template_drone_control_node
+[7.241s] -- Set runtime path of "/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/install/template_drone_control/lib/template_drone_control/template_drone_control_node" to ""
+[7.241s] -- Up-to-date: /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/install/template_drone_control/share/ament_index/resource_index/package_run_dependencies/template_drone_control
+[7.241s] -- Up-to-date: /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/install/template_drone_control/share/ament_index/resource_index/parent_prefix_path/template_drone_control
+[7.241s] -- Up-to-date: /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/install/template_drone_control/share/template_drone_control/environment/ament_prefix_path.sh
+[7.241s] -- Up-to-date: /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/install/template_drone_control/share/template_drone_control/environment/ament_prefix_path.dsv
+[7.241s] -- Up-to-date: /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/install/template_drone_control/share/template_drone_control/environment/path.sh
+[7.242s] -- Up-to-date: /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/install/template_drone_control/share/template_drone_control/environment/path.dsv
+[7.242s] -- Up-to-date: /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/install/template_drone_control/share/template_drone_control/local_setup.bash
+[7.242s] -- Up-to-date: /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/install/template_drone_control/share/template_drone_control/local_setup.sh
+[7.242s] -- Up-to-date: /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/install/template_drone_control/share/template_drone_control/local_setup.zsh
+[7.242s] -- Up-to-date: /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/install/template_drone_control/share/template_drone_control/local_setup.dsv
+[7.242s] -- Installing: /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/install/template_drone_control/share/template_drone_control/package.dsv
+[7.242s] -- Up-to-date: /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/install/template_drone_control/share/ament_index/resource_index/packages/template_drone_control
+[7.242s] -- Up-to-date: /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/install/template_drone_control/share/template_drone_control/cmake/template_drone_controlConfig.cmake
+[7.242s] -- Up-to-date: /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/install/template_drone_control/share/template_drone_control/cmake/template_drone_controlConfig-version.cmake
+[7.242s] -- Up-to-date: /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/install/template_drone_control/share/template_drone_control/package.xml
+[7.243s] Invoked command in '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control

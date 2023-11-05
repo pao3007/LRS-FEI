@@ -1,0 +1,62 @@
+[0.014s] Invoking command in '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control -- -j12 -l12
+[0.054s] [35m[1mScanning dependencies of target template_drone_control_node[0m
+[0.082s] [ 50%] [32mBuilding CXX object CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o[0m
+[2.992s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In constructor ‘TemplateDroneControl::TemplateDroneControl()’:
+[2.992s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:44:15: error: expected ‘(’ before ‘current_state_’
+[2.992s]    44 |         while current_state_.mode.c_str() != "GUIDED"{
+[2.992s]       |               ^~~~~~~~~~~~~~
+[2.992s]       |               (
+[2.992s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:44:46: warning: comparison with string literal results in unspecified behavior [-Waddress]
+[2.992s]    44 |         while current_state_.mode.c_str() != "GUIDED"{
+[2.992s]       |                                              ^~~~~~~~
+[2.992s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:44:54: error: expected ‘)’ before ‘{’ token
+[2.992s]    44 |         while current_state_.mode.c_str() != "GUIDED"{
+[2.992s]       |               ~~~~~~~~~~~~~~                         ^
+[2.993s]       |                                                      )
+[2.993s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:48:59: error: no matching function for call to ‘rclcpp::Client<mavros_msgs::srv::CommandBool>::async_send_request(const char [14])’
+[2.993s]    48 |         arming_client_->async_send_request("{value: True}")
+[2.993s]       |                                                           ^
+[2.993s] In file included from /opt/ros/foxy/include/rclcpp/callback_group.hpp:23,
+[2.993s]                  from /opt/ros/foxy/include/rclcpp/any_executable.hpp:20,
+[2.993s]                  from /opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24,
+[2.993s]                  from /opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18,
+[2.993s]                  from /opt/ros/foxy/include/rclcpp/executor_options.hpp:20,
+[2.993s]                  from /opt/ros/foxy/include/rclcpp/executor.hpp:33,
+[2.993s]                  from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26,
+[2.993s]                  from /opt/ros/foxy/include/rclcpp/executors.hpp:21,
+[2.993s]                  from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+[2.993s]                  from /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:1:
+[2.993s] /opt/ros/foxy/include/rclcpp/client.hpp:318:3: note: candidate: ‘rclcpp::Client<ServiceT>::SharedFuture rclcpp::Client<ServiceT>::async_send_request(rclcpp::Client<ServiceT>::SharedRequest) [with ServiceT = mavros_msgs::srv::CommandBool; rclcpp::Client<ServiceT>::SharedFuture = std::shared_future<std::shared_ptr<mavros_msgs::srv::CommandBool_Response_<std::allocator<void> > > >; typename ServiceT::Response::SharedPtr = std::shared_ptr<mavros_msgs::srv::CommandBool_Response_<std::allocator<void> > >; rclcpp::Client<ServiceT>::SharedRequest = std::shared_ptr<mavros_msgs::srv::CommandBool_Request_<std::allocator<void> > >]’
+[2.993s]   318 |   async_send_request(SharedRequest request)
+[2.993s]       |   ^~~~~~~~~~~~~~~~~~
+[2.994s] /opt/ros/foxy/include/rclcpp/client.hpp:318:36: note:   no known conversion for argument 1 from ‘const char [14]’ to ‘rclcpp::Client<mavros_msgs::srv::CommandBool>::SharedRequest’ {aka ‘std::shared_ptr<mavros_msgs::srv::CommandBool_Request_<std::allocator<void> > >’}
+[2.994s]   318 |   async_send_request(SharedRequest request)
+[2.994s]       |                      ~~~~~~~~~~~~~~^~~~~~~
+[2.994s] /opt/ros/foxy/include/rclcpp/client.hpp:333:3: note: candidate: ‘template<class CallbackT, typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_future<std::shared_ptr<mavros_msgs::srv::CommandBool_Response_<std::allocator<void> > > >)> >::value, void>::type* <anonymous> > rclcpp::Client<ServiceT>::SharedFuture rclcpp::Client<ServiceT>::async_send_request(rclcpp::Client<ServiceT>::SharedRequest, CallbackT&&) [with CallbackT = CallbackT; typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_future<typename ServiceT::Response::SharedPtr>)> >::value>::type* <anonymous> = <enumerator>; ServiceT = mavros_msgs::srv::CommandBool]’
+[2.994s]   333 |   async_send_request(SharedRequest request, CallbackT && cb)
+[2.994s]       |   ^~~~~~~~~~~~~~~~~~
+[2.994s] /opt/ros/foxy/include/rclcpp/client.hpp:333:3: note:   template argument deduction/substitution failed:
+[2.994s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:48:59: note:   candidate expects 2 arguments, 1 provided
+[2.994s]    48 |         arming_client_->async_send_request("{value: True}")
+[2.994s]       |                                                           ^
+[2.995s] In file included from /opt/ros/foxy/include/rclcpp/callback_group.hpp:23,
+[2.995s]                  from /opt/ros/foxy/include/rclcpp/any_executable.hpp:20,
+[2.995s]                  from /opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24,
+[2.995s]                  from /opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18,
+[2.995s]                  from /opt/ros/foxy/include/rclcpp/executor_options.hpp:20,
+[2.996s]                  from /opt/ros/foxy/include/rclcpp/executor.hpp:33,
+[2.997s]                  from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26,
+[2.997s]                  from /opt/ros/foxy/include/rclcpp/executors.hpp:21,
+[2.998s]                  from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+[2.998s]                  from /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:1:
+[2.998s] /opt/ros/foxy/include/rclcpp/client.hpp:359:3: note: candidate: ‘template<class CallbackT, typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_future<std::pair<std::shared_ptr<mavros_msgs::srv::CommandBool_Request_<std::allocator<void> > >, std::shared_ptr<mavros_msgs::srv::CommandBool_Response_<std::allocator<void> > > > >)> >::value, void>::type* <anonymous> > rclcpp::Client<ServiceT>::SharedFutureWithRequest rclcpp::Client<ServiceT>::async_send_request(rclcpp::Client<ServiceT>::SharedRequest, CallbackT&&) [with CallbackT = CallbackT; typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_future<std::pair<typename ServiceT::Request::SharedPtr, typename ServiceT::Response::SharedPtr> >)> >::value>::type* <anonymous> = <enumerator>; ServiceT = mavros_msgs::srv::CommandBool]’
+[2.998s]   359 |   async_send_request(SharedRequest request, CallbackT && cb)
+[2.998s]       |   ^~~~~~~~~~~~~~~~~~
+[2.998s] /opt/ros/foxy/include/rclcpp/client.hpp:359:3: note:   template argument deduction/substitution failed:
+[2.998s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:48:59: note:   candidate expects 2 arguments, 1 provided
+[2.998s]    48 |         arming_client_->async_send_request("{value: True}")
+[2.998s]       |                                                           ^
+[2.999s] make[2]: *** [CMakeFiles/template_drone_control_node.dir/build.make:63: CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o] Error 1
+[2.999s] make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/template_drone_control_node.dir/all] Error 2
+[2.999s] make: *** [Makefile:141: all] Error 2
+[2.999s] Invoked command in '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control -- -j12 -l12

@@ -1,0 +1,61 @@
+[0.031s] Invoking command in '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control -- -j12 -l12
+[0.113s] [35m[1mScanning dependencies of target template_drone_control_node[0m
+[0.169s] [ 50%] [32mBuilding CXX object CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o[0m
+[7.013s] In file included from /opt/ros/foxy/include/rclcpp/service.hpp:34,
+[7.014s]                  from /opt/ros/foxy/include/rclcpp/callback_group.hpp:25,
+[7.014s]                  from /opt/ros/foxy/include/rclcpp/any_executable.hpp:20,
+[7.014s]                  from /opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24,
+[7.014s]                  from /opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18,
+[7.014s]                  from /opt/ros/foxy/include/rclcpp/executor_options.hpp:20,
+[7.014s]                  from /opt/ros/foxy/include/rclcpp/executor.hpp:33,
+[7.014s]                  from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26,
+[7.014s]                  from /opt/ros/foxy/include/rclcpp/executors.hpp:21,
+[7.014s]                  from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+[7.014s]                  from /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:1:
+[7.014s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In constructor ‘TemplateDroneControl::TemplateDroneControl()’:
+[7.015s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:53:13: error: static assertion failed: First argument to logging macros must be an rclcpp::Logger
+[7.015s]    53 |             RCLCPP_INFO("Waiting for guided mode");
+[7.015s]       |             ^~~~~~~~~~~
+[7.015s] In file included from /opt/ros/foxy/include/rclcpp/client.hpp:40,
+[7.015s]                  from /opt/ros/foxy/include/rclcpp/callback_group.hpp:23,
+[7.015s]                  from /opt/ros/foxy/include/rclcpp/any_executable.hpp:20,
+[7.015s]                  from /opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24,
+[7.015s]                  from /opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18,
+[7.016s]                  from /opt/ros/foxy/include/rclcpp/executor_options.hpp:20,
+[7.016s]                  from /opt/ros/foxy/include/rclcpp/executor.hpp:33,
+[7.016s]                  from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26,
+[7.016s]                  from /opt/ros/foxy/include/rclcpp/executors.hpp:21,
+[7.016s]                  from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+[7.016s]                  from /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:1:
+[7.016s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:53:13: error: request for member ‘get_name’ in ‘("Waiting for guided mode")’, which is of non-class type ‘const char [24]’
+[7.016s]    53 |             RCLCPP_INFO("Waiting for guided mode");
+[7.016s]       |             ^~~~~~~~~~~
+[7.016s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:53:13: error: request for member ‘get_name’ in ‘("Waiting for guided mode")’, which is of non-class type ‘const char [24]’
+[7.016s]    53 |             RCLCPP_INFO("Waiting for guided mode");
+[7.017s]       |             ^~~~~~~~~~~
+[7.017s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:53:13: error: no matching function for call to ‘get_c_string()’
+[7.017s]    53 |             RCLCPP_INFO("Waiting for guided mode");
+[7.017s]       |             ^~~~~~~~~~~
+[7.017s] In file included from /opt/ros/foxy/include/rclcpp/client.hpp:36,
+[7.017s]                  from /opt/ros/foxy/include/rclcpp/callback_group.hpp:23,
+[7.017s]                  from /opt/ros/foxy/include/rclcpp/any_executable.hpp:20,
+[7.017s]                  from /opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24,
+[7.017s]                  from /opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18,
+[7.018s]                  from /opt/ros/foxy/include/rclcpp/executor_options.hpp:20,
+[7.018s]                  from /opt/ros/foxy/include/rclcpp/executor.hpp:33,
+[7.019s]                  from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26,
+[7.019s]                  from /opt/ros/foxy/include/rclcpp/executors.hpp:21,
+[7.020s]                  from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+[7.023s]                  from /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:1:
+[7.024s] /opt/ros/foxy/include/rclcpp/utilities.hpp:296:1: note: candidate: ‘const char* rclcpp::get_c_string(const char*)’
+[7.024s]   296 | get_c_string(const char * string_in);
+[7.024s]       | ^~~~~~~~~~~~
+[7.024s] /opt/ros/foxy/include/rclcpp/utilities.hpp:296:1: note:   candidate expects 1 argument, 0 provided
+[7.024s] /opt/ros/foxy/include/rclcpp/utilities.hpp:305:1: note: candidate: ‘const char* rclcpp::get_c_string(const string&)’
+[7.024s]   305 | get_c_string(const std::string & string_in);
+[7.024s]       | ^~~~~~~~~~~~
+[7.024s] /opt/ros/foxy/include/rclcpp/utilities.hpp:305:1: note:   candidate expects 1 argument, 0 provided
+[7.025s] make[2]: *** [CMakeFiles/template_drone_control_node.dir/build.make:63: CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o] Error 1
+[7.025s] make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/template_drone_control_node.dir/all] Error 2
+[7.025s] make: *** [Makefile:141: all] Error 2
+[7.025s] Invoked command in '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control -- -j12 -l12

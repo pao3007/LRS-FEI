@@ -1,0 +1,220 @@
+[0.000000] (-) TimerEvent: {}
+[0.000562] (template_drone_control) JobQueued: {'identifier': 'template_drone_control', 'dependencies': OrderedDict()}
+[0.000706] (template_drone_control) JobStarted: {'identifier': 'template_drone_control'}
+[0.026091] (template_drone_control) JobProgress: {'identifier': 'template_drone_control', 'progress': 'cmake'}
+[0.030500] (template_drone_control) JobProgress: {'identifier': 'template_drone_control', 'progress': 'build'}
+[0.032757] (template_drone_control) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control', '--', '-j12', '-l12'], 'cwd': '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'lrs-ubuntu'), ('LC_TIME', 'sk_SK.UTF-8'), ('SSH_AGENT_PID', '1733'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/lrs-ubuntu'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'sk_SK.UTF-8'), ('MANAGERPID', '1530'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=e47dc85ab1c8fdbf387562a765358bab'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'lrs-ubuntu'), ('JOURNAL_STREAM', '8:41738'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lrs-ubuntu'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/home/lrs-ubuntu/fei_lrs_gazebo/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/lib/ccache:/home/lrs-ubuntu/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/home/lrs-ubuntu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/lrs:@/tmp/.ICE-unix/1771,unix/lrs:/tmp/.ICE-unix/1771'), ('INVOCATION_ID', '4926bde6f1774a60859aedb398a7782e'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'sk_SK.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/e502d1a9_0ebd_492b_a55a_231cdfddc9bb'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'sk_SK.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.121'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'sk_SK.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'sk_SK.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'sk_SK.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=e47dc85ab1c8fdbf387562a765358bab'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'sk_SK.UTF-8'), ('LC_PAPER', 'sk_SK.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.096934] (-) TimerEvent: {}
+[0.143567] (template_drone_control) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target template_drone_control_node\x1b[0m\n'}
+[0.195907] (template_drone_control) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o\x1b[0m\n'}
+[0.196926] (-) TimerEvent: {}
+[0.297854] (-) TimerEvent: {}
+[0.398714] (-) TimerEvent: {}
+[0.499771] (-) TimerEvent: {}
+[0.600349] (-) TimerEvent: {}
+[0.701929] (-) TimerEvent: {}
+[0.802995] (-) TimerEvent: {}
+[0.903574] (-) TimerEvent: {}
+[1.004870] (-) TimerEvent: {}
+[1.105288] (-) TimerEvent: {}
+[1.205635] (-) TimerEvent: {}
+[1.306328] (-) TimerEvent: {}
+[1.406913] (-) TimerEvent: {}
+[1.507517] (-) TimerEvent: {}
+[1.608295] (-) TimerEvent: {}
+[1.709557] (-) TimerEvent: {}
+[1.810029] (-) TimerEvent: {}
+[1.910957] (-) TimerEvent: {}
+[2.012296] (-) TimerEvent: {}
+[2.112936] (-) TimerEvent: {}
+[2.213475] (-) TimerEvent: {}
+[2.314114] (-) TimerEvent: {}
+[2.414743] (-) TimerEvent: {}
+[2.515271] (-) TimerEvent: {}
+[2.615820] (-) TimerEvent: {}
+[2.716943] (-) TimerEvent: {}
+[2.817513] (-) TimerEvent: {}
+[2.917829] (-) TimerEvent: {}
+[3.018552] (-) TimerEvent: {}
+[3.119975] (-) TimerEvent: {}
+[3.220298] (-) TimerEvent: {}
+[3.320853] (-) TimerEvent: {}
+[3.421992] (-) TimerEvent: {}
+[3.522473] (-) TimerEvent: {}
+[3.622809] (-) TimerEvent: {}
+[3.723356] (-) TimerEvent: {}
+[3.824505] (-) TimerEvent: {}
+[3.924810] (-) TimerEvent: {}
+[4.025542] (-) TimerEvent: {}
+[4.127614] (-) TimerEvent: {}
+[4.227880] (-) TimerEvent: {}
+[4.328502] (-) TimerEvent: {}
+[4.429855] (-) TimerEvent: {}
+[4.530372] (-) TimerEvent: {}
+[4.630616] (-) TimerEvent: {}
+[4.731098] (-) TimerEvent: {}
+[4.831927] (-) TimerEvent: {}
+[4.932488] (-) TimerEvent: {}
+[5.033060] (-) TimerEvent: {}
+[5.134318] (-) TimerEvent: {}
+[5.234938] (-) TimerEvent: {}
+[5.335813] (-) TimerEvent: {}
+[5.437347] (-) TimerEvent: {}
+[5.537703] (-) TimerEvent: {}
+[5.637953] (-) TimerEvent: {}
+[5.738550] (-) TimerEvent: {}
+[5.839759] (-) TimerEvent: {}
+[5.940642] (-) TimerEvent: {}
+[6.041382] (-) TimerEvent: {}
+[6.142074] (-) TimerEvent: {}
+[6.242773] (-) TimerEvent: {}
+[6.343294] (-) TimerEvent: {}
+[6.444005] (-) TimerEvent: {}
+[6.544620] (-) TimerEvent: {}
+[6.644951] (-) TimerEvent: {}
+[6.745470] (-) TimerEvent: {}
+[6.847401] (-) TimerEvent: {}
+[6.948591] (-) TimerEvent: {}
+[7.049415] (-) TimerEvent: {}
+[7.150246] (-) TimerEvent: {}
+[7.251171] (-) TimerEvent: {}
+[7.351479] (-) TimerEvent: {}
+[7.451927] (-) TimerEvent: {}
+[7.552680] (-) TimerEvent: {}
+[7.653427] (-) TimerEvent: {}
+[7.754048] (-) TimerEvent: {}
+[7.854679] (-) TimerEvent: {}
+[7.955025] (-) TimerEvent: {}
+[8.055616] (-) TimerEvent: {}
+[8.156545] (-) TimerEvent: {}
+[8.257314] (-) TimerEvent: {}
+[8.357613] (-) TimerEvent: {}
+[8.458319] (-) TimerEvent: {}
+[8.560080] (-) TimerEvent: {}
+[8.660430] (-) TimerEvent: {}
+[8.760918] (-) TimerEvent: {}
+[8.862205] (-) TimerEvent: {}
+[8.962965] (-) TimerEvent: {}
+[9.063570] (-) TimerEvent: {}
+[9.164464] (-) TimerEvent: {}
+[9.264974] (-) TimerEvent: {}
+[9.365769] (-) TimerEvent: {}
+[9.466802] (-) TimerEvent: {}
+[9.568111] (-) TimerEvent: {}
+[9.669307] (-) TimerEvent: {}
+[9.770249] (-) TimerEvent: {}
+[9.871564] (-) TimerEvent: {}
+[9.972809] (-) TimerEvent: {}
+[10.073369] (-) TimerEvent: {}
+[10.174094] (-) TimerEvent: {}
+[10.274893] (-) TimerEvent: {}
+[10.376441] (-) TimerEvent: {}
+[10.477741] (-) TimerEvent: {}
+[10.578490] (-) TimerEvent: {}
+[10.679893] (-) TimerEvent: {}
+[10.781032] (-) TimerEvent: {}
+[10.881319] (-) TimerEvent: {}
+[10.981594] (-) TimerEvent: {}
+[11.082036] (-) TimerEvent: {}
+[11.182674] (-) TimerEvent: {}
+[11.283180] (-) TimerEvent: {}
+[11.384013] (-) TimerEvent: {}
+[11.485401] (-) TimerEvent: {}
+[11.586027] (-) TimerEvent: {}
+[11.687379] (-) TimerEvent: {}
+[11.788137] (-) TimerEvent: {}
+[11.889490] (-) TimerEvent: {}
+[11.989869] (-) TimerEvent: {}
+[12.090277] (-) TimerEvent: {}
+[12.190766] (-) TimerEvent: {}
+[12.291966] (-) TimerEvent: {}
+[12.393051] (-) TimerEvent: {}
+[12.494115] (-) TimerEvent: {}
+[12.594784] (-) TimerEvent: {}
+[12.695983] (-) TimerEvent: {}
+[12.797068] (-) TimerEvent: {}
+[12.898117] (-) TimerEvent: {}
+[12.998836] (-) TimerEvent: {}
+[13.099592] (-) TimerEvent: {}
+[13.200679] (-) TimerEvent: {}
+[13.301240] (-) TimerEvent: {}
+[13.401696] (-) TimerEvent: {}
+[13.502750] (-) TimerEvent: {}
+[13.603822] (-) TimerEvent: {}
+[13.704388] (-) TimerEvent: {}
+[13.805051] (-) TimerEvent: {}
+[13.906002] (-) TimerEvent: {}
+[14.007031] (-) TimerEvent: {}
+[14.107645] (-) TimerEvent: {}
+[14.208775] (-) TimerEvent: {}
+[14.309096] (-) TimerEvent: {}
+[14.409587] (-) TimerEvent: {}
+[14.510789] (-) TimerEvent: {}
+[14.611211] (-) TimerEvent: {}
+[14.711498] (-) TimerEvent: {}
+[14.812025] (-) TimerEvent: {}
+[14.912911] (-) TimerEvent: {}
+[15.013760] (-) TimerEvent: {}
+[15.114419] (-) TimerEvent: {}
+[15.215585] (-) TimerEvent: {}
+[15.316186] (-) TimerEvent: {}
+[15.416610] (-) TimerEvent: {}
+[15.517839] (-) TimerEvent: {}
+[15.618502] (-) TimerEvent: {}
+[15.718906] (-) TimerEvent: {}
+[15.819985] (-) TimerEvent: {}
+[15.920635] (-) TimerEvent: {}
+[16.021099] (-) TimerEvent: {}
+[16.121891] (-) TimerEvent: {}
+[16.222300] (-) TimerEvent: {}
+[16.322842] (-) TimerEvent: {}
+[16.423303] (-) TimerEvent: {}
+[16.523915] (-) TimerEvent: {}
+[16.624425] (-) TimerEvent: {}
+[16.705980] (template_drone_control) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable template_drone_control_node\x1b[0m\n'}
+[16.724561] (-) TimerEvent: {}
+[16.825076] (-) TimerEvent: {}
+[16.926041] (-) TimerEvent: {}
+[17.026777] (-) TimerEvent: {}
+[17.128279] (-) TimerEvent: {}
+[17.229971] (-) TimerEvent: {}
+[17.331603] (-) TimerEvent: {}
+[17.433593] (-) TimerEvent: {}
+[17.535160] (-) TimerEvent: {}
+[17.636020] (-) TimerEvent: {}
+[17.737631] (-) TimerEvent: {}
+[17.838769] (-) TimerEvent: {}
+[17.940000] (-) TimerEvent: {}
+[18.041043] (-) TimerEvent: {}
+[18.141633] (-) TimerEvent: {}
+[18.243244] (-) TimerEvent: {}
+[18.344520] (-) TimerEvent: {}
+[18.445104] (-) TimerEvent: {}
+[18.449052] (template_drone_control) StdoutLine: {'line': b'[100%] Built target template_drone_control_node\n'}
+[18.474663] (template_drone_control) CommandEnded: {'returncode': 0}
+[18.535333] (template_drone_control) JobProgress: {'identifier': 'template_drone_control', 'progress': 'install'}
+[18.545581] (-) TimerEvent: {}
+[18.562689] (template_drone_control) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control'], 'cwd': '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'lrs-ubuntu'), ('LC_TIME', 'sk_SK.UTF-8'), ('SSH_AGENT_PID', '1733'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/lrs-ubuntu'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'sk_SK.UTF-8'), ('MANAGERPID', '1530'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=e47dc85ab1c8fdbf387562a765358bab'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'lrs-ubuntu'), ('JOURNAL_STREAM', '8:41738'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lrs-ubuntu'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/home/lrs-ubuntu/fei_lrs_gazebo/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/lib/ccache:/home/lrs-ubuntu/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/home/lrs-ubuntu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/lrs:@/tmp/.ICE-unix/1771,unix/lrs:/tmp/.ICE-unix/1771'), ('INVOCATION_ID', '4926bde6f1774a60859aedb398a7782e'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'sk_SK.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/e502d1a9_0ebd_492b_a55a_231cdfddc9bb'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'sk_SK.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.121'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'sk_SK.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'sk_SK.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'sk_SK.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=e47dc85ab1c8fdbf387562a765358bab'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'sk_SK.UTF-8'), ('LC_PAPER', 'sk_SK.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[18.586715] (template_drone_control) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[18.587084] (template_drone_control) StdoutLine: {'line': b'-- Installing: /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/install/template_drone_control/lib/template_drone_control/template_drone_control_node\n'}
+[18.596450] (template_drone_control) StdoutLine: {'line': b'-- Set runtime path of "/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/install/template_drone_control/lib/template_drone_control/template_drone_control_node" to ""\n'}
+[18.597253] (template_drone_control) StdoutLine: {'line': b'-- Up-to-date: /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/install/template_drone_control/share/ament_index/resource_index/package_run_dependencies/template_drone_control\n'}
+[18.597695] (template_drone_control) StdoutLine: {'line': b'-- Up-to-date: /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/install/template_drone_control/share/ament_index/resource_index/parent_prefix_path/template_drone_control\n'}
+[18.598700] (template_drone_control) StdoutLine: {'line': b'-- Up-to-date: /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/install/template_drone_control/share/template_drone_control/environment/ament_prefix_path.sh\n'}
+[18.599215] (template_drone_control) StdoutLine: {'line': b'-- Up-to-date: /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/install/template_drone_control/share/template_drone_control/environment/ament_prefix_path.dsv\n'}
+[18.599513] (template_drone_control) StdoutLine: {'line': b'-- Up-to-date: /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/install/template_drone_control/share/template_drone_control/environment/path.sh\n'}
+[18.599672] (template_drone_control) StdoutLine: {'line': b'-- Up-to-date: /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/install/template_drone_control/share/template_drone_control/environment/path.dsv\n'}
+[18.599784] (template_drone_control) StdoutLine: {'line': b'-- Up-to-date: /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/install/template_drone_control/share/template_drone_control/local_setup.bash\n'}
+[18.599903] (template_drone_control) StdoutLine: {'line': b'-- Up-to-date: /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/install/template_drone_control/share/template_drone_control/local_setup.sh\n'}
+[18.600025] (template_drone_control) StdoutLine: {'line': b'-- Up-to-date: /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/install/template_drone_control/share/template_drone_control/local_setup.zsh\n'}
+[18.600165] (template_drone_control) StdoutLine: {'line': b'-- Up-to-date: /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/install/template_drone_control/share/template_drone_control/local_setup.dsv\n'}
+[18.600308] (template_drone_control) StdoutLine: {'line': b'-- Installing: /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/install/template_drone_control/share/template_drone_control/package.dsv\n'}
+[18.600455] (template_drone_control) StdoutLine: {'line': b'-- Up-to-date: /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/install/template_drone_control/share/ament_index/resource_index/packages/template_drone_control\n'}
+[18.600588] (template_drone_control) StdoutLine: {'line': b'-- Up-to-date: /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/install/template_drone_control/share/template_drone_control/cmake/template_drone_controlConfig.cmake\n'}
+[18.600719] (template_drone_control) StdoutLine: {'line': b'-- Up-to-date: /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/install/template_drone_control/share/template_drone_control/cmake/template_drone_controlConfig-version.cmake\n'}
+[18.601077] (template_drone_control) StdoutLine: {'line': b'-- Up-to-date: /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/install/template_drone_control/share/template_drone_control/package.xml\n'}
+[18.602087] (template_drone_control) CommandEnded: {'returncode': 0}
+[18.646942] (-) TimerEvent: {}
+[18.747947] (-) TimerEvent: {}
+[18.806419] (template_drone_control) JobEnded: {'identifier': 'template_drone_control', 'rc': 0}
+[18.807844] (-) EventReactorShutdown: {}

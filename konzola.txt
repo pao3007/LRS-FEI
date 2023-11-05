@@ -1,0 +1,15 @@
+gazebo:
+	cd /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/worlds
+	gazebo fei_lrs_gazebo.world 
+	
+adrupilot:
+	cd /home/lrs-ubuntu/ardupilot/ArduCopter
+	sim_vehicle.py -f gazebo-iris --console -l 48.15084570555732,17.072729745416016,150,0
+mavros:
+	ros2 run mavros mavros_node --ros-args -p fcu_url:=udp://127.0.0.1:14551@14555
+
+workspace
+	cd /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace
+	colcon build (pre kompilovanie)
+	source install/setup.bash (aby sme vedeli spustit ros2 node)
+

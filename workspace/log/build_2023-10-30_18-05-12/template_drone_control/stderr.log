@@ -1,0 +1,44 @@
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function ‘void TemplateDroneControl::rotate_drone(float, float, float, float, float)’:
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:170:53: warning: left operand of comma operator has no effect [-Wunused-value]
+  170 |                 current_local_pos_.pose.orientation.x,
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:171:53: warning: right operand of comma operator has no effect [-Wunused-value]
+  171 |                 current_local_pos_.pose.orientation.y,
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:172:53: warning: right operand of comma operator has no effect [-Wunused-value]
+  172 |                 current_local_pos_.pose.orientation.z,
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:174:13: error: no match for ‘operator=’ (operand types are ‘tf2::Quaternion’ and ‘geometry_msgs::msg::Quaternion_<std::allocator<void> >::_w_type’ {aka ‘double’})
+  174 |             );
+      |             ^
+In file included from /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:12:
+/opt/ros/foxy/include/tf2/LinearMath/Quaternion.h:29:7: note: candidate: ‘constexpr tf2::Quaternion& tf2::Quaternion::operator=(const tf2::Quaternion&)’
+   29 | class Quaternion : public QuadWord {
+      |       ^~~~~~~~~~
+/opt/ros/foxy/include/tf2/LinearMath/Quaternion.h:29:7: note:   no known conversion for argument 1 from ‘geometry_msgs::msg::Quaternion_<std::allocator<void> >::_w_type’ {aka ‘double’} to ‘const tf2::Quaternion&’
+/opt/ros/foxy/include/tf2/LinearMath/Quaternion.h:29:7: note: candidate: ‘constexpr tf2::Quaternion& tf2::Quaternion::operator=(tf2::Quaternion&&)’
+/opt/ros/foxy/include/tf2/LinearMath/Quaternion.h:29:7: note:   no known conversion for argument 1 from ‘geometry_msgs::msg::Quaternion_<std::allocator<void> >::_w_type’ {aka ‘double’} to ‘tf2::Quaternion&&’
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:177:17: error: no match for call to ‘(tf2::Matrix3x3) (tf2::Quaternion&)’
+  177 |              m(q);
+      |                 ^
+In file included from /opt/ros/foxy/include/rclcpp/client.hpp:40,
+                 from /opt/ros/foxy/include/rclcpp/callback_group.hpp:23,
+                 from /opt/ros/foxy/include/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24,
+                 from /opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/foxy/include/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/foxy/include/rclcpp/executor.hpp:33,
+                 from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26,
+                 from /opt/ros/foxy/include/rclcpp/executors.hpp:21,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+                 from /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:1:
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function ‘void TemplateDroneControl::local_pos_cb(geometry_msgs::msg::PoseStamped_<std::allocator<void> >::SharedPtr)’:
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:203:106: error: ‘struct TemplateDroneControl::GlobalPose’ has no member named ‘position’
+  203 |         RCLCPP_INFO(this->get_logger(), "Current Local Position: %f, %f, %f", global_pose.x, global_pose.position.y, global_pose.position.z);
+      |                                                                                                          ^~~~~~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:203:130: error: ‘struct TemplateDroneControl::GlobalPose’ has no member named ‘position’
+  203 |         RCLCPP_INFO(this->get_logger(), "Current Local Position: %f, %f, %f", global_pose.x, global_pose.position.y, global_pose.position.z);
+      |                                                                                                                                  ^~~~~~~~
+make[2]: *** [CMakeFiles/template_drone_control_node.dir/build.make:63: CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/template_drone_control_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

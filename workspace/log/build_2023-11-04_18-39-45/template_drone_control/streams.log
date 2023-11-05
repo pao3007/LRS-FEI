@@ -1,0 +1,20 @@
+[0.018s] Invoking command in '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control -- -j12 -l12
+[0.052s] [35m[1mScanning dependencies of target template_drone_control_node[0m
+[0.080s] [ 50%] [32mBuilding CXX object CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o[0m
+[4.198s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function ‘void TemplateDroneControl::send_manual_coords()’:
+[4.198s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:98:9: error: declaration of ‘auto x’ has no initializer
+[4.199s]    98 |         auto x, y = transform_global_to_local(x, y);
+[4.199s]       |         ^~~~
+[4.199s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:98:17: error: conflicting declaration ‘auto y’
+[4.199s]    98 |         auto x, y = transform_global_to_local(x, y);
+[4.199s]       |                 ^
+[4.199s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:76:19: note: previous declaration as ‘double y’
+[4.199s]    76 |         double x, y, z;
+[4.199s]       |                   ^
+[4.199s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:99:58: error: ‘max_e’ was not declared in this scope
+[4.199s]    99 |         rotate_drone(x, y, global_pose.x, global_pose.y, max_e);
+[4.199s]       |                                                          ^~~~~
+[4.199s] make[2]: *** [CMakeFiles/template_drone_control_node.dir/build.make:63: CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o] Error 1
+[4.199s] make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/template_drone_control_node.dir/all] Error 2
+[4.199s] make: *** [Makefile:141: all] Error 2
+[4.200s] Invoked command in '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control -- -j12 -l12

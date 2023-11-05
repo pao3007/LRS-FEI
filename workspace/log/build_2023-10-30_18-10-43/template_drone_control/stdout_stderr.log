@@ -1,0 +1,27 @@
+[35m[1mScanning dependencies of target template_drone_control_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o[0m
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function ‘void TemplateDroneControl::rotate_drone(float, float, float, float, float)’:
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:174:13: error: no match for call to ‘(tf2::Quaternion) (geometry_msgs::msg::Quaternion_<std::allocator<void> >::_x_type&, geometry_msgs::msg::Quaternion_<std::allocator<void> >::_y_type&, geometry_msgs::msg::Quaternion_<std::allocator<void> >::_z_type&, geometry_msgs::msg::Quaternion_<std::allocator<void> >::_w_type&)’
+  174 |             );
+      |             ^
+In file included from /opt/ros/foxy/include/rclcpp/client.hpp:40,
+                 from /opt/ros/foxy/include/rclcpp/callback_group.hpp:23,
+                 from /opt/ros/foxy/include/rclcpp/any_executable.hpp:20,
+                 from /opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24,
+                 from /opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18,
+                 from /opt/ros/foxy/include/rclcpp/executor_options.hpp:20,
+                 from /opt/ros/foxy/include/rclcpp/executor.hpp:33,
+                 from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26,
+                 from /opt/ros/foxy/include/rclcpp/executors.hpp:21,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+                 from /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:1:
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function ‘void TemplateDroneControl::local_pos_cb(geometry_msgs::msg::PoseStamped_<std::allocator<void> >::SharedPtr)’:
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:207:106: error: ‘struct TemplateDroneControl::GlobalPose’ has no member named ‘position’
+  207 |         RCLCPP_INFO(this->get_logger(), "Current Local Position: %f, %f, %f", global_pose.x, global_pose.position.y, global_pose.position.z);
+      |                                                                                                          ^~~~~~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:207:130: error: ‘struct TemplateDroneControl::GlobalPose’ has no member named ‘position’
+  207 |         RCLCPP_INFO(this->get_logger(), "Current Local Position: %f, %f, %f", global_pose.x, global_pose.position.y, global_pose.position.z);
+      |                                                                                                                                  ^~~~~~~~
+make[2]: *** [CMakeFiles/template_drone_control_node.dir/build.make:63: CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/template_drone_control_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

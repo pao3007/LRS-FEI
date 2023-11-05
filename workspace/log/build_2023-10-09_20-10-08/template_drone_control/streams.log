@@ -1,0 +1,23 @@
+[0.026s] Invoking command in '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control -- -j12 -l12
+[0.115s] [35m[1mScanning dependencies of target template_drone_control_node[0m
+[0.162s] [ 50%] [32mBuilding CXX object CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o[0m
+[5.185s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In constructor ‘TemplateDroneControl::TemplateDroneControl()’:
+[5.186s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:49:115: error: cannot convert ‘std::shared_ptr<mavros_msgs::srv::CommandBool_Request_<std::allocator<void> > >’ to ‘const rmw_client_t*’
+[5.186s]    49 |         auto result_arm = arming_client_>rmw_send_request(std::make_shared<mavros_msgs::srv::CommandBool::Request>(set_armed));
+[5.186s]       |                                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+[5.186s]       |                                                                                                                   |
+[5.186s]       |                                                                                                                   std::shared_ptr<mavros_msgs::srv::CommandBool_Request_<std::allocator<void> > >
+[5.186s] In file included from /opt/ros/foxy/include/rcl/timer.h:31,
+[5.186s]                  from /opt/ros/foxy/include/rcl/wait.h:31,
+[5.186s]                  from /opt/ros/foxy/include/rclcpp/executor.hpp:30,
+[5.186s]                  from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26,
+[5.186s]                  from /opt/ros/foxy/include/rclcpp/executors.hpp:21,
+[5.187s]                  from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+[5.187s]                  from /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:1:
+[5.187s] /opt/ros/foxy/include/rmw/rmw.h:1930:24: note:   initializing argument 1 of ‘rmw_ret_t rmw_send_request(const rmw_client_t*, const void*, int64_t*)’
+[5.187s]  1930 |   const rmw_client_t * client,
+[5.187s]       |   ~~~~~~~~~~~~~~~~~~~~~^~~~~~
+[5.187s] make[2]: *** [CMakeFiles/template_drone_control_node.dir/build.make:63: CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o] Error 1
+[5.187s] make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/template_drone_control_node.dir/all] Error 2
+[5.187s] make: *** [Makefile:141: all] Error 2
+[5.193s] Invoked command in '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control -- -j12 -l12

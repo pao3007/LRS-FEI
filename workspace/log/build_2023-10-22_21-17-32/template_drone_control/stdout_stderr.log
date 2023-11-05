@@ -1,0 +1,13 @@
+[35m[1mScanning dependencies of target template_drone_control_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o[0m
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In constructor ‘TemplateDroneControl::TemplateDroneControl()’:
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:70:38: error: no matching function for call to ‘TemplateDroneControl::send_takeoff_request()’
+   70 |                 send_takeoff_request();
+      |                                      ^
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:160:10: note: candidate: ‘void TemplateDroneControl::send_takeoff_request(float)’
+  160 |     void send_takeoff_request(float alt)
+      |          ^~~~~~~~~~~~~~~~~~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:160:10: note:   candidate expects 1 argument, 0 provided
+make[2]: *** [CMakeFiles/template_drone_control_node.dir/build.make:63: CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/template_drone_control_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,64 @@
+[0.030s] Invoking command in '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control -- -j12 -l12
+[0.113s] [35m[1mScanning dependencies of target template_drone_control_node[0m
+[0.162s] [ 50%] [32mBuilding CXX object CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o[0m
+[5.726s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In constructor ‘TemplateDroneControl::TemplateDroneControl()’:
+[5.727s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:28:82: error: ‘local_pos_cb’ is not a member of ‘TemplateDroneControl’
+[5.727s]    28 |             "/mavros/local_position/pose", qos, std::bind(&TemplateDroneControl::local_pos_cb, this, std::placeholders::_1));
+[5.727s]       |                                                                                  ^~~~~~~~~~~~
+[5.727s] In file included from /opt/ros/foxy/include/rclcpp/service.hpp:34,
+[5.728s]                  from /opt/ros/foxy/include/rclcpp/callback_group.hpp:25,
+[5.728s]                  from /opt/ros/foxy/include/rclcpp/any_executable.hpp:20,
+[5.728s]                  from /opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24,
+[5.728s]                  from /opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18,
+[5.728s]                  from /opt/ros/foxy/include/rclcpp/executor_options.hpp:20,
+[5.728s]                  from /opt/ros/foxy/include/rclcpp/executor.hpp:33,
+[5.728s]                  from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26,
+[5.729s]                  from /opt/ros/foxy/include/rclcpp/executors.hpp:21,
+[5.729s]                  from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+[5.729s]                  from /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:1:
+[5.729s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:53:13: error: static assertion failed: First argument to logging macros must be an rclcpp::Logger
+[5.729s]    53 |             RCLCPP_INFO("Waiting for guided mode");
+[5.729s]       |             ^~~~~~~~~~~
+[5.729s] In file included from /opt/ros/foxy/include/rclcpp/client.hpp:40,
+[5.729s]                  from /opt/ros/foxy/include/rclcpp/callback_group.hpp:23,
+[5.729s]                  from /opt/ros/foxy/include/rclcpp/any_executable.hpp:20,
+[5.729s]                  from /opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24,
+[5.729s]                  from /opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18,
+[5.729s]                  from /opt/ros/foxy/include/rclcpp/executor_options.hpp:20,
+[5.729s]                  from /opt/ros/foxy/include/rclcpp/executor.hpp:33,
+[5.730s]                  from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26,
+[5.730s]                  from /opt/ros/foxy/include/rclcpp/executors.hpp:21,
+[5.730s]                  from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+[5.730s]                  from /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:1:
+[5.730s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:53:13: error: request for member ‘get_name’ in ‘("Waiting for guided mode")’, which is of non-class type ‘const char [24]’
+[5.730s]    53 |             RCLCPP_INFO("Waiting for guided mode");
+[5.730s]       |             ^~~~~~~~~~~
+[5.730s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:53:13: error: request for member ‘get_name’ in ‘("Waiting for guided mode")’, which is of non-class type ‘const char [24]’
+[5.730s]    53 |             RCLCPP_INFO("Waiting for guided mode");
+[5.730s]       |             ^~~~~~~~~~~
+[5.730s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:53:13: error: no matching function for call to ‘get_c_string()’
+[5.730s]    53 |             RCLCPP_INFO("Waiting for guided mode");
+[5.730s]       |             ^~~~~~~~~~~
+[5.730s] In file included from /opt/ros/foxy/include/rclcpp/client.hpp:36,
+[5.730s]                  from /opt/ros/foxy/include/rclcpp/callback_group.hpp:23,
+[5.730s]                  from /opt/ros/foxy/include/rclcpp/any_executable.hpp:20,
+[5.730s]                  from /opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24,
+[5.731s]                  from /opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18,
+[5.731s]                  from /opt/ros/foxy/include/rclcpp/executor_options.hpp:20,
+[5.731s]                  from /opt/ros/foxy/include/rclcpp/executor.hpp:33,
+[5.731s]                  from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26,
+[5.731s]                  from /opt/ros/foxy/include/rclcpp/executors.hpp:21,
+[5.731s]                  from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+[5.732s]                  from /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:1:
+[5.732s] /opt/ros/foxy/include/rclcpp/utilities.hpp:296:1: note: candidate: ‘const char* rclcpp::get_c_string(const char*)’
+[5.732s]   296 | get_c_string(const char * string_in);
+[5.734s]       | ^~~~~~~~~~~~
+[5.734s] /opt/ros/foxy/include/rclcpp/utilities.hpp:296:1: note:   candidate expects 1 argument, 0 provided
+[5.735s] /opt/ros/foxy/include/rclcpp/utilities.hpp:305:1: note: candidate: ‘const char* rclcpp::get_c_string(const string&)’
+[5.736s]   305 | get_c_string(const std::string & string_in);
+[5.736s]       | ^~~~~~~~~~~~
+[5.736s] /opt/ros/foxy/include/rclcpp/utilities.hpp:305:1: note:   candidate expects 1 argument, 0 provided
+[5.736s] make[2]: *** [CMakeFiles/template_drone_control_node.dir/build.make:63: CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o] Error 1
+[5.736s] make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/template_drone_control_node.dir/all] Error 2
+[5.736s] make: *** [Makefile:141: all] Error 2
+[5.736s] Invoked command in '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control -- -j12 -l12

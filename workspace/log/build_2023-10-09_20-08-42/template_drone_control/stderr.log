@@ -1,0 +1,11 @@
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In constructor ‘TemplateDroneControl::TemplateDroneControl()’:
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:48:27: error: expected primary-expression before ‘;’ token
+   48 |         set_armed.value = ;
+      |                           ^
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:49:42: error: ‘async_send_request’ was not declared in this scope; did you mean ‘rmw_send_request’?
+   49 |         auto result_arm = arming_client_>async_send_request(std::make_shared<mavros_msgs::srv::CommandBool::Request>(set_armed));
+      |                                          ^~~~~~~~~~~~~~~~~~
+      |                                          rmw_send_request
+make[2]: *** [CMakeFiles/template_drone_control_node.dir/build.make:63: CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/template_drone_control_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

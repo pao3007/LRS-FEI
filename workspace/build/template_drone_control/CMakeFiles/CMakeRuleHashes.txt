@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+5fc5f36e22e9dc3dcd3b11b26c6ed4a2 CMakeFiles/template_drone_control_uninstall

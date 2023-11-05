@@ -1,0 +1,32 @@
+[0.021s] Invoking command in '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control -- -j12 -l12
+[0.076s] [35m[1mScanning dependencies of target template_drone_control_node[0m
+[0.111s] [ 50%] [32mBuilding CXX object CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o[0m
+[4.059s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In constructor ‘TemplateDroneControl::TemplateDroneControl()’:
+[4.059s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:44:15: error: expected ‘(’ before ‘current_state_’
+[4.059s]    44 |         while current_state_.mode.c_str() != "GUIDED"{
+[4.060s]       |               ^~~~~~~~~~~~~~
+[4.060s]       |               (
+[4.060s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:44:46: warning: comparison with string literal results in unspecified behavior [-Waddress]
+[4.060s]    44 |         while current_state_.mode.c_str() != "GUIDED"{
+[4.060s]       |                                              ^~~~~~~~
+[4.060s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:44:54: error: expected ‘)’ before ‘{’ token
+[4.060s]    44 |         while current_state_.mode.c_str() != "GUIDED"{
+[4.060s]       |               ~~~~~~~~~~~~~~                         ^
+[4.060s]       |                                                      )
+[4.060s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:48:116: error: too many arguments to function ‘std::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = mavros_msgs::srv::CommandBool_Request_<std::allocator<void> >; _Args = {}]’
+[4.061s]    48 |         arming_client_->async_send_request(std::make_shared<mavros_msgs::srv::CommandBool::Request>({"value: True"}))
+[4.061s]       |                                                                                                                    ^
+[4.061s] In file included from /usr/include/c++/9/memory:81,
+[4.061s]                  from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+[4.061s]                  from /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:1:
+[4.061s] /usr/include/c++/9/bits/shared_ptr.h:714:5: note: declared here
+[4.061s]   714 |     make_shared(_Args&&... __args)
+[4.061s]       |     ^~~~~~~~~~~
+[4.061s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:48:118: error: expected ‘;’ before ‘do’
+[4.061s]    48 |         arming_client_->async_send_request(std::make_shared<mavros_msgs::srv::CommandBool::Request>({"value: True"}))
+[4.061s]       |                                                                                                                      ^
+[4.061s]       |                                                                                                                      ;
+[4.061s] make[2]: *** [CMakeFiles/template_drone_control_node.dir/build.make:63: CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o] Error 1
+[4.061s] make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/template_drone_control_node.dir/all] Error 2
+[4.061s] make: *** [Makefile:141: all] Error 2
+[4.065s] Invoked command in '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control -- -j12 -l12

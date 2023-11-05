@@ -1,0 +1,23 @@
+[0.011s] Invoking command in '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control -- -j12 -l12
+[0.058s] [35m[1mScanning dependencies of target template_drone_control_node[0m
+[0.087s] [ 50%] [32mBuilding CXX object CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o[0m
+[4.031s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function ‘void TemplateDroneControl::create_points()’:
+[4.031s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:444:66: error: expected ‘;’ before ‘list_of_points’
+[4.031s]   444 |         list_of_points.push_back({13.599, 2.49, 1.0, "", "soft"})
+[4.031s]       |                                                                  ^
+[4.031s]       |                                                                  ;
+[4.031s]   445 |         list_of_points.push_back({12.599, 2.49, 1.0, "", "soft"})
+[4.031s]       |         ~~~~~~~~~~~~~~                                            
+[4.031s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:445:65: error: expected primary-expression before ‘)’ token
+[4.031s]   445 |         list_of_points.push_back({12.599, 2.49, 1.0, "", "soft"})
+[4.032s]       |                                                                 ^
+[4.032s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:446:65: error: expected primary-expression before ‘)’ token
+[4.032s]   446 |         list_of_points.push_back({12.599, 1.49, 1.0, "", "soft"})
+[4.032s]       |                                                                 ^
+[4.032s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:447:69: error: expected primary-expression before ‘)’ token
+[4.032s]   447 |         list_of_points.push_back({13.599, 1.49, 1.0, "land", "soft"})
+[4.032s]       |                                                                     ^
+[4.032s] make[2]: *** [CMakeFiles/template_drone_control_node.dir/build.make:63: CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o] Error 1
+[4.036s] make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/template_drone_control_node.dir/all] Error 2
+[4.036s] make: *** [Makefile:141: all] Error 2
+[4.036s] Invoked command in '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control -- -j12 -l12

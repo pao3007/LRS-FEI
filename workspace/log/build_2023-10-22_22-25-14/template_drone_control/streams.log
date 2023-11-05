@@ -1,0 +1,54 @@
+[0.063s] Invoking command in '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control -- -j12 -l12
+[0.189s] [35m[1mScanning dependencies of target template_drone_control_node[0m
+[0.244s] [ 50%] [32mBuilding CXX object CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o[0m
+[9.568s] In file included from /opt/ros/foxy/include/rclcpp/service.hpp:34,
+[9.569s]                  from /opt/ros/foxy/include/rclcpp/callback_group.hpp:25,
+[9.570s]                  from /opt/ros/foxy/include/rclcpp/any_executable.hpp:20,
+[9.571s]                  from /opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24,
+[9.571s]                  from /opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18,
+[9.572s]                  from /opt/ros/foxy/include/rclcpp/executor_options.hpp:20,
+[9.572s]                  from /opt/ros/foxy/include/rclcpp/executor.hpp:33,
+[9.572s]                  from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26,
+[9.572s]                  from /opt/ros/foxy/include/rclcpp/executors.hpp:21,
+[9.572s]                  from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+[9.572s]                  from /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:1:
+[9.572s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In constructor ‘TemplateDroneControl::TemplateDroneControl()’:
+[9.572s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:44:36: error: ‘class TemplateDroneControl’ has no member named ‘set_mode_client_get_logger’
+[9.572s]    44 |                 RCLCPP_ERROR(this->set_mode_client_get_logger(), "Interrupted while waiting for the set_mode service. Exiting.");
+[9.573s]       |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+[9.573s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:44:36: error: ‘class TemplateDroneControl’ has no member named ‘set_mode_client_get_logger’
+[9.573s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:44:17: error: template argument 1 is invalid
+[9.573s]    44 |                 RCLCPP_ERROR(this->set_mode_client_get_logger(), "Interrupted while waiting for the set_mode service. Exiting.");
+[9.573s]       |                 ^~~~~~~~~~~~
+[9.573s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:44:17: error: template argument 1 is invalid
+[9.573s]    44 |                 RCLCPP_ERROR(this->set_mode_client_get_logger(), "Interrupted while waiting for the set_mode service. Exiting.");
+[9.573s]       |                 ^~~~~~~~~~~~
+[9.573s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:44:17: error: template argument 1 is invalid
+[9.573s]    44 |                 RCLCPP_ERROR(this->set_mode_client_get_logger(), "Interrupted while waiting for the set_mode service. Exiting.");
+[9.573s]       |                 ^~~~~~~~~~~~
+[9.573s] In file included from /opt/ros/foxy/include/rclcpp/client.hpp:40,
+[9.573s]                  from /opt/ros/foxy/include/rclcpp/callback_group.hpp:23,
+[9.574s]                  from /opt/ros/foxy/include/rclcpp/any_executable.hpp:20,
+[9.574s]                  from /opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24,
+[9.574s]                  from /opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18,
+[9.574s]                  from /opt/ros/foxy/include/rclcpp/executor_options.hpp:20,
+[9.574s]                  from /opt/ros/foxy/include/rclcpp/executor.hpp:33,
+[9.574s]                  from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26,
+[9.574s]                  from /opt/ros/foxy/include/rclcpp/executors.hpp:21,
+[9.574s]                  from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+[9.574s]                  from /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:1:
+[9.574s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:44:36: error: ‘class TemplateDroneControl’ has no member named ‘set_mode_client_get_logger’
+[9.574s]    44 |                 RCLCPP_ERROR(this->set_mode_client_get_logger(), "Interrupted while waiting for the set_mode service. Exiting.");
+[9.575s]       |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+[9.575s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:44:36: error: ‘class TemplateDroneControl’ has no member named ‘set_mode_client_get_logger’
+[9.575s]    44 |                 RCLCPP_ERROR(this->set_mode_client_get_logger(), "Interrupted while waiting for the set_mode service. Exiting.");
+[9.575s]       |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+[9.575s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function ‘void TemplateDroneControl::send_takeoff_request(float)’:
+[9.575s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:175:9: error: ‘set_guided’ was not declared in this scope; did you mean ‘set_mode’?
+[9.575s]   175 |         set_guided();
+[9.575s]       |         ^~~~~~~~~~
+[9.576s]       |         set_mode
+[9.577s] make[2]: *** [CMakeFiles/template_drone_control_node.dir/build.make:63: CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o] Error 1
+[9.577s] make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/template_drone_control_node.dir/all] Error 2
+[9.577s] make: *** [Makefile:141: all] Error 2
+[9.579s] Invoked command in '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control -- -j12 -l12

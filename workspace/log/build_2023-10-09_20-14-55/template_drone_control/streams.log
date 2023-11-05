@@ -1,0 +1,33 @@
+[0.031s] Invoking command in '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control -- -j12 -l12
+[0.093s] [35m[1mScanning dependencies of target template_drone_control_node[0m
+[0.135s] [ 50%] [32mBuilding CXX object CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o[0m
+[5.089s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:93:62: error: redeclaration of ‘rclcpp::Client<mavros_msgs::srv::CommandBool>::SharedPtr TemplateDroneControl::arming_client_’
+[5.089s]    93 |     rclcpp::Client<mavros_msgs::srv::CommandBool>::SharedPtr arming_client_;
+[5.089s]       |                                                              ^~~~~~~~~~~~~~
+[5.089s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:90:62: note: previous declaration ‘rclcpp::Client<mavros_msgs::srv::CommandBool>::SharedPtr TemplateDroneControl::arming_client_’
+[5.089s]    90 |     rclcpp::Client<mavros_msgs::srv::CommandBool>::SharedPtr arming_client_;
+[5.089s]       |                                                              ^~~~~~~~~~~~~~
+[5.089s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In constructor ‘TemplateDroneControl::TemplateDroneControl()’:
+[5.089s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:47:34: error: expected ‘;’ before ‘do’
+[5.089s]    47 |         send_arming_request(true)
+[5.089s]       |                                  ^
+[5.090s]       |                                  ;
+[5.090s] In file included from /opt/ros/foxy/include/rclcpp/client.hpp:40,
+[5.090s]                  from /opt/ros/foxy/include/rclcpp/callback_group.hpp:23,
+[5.090s]                  from /opt/ros/foxy/include/rclcpp/any_executable.hpp:20,
+[5.090s]                  from /opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24,
+[5.090s]                  from /opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18,
+[5.090s]                  from /opt/ros/foxy/include/rclcpp/executor_options.hpp:20,
+[5.090s]                  from /opt/ros/foxy/include/rclcpp/executor.hpp:33,
+[5.090s]                  from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26,
+[5.090s]                  from /opt/ros/foxy/include/rclcpp/executors.hpp:21,
+[5.090s]                  from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+[5.090s]                  from /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:1:
+[5.090s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function ‘void TemplateDroneControl::send_arming_request(bool)’:
+[5.091s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:82:107: error: request for member ‘c_str’ in ‘((const std::__shared_ptr_access<mavros_msgs::srv::CommandBool_Response_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>*)(& result_future.std::shared_future<std::shared_ptr<mavros_msgs::srv::CommandBool_Response_<std::allocator<void> > > >::get()))->std::__shared_ptr_access<mavros_msgs::srv::CommandBool_Response_<std::allocator<void> >, __gnu_cxx::_S_atomic, false, false>::operator->()->mavros_msgs::srv::CommandBool_Response_<std::allocator<void> >::result’, which is of non-class type ‘mavros_msgs::srv::CommandBool_Response_<std::allocator<void> >::_result_type’ {aka ‘unsigned char’}
+[5.091s]    82 |                 RCLCPP_ERROR(this->get_logger(), "Arming request denied: %s", result_future.get()->result.c_str());
+[5.091s]       |                                                                                                           ^~~~~
+[5.091s] make[2]: *** [CMakeFiles/template_drone_control_node.dir/build.make:63: CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o] Error 1
+[5.091s] make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/template_drone_control_node.dir/all] Error 2
+[5.091s] make: *** [Makefile:141: all] Error 2
+[5.093s] Invoked command in '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control -- -j12 -l12

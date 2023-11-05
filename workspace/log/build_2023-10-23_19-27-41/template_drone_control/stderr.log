@@ -1,0 +1,45 @@
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In constructor ‘TemplateDroneControl::TemplateDroneControl()’:
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:23:31: error: ‘ros2’ was not declared in this scope
+   23 |         arming_client_ = this-ros2 mavros how to sent position command >create_client<mavros_msgs::srv::CommandBool>("mavros/cmd/arming");
+      |                               ^~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:56:38: error: expected primary-expression before ‘:’ token
+   56 |                     if (!armed_check):
+      |                                      ^
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function ‘void TemplateDroneControl::send_position_command(float, float, float, float)’:
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:70:58: error: expected ‘;’ before ‘e_z’
+   70 |         e_x = abs(current_local_pos_.pose.position.x - x)
+      |                                                          ^
+      |                                                          ;
+   71 |         e_z = abs(current_local_pos_.pose.position.z - z)
+      |         ~~~                                               
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:69:20: warning: unused variable ‘e_z’ [-Wunused-variable]
+   69 |         float e_x, e_z, e_y;
+      |                    ^~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:69:25: warning: unused variable ‘e_y’ [-Wunused-variable]
+   69 |         float e_x, e_z, e_y;
+      |                         ^~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:67:47: warning: unused parameter ‘y’ [-Wunused-parameter]
+   67 |     void send_position_command(float x, float y, float z, float max_e)
+      |                                         ~~~~~~^
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:67:56: warning: unused parameter ‘z’ [-Wunused-parameter]
+   67 |     void send_position_command(float x, float y, float z, float max_e)
+      |                                                  ~~~~~~^
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:67:65: warning: unused parameter ‘max_e’ [-Wunused-parameter]
+   67 |     void send_position_command(float x, float y, float z, float max_e)
+      |                                                           ~~~~~~^~~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function ‘void TemplateDroneControl::send_land_request()’:
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:186:24: error: expected ‘;’ before ‘while’
+  186 |     send_arming_request
+      |                        ^
+      |                        ;
+  187 |         while (!arming_client_->wait_for_service(std::chrono::seconds(1))) {
+      |         ~~~~~           
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:186:5: error: invalid use of non-static member function ‘void TemplateDroneControl::send_arming_request(bool)’
+  186 |     send_arming_request
+      |     ^~~~~~~~~~~~~~~~~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:142:10: note: declared here
+  142 |     void send_arming_request(bool arm)
+      |          ^~~~~~~~~~~~~~~~~~~
+make[2]: *** [CMakeFiles/template_drone_control_node.dir/build.make:63: CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/template_drone_control_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

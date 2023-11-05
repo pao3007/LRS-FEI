@@ -1,0 +1,49 @@
+[0.041s] Invoking command in '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control -- -j12 -l12
+[0.222s] [35m[1mScanning dependencies of target template_drone_control_node[0m
+[0.282s] [ 50%] [32mBuilding CXX object CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o[0m
+[11.858s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In constructor ‘TemplateDroneControl::TemplateDroneControl()’:
+[11.859s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:23:31: error: ‘ros2’ was not declared in this scope
+[11.859s]    23 |         arming_client_ = this-ros2 mavros how to sent position command >create_client<mavros_msgs::srv::CommandBool>("mavros/cmd/arming");
+[11.859s]       |                               ^~~~
+[11.859s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:56:38: error: expected primary-expression before ‘:’ token
+[11.859s]    56 |                     if (!armed_check):
+[11.859s]       |                                      ^
+[11.859s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function ‘void TemplateDroneControl::send_position_command(float, float, float, float)’:
+[11.859s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:70:58: error: expected ‘;’ before ‘e_z’
+[11.860s]    70 |         e_x = abs(current_local_pos_.pose.position.x - x)
+[11.860s]       |                                                          ^
+[11.860s]       |                                                          ;
+[11.860s]    71 |         e_z = abs(current_local_pos_.pose.position.z - z)
+[11.860s]       |         ~~~                                               
+[11.860s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:69:20: warning: unused variable ‘e_z’ [-Wunused-variable]
+[11.861s]    69 |         float e_x, e_z, e_y;
+[11.861s]       |                    ^~~
+[11.861s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:69:25: warning: unused variable ‘e_y’ [-Wunused-variable]
+[11.861s]    69 |         float e_x, e_z, e_y;
+[11.861s]       |                         ^~~
+[11.861s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:67:47: warning: unused parameter ‘y’ [-Wunused-parameter]
+[11.861s]    67 |     void send_position_command(float x, float y, float z, float max_e)
+[11.861s]       |                                         ~~~~~~^
+[11.861s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:67:56: warning: unused parameter ‘z’ [-Wunused-parameter]
+[11.862s]    67 |     void send_position_command(float x, float y, float z, float max_e)
+[11.862s]       |                                                  ~~~~~~^
+[11.862s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:67:65: warning: unused parameter ‘max_e’ [-Wunused-parameter]
+[11.862s]    67 |     void send_position_command(float x, float y, float z, float max_e)
+[11.862s]       |                                                           ~~~~~~^~~~~
+[11.862s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function ‘void TemplateDroneControl::send_land_request()’:
+[11.862s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:186:24: error: expected ‘;’ before ‘while’
+[11.862s]   186 |     send_arming_request
+[11.862s]       |                        ^
+[11.862s]       |                        ;
+[11.862s]   187 |         while (!arming_client_->wait_for_service(std::chrono::seconds(1))) {
+[11.862s]       |         ~~~~~           
+[11.862s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:186:5: error: invalid use of non-static member function ‘void TemplateDroneControl::send_arming_request(bool)’
+[11.862s]   186 |     send_arming_request
+[11.862s]       |     ^~~~~~~~~~~~~~~~~~~
+[11.862s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:142:10: note: declared here
+[11.862s]   142 |     void send_arming_request(bool arm)
+[11.863s]       |          ^~~~~~~~~~~~~~~~~~~
+[11.863s] make[2]: *** [CMakeFiles/template_drone_control_node.dir/build.make:63: CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o] Error 1
+[11.863s] make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/template_drone_control_node.dir/all] Error 2
+[11.863s] make: *** [Makefile:141: all] Error 2
+[11.864s] Invoked command in '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control -- -j12 -l12

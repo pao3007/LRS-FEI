@@ -1,0 +1,4 @@
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function ‘void TemplateDroneControl::meine_wait(float)’:
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:89:13: warning: unused variable ‘true_wait_time’ [-Wunused-variable]
+   89 |         int true_wait_time = int(wait_time/20.0);
+      |             ^~~~~~~~~~~~~~

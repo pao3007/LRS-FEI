@@ -1,0 +1,99 @@
+[0.000000] (-) TimerEvent: {}
+[0.000312] (template_drone_control) JobQueued: {'identifier': 'template_drone_control', 'dependencies': OrderedDict()}
+[0.000564] (template_drone_control) JobStarted: {'identifier': 'template_drone_control'}
+[0.011101] (template_drone_control) JobProgress: {'identifier': 'template_drone_control', 'progress': 'cmake'}
+[0.011794] (template_drone_control) JobProgress: {'identifier': 'template_drone_control', 'progress': 'build'}
+[0.013041] (template_drone_control) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control', '--', '-j12', '-l12'], 'cwd': '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'lrs-ubuntu'), ('LC_TIME', 'sk_SK.UTF-8'), ('SSH_AGENT_PID', '1708'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/lrs-ubuntu'), ('OLDPWD', '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'sk_SK.UTF-8'), ('MANAGERPID', '1530'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'lrs-ubuntu'), ('JOURNAL_STREAM', '8:40760'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lrs-ubuntu'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/home/lrs-ubuntu/fei_lrs_gazebo/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/lib/ccache:/home/lrs-ubuntu/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/home/lrs-ubuntu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/lrs:@/tmp/.ICE-unix/1746,unix/lrs:/tmp/.ICE-unix/1746'), ('INVOCATION_ID', '4df03c59b3a84610a6703842eef3d920'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'sk_SK.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'sk_SK.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/install/template_drone_control:/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'sk_SK.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:93345eb8-ec3c-40d3-a6ce-0b23e4d5ea39'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'sk_SK.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'sk_SK.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'sk_SK.UTF-8'), ('LC_PAPER', 'sk_SK.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/install/template_drone_control:/opt/ros/foxy')]), 'shell': False}
+[0.055084] (template_drone_control) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target template_drone_control_node\x1b[0m\n'}
+[0.083473] (template_drone_control) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o\x1b[0m\n'}
+[0.099648] (-) TimerEvent: {}
+[0.199917] (-) TimerEvent: {}
+[0.300167] (-) TimerEvent: {}
+[0.400423] (-) TimerEvent: {}
+[0.500682] (-) TimerEvent: {}
+[0.600903] (-) TimerEvent: {}
+[0.701117] (-) TimerEvent: {}
+[0.801364] (-) TimerEvent: {}
+[0.901641] (-) TimerEvent: {}
+[1.001918] (-) TimerEvent: {}
+[1.102195] (-) TimerEvent: {}
+[1.202509] (-) TimerEvent: {}
+[1.302740] (-) TimerEvent: {}
+[1.403032] (-) TimerEvent: {}
+[1.503313] (-) TimerEvent: {}
+[1.603567] (-) TimerEvent: {}
+[1.703822] (-) TimerEvent: {}
+[1.804077] (-) TimerEvent: {}
+[1.904328] (-) TimerEvent: {}
+[2.004606] (-) TimerEvent: {}
+[2.104893] (-) TimerEvent: {}
+[2.205164] (-) TimerEvent: {}
+[2.305425] (-) TimerEvent: {}
+[2.405683] (-) TimerEvent: {}
+[2.505937] (-) TimerEvent: {}
+[2.606163] (-) TimerEvent: {}
+[2.706452] (-) TimerEvent: {}
+[2.806711] (-) TimerEvent: {}
+[2.906932] (-) TimerEvent: {}
+[2.992667] (template_drone_control) StderrLine: {'line': b'/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In constructor \xe2\x80\x98TemplateDroneControl::TemplateDroneControl()\xe2\x80\x99:\n'}
+[2.992838] (template_drone_control) StderrLine: {'line': b'/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:44:15: error: expected \xe2\x80\x98(\xe2\x80\x99 before \xe2\x80\x98current_state_\xe2\x80\x99\n'}
+[2.992911] (template_drone_control) StderrLine: {'line': b'   44 |         while current_state_.mode.c_str() != "GUIDED"{\n'}
+[2.992971] (template_drone_control) StderrLine: {'line': b'      |               ^~~~~~~~~~~~~~\n'}
+[2.993028] (template_drone_control) StderrLine: {'line': b'      |               (\n'}
+[2.993083] (template_drone_control) StderrLine: {'line': b'/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:44:46: warning: comparison with string literal results in unspecified behavior [-Waddress]\n'}
+[2.993138] (template_drone_control) StderrLine: {'line': b'   44 |         while current_state_.mode.c_str() != "GUIDED"{\n'}
+[2.993193] (template_drone_control) StderrLine: {'line': b'      |                                              ^~~~~~~~\n'}
+[2.993250] (template_drone_control) StderrLine: {'line': b'/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:44:54: error: expected \xe2\x80\x98)\xe2\x80\x99 before \xe2\x80\x98{\xe2\x80\x99 token\n'}
+[2.993373] (template_drone_control) StderrLine: {'line': b'   44 |         while current_state_.mode.c_str() != "GUIDED"{\n'}
+[2.993514] (template_drone_control) StderrLine: {'line': b'      |               ~~~~~~~~~~~~~~                         ^\n'}
+[2.993675] (template_drone_control) StderrLine: {'line': b'      |                                                      )\n'}
+[2.993828] (template_drone_control) StderrLine: {'line': b'/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:48:59: error: no matching function for call to \xe2\x80\x98rclcpp::Client<mavros_msgs::srv::CommandBool>::async_send_request(const char [14])\xe2\x80\x99\n'}
+[2.993904] (template_drone_control) StderrLine: {'line': b'   48 |         arming_client_->async_send_request("{value: True}")\n'}
+[2.993964] (template_drone_control) StderrLine: {'line': b'      |                                                           ^\n'}
+[2.994021] (template_drone_control) StderrLine: {'line': b'In file included from /opt/ros/foxy/include/rclcpp/callback_group.hpp:23,\n'}
+[2.994077] (template_drone_control) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/any_executable.hpp:20,\n'}
+[2.994132] (template_drone_control) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24,\n'}
+[2.994187] (template_drone_control) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18,\n'}
+[2.994241] (template_drone_control) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/executor_options.hpp:20,\n'}
+[2.994296] (template_drone_control) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/executor.hpp:33,\n'}
+[2.994350] (template_drone_control) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26,\n'}
+[2.994405] (template_drone_control) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/executors.hpp:21,\n'}
+[2.994458] (template_drone_control) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,\n'}
+[2.994511] (template_drone_control) StderrLine: {'line': b'                 from /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:1:\n'}
+[2.994566] (template_drone_control) StderrLine: {'line': b'/opt/ros/foxy/include/rclcpp/client.hpp:318:3: note: candidate: \xe2\x80\x98rclcpp::Client<ServiceT>::SharedFuture rclcpp::Client<ServiceT>::async_send_request(rclcpp::Client<ServiceT>::SharedRequest) [with ServiceT = mavros_msgs::srv::CommandBool; rclcpp::Client<ServiceT>::SharedFuture = std::shared_future<std::shared_ptr<mavros_msgs::srv::CommandBool_Response_<std::allocator<void> > > >; typename ServiceT::Response::SharedPtr = std::shared_ptr<mavros_msgs::srv::CommandBool_Response_<std::allocator<void> > >; rclcpp::Client<ServiceT>::SharedRequest = std::shared_ptr<mavros_msgs::srv::CommandBool_Request_<std::allocator<void> > >]\xe2\x80\x99\n'}
+[2.994627] (template_drone_control) StderrLine: {'line': b'  318 |   async_send_request(SharedRequest request)\n'}
+[2.994682] (template_drone_control) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~~\n'}
+[2.994737] (template_drone_control) StderrLine: {'line': b'/opt/ros/foxy/include/rclcpp/client.hpp:318:36: note:   no known conversion for argument 1 from \xe2\x80\x98const char [14]\xe2\x80\x99 to \xe2\x80\x98rclcpp::Client<mavros_msgs::srv::CommandBool>::SharedRequest\xe2\x80\x99 {aka \xe2\x80\x98std::shared_ptr<mavros_msgs::srv::CommandBool_Request_<std::allocator<void> > >\xe2\x80\x99}\n'}
+[2.994798] (template_drone_control) StderrLine: {'line': b'  318 |   async_send_request(SharedRequest request)\n'}
+[2.994858] (template_drone_control) StderrLine: {'line': b'      |                      ~~~~~~~~~~~~~~^~~~~~~\n'}
+[2.994913] (template_drone_control) StderrLine: {'line': b'/opt/ros/foxy/include/rclcpp/client.hpp:333:3: note: candidate: \xe2\x80\x98template<class CallbackT, typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_future<std::shared_ptr<mavros_msgs::srv::CommandBool_Response_<std::allocator<void> > > >)> >::value, void>::type* <anonymous> > rclcpp::Client<ServiceT>::SharedFuture rclcpp::Client<ServiceT>::async_send_request(rclcpp::Client<ServiceT>::SharedRequest, CallbackT&&) [with CallbackT = CallbackT; typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_future<typename ServiceT::Response::SharedPtr>)> >::value>::type* <anonymous> = <enumerator>; ServiceT = mavros_msgs::srv::CommandBool]\xe2\x80\x99\n'}
+[2.994988] (template_drone_control) StderrLine: {'line': b'  333 |   async_send_request(SharedRequest request, CallbackT && cb)\n'}
+[2.995046] (template_drone_control) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~~\n'}
+[2.995141] (template_drone_control) StderrLine: {'line': b'/opt/ros/foxy/include/rclcpp/client.hpp:333:3: note:   template argument deduction/substitution failed:\n'}
+[2.995297] (template_drone_control) StderrLine: {'line': b'/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:48:59: note:   candidate expects 2 arguments, 1 provided\n'}
+[2.995358] (template_drone_control) StderrLine: {'line': b'   48 |         arming_client_->async_send_request("{value: True}")\n'}
+[2.995539] (template_drone_control) StderrLine: {'line': b'      |                                                           ^\n'}
+[2.995717] (template_drone_control) StderrLine: {'line': b'In file included from /opt/ros/foxy/include/rclcpp/callback_group.hpp:23,\n'}
+[2.995941] (template_drone_control) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/any_executable.hpp:20,\n'}
+[2.996152] (template_drone_control) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24,\n'}
+[2.996212] (template_drone_control) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18,\n'}
+[2.996421] (template_drone_control) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/executor_options.hpp:20,\n'}
+[2.996538] (template_drone_control) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/executor.hpp:33,\n'}
+[2.997868] (template_drone_control) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26,\n'}
+[2.998175] (template_drone_control) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/executors.hpp:21,\n'}
+[2.998800] (template_drone_control) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,\n'}
+[2.999192] (template_drone_control) StderrLine: {'line': b'                 from /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:1:\n'}
+[2.999274] (template_drone_control) StderrLine: {'line': b'/opt/ros/foxy/include/rclcpp/client.hpp:359:3: note: candidate: \xe2\x80\x98template<class CallbackT, typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_future<std::pair<std::shared_ptr<mavros_msgs::srv::CommandBool_Request_<std::allocator<void> > >, std::shared_ptr<mavros_msgs::srv::CommandBool_Response_<std::allocator<void> > > > >)> >::value, void>::type* <anonymous> > rclcpp::Client<ServiceT>::SharedFutureWithRequest rclcpp::Client<ServiceT>::async_send_request(rclcpp::Client<ServiceT>::SharedRequest, CallbackT&&) [with CallbackT = CallbackT; typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_future<std::pair<typename ServiceT::Request::SharedPtr, typename ServiceT::Response::SharedPtr> >)> >::value>::type* <anonymous> = <enumerator>; ServiceT = mavros_msgs::srv::CommandBool]\xe2\x80\x99\n'}
+[2.999350] (template_drone_control) StderrLine: {'line': b'  359 |   async_send_request(SharedRequest request, CallbackT && cb)\n'}
+[2.999407] (template_drone_control) StderrLine: {'line': b'      |   ^~~~~~~~~~~~~~~~~~\n'}
+[2.999472] (template_drone_control) StderrLine: {'line': b'/opt/ros/foxy/include/rclcpp/client.hpp:359:3: note:   template argument deduction/substitution failed:\n'}
+[2.999529] (template_drone_control) StderrLine: {'line': b'/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:48:59: note:   candidate expects 2 arguments, 1 provided\n'}
+[2.999590] (template_drone_control) StderrLine: {'line': b'   48 |         arming_client_->async_send_request("{value: True}")\n'}
+[2.999646] (template_drone_control) StderrLine: {'line': b'      |                                                           ^\n'}
+[2.999705] (template_drone_control) StderrLine: {'line': b'make[2]: *** [CMakeFiles/template_drone_control_node.dir/build.make:63: CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o] Error 1\n'}
+[2.999764] (template_drone_control) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/template_drone_control_node.dir/all] Error 2\n'}
+[2.999820] (template_drone_control) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[2.999884] (template_drone_control) CommandEnded: {'returncode': 2}
+[3.007021] (-) TimerEvent: {}
+[3.032660] (template_drone_control) JobEnded: {'identifier': 'template_drone_control', 'rc': 2}
+[3.043237] (-) EventReactorShutdown: {}

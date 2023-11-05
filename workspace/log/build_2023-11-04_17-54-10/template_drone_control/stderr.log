@@ -1,0 +1,12 @@
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function ‘void TemplateDroneControl::move_to_position()’:
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:104:68: error: cannot convert ‘const string’ {aka ‘const std::__cxx11::basic_string<char>’} to ‘float’
+  104 |             send_position_command(point.x, point.y, point.z, point.precision);
+      |                                                              ~~~~~~^~~~~~~~~
+      |                                                                    |
+      |                                                                    const string {aka const std::__cxx11::basic_string<char>}
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:143:65: note:   initializing argument 4 of ‘void TemplateDroneControl::send_position_command(float, float, float, float)’
+  143 |     void send_position_command(float x, float y, float z, float max_e)
+      |                                                           ~~~~~~^~~~~
+make[2]: *** [CMakeFiles/template_drone_control_node.dir/build.make:63: CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/template_drone_control_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

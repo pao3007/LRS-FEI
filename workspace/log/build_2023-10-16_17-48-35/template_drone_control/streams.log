@@ -1,0 +1,80 @@
+[0.028s] Invoking command in '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control -- -j12 -l12
+[0.111s] [35m[1mScanning dependencies of target template_drone_control_node[0m
+[0.161s] [ 50%] [32mBuilding CXX object CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o[0m
+[7.374s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:194:5: error: ‘str’ does not name a type; did you mean ‘std’?
+[7.374s]   194 |     str state_;
+[7.374s]       |     ^~~
+[7.374s]       |     std
+[7.374s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In constructor ‘TemplateDroneControl::TemplateDroneControl()’:
+[7.374s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:55:15: error: expected ‘(’ before ‘!’ token
+[7.375s]    55 |         while !guided_mode_set{
+[7.375s]       |               ^
+[7.375s]       |               (
+[7.375s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:55:31: error: expected ‘)’ before ‘{’ token
+[7.375s]    55 |         while !guided_mode_set{
+[7.375s]       |               ~               ^
+[7.375s]       |                               )
+[7.375s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:56:23: error: expected ‘;’ before ‘do’
+[7.375s]    56 |             sleep(0.5)
+[7.375s]       |                       ^
+[7.375s]       |                       ;
+[7.375s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:66:45: error: expected ‘;’ before ‘do’
+[7.376s]    66 |         send_takeoff_land_request(1.0, true)
+[7.376s]       |                                             ^
+[7.376s]       |                                             ;
+[7.376s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:70:17: error: ‘terminate’ was not declared in this scope; did you mean ‘std::terminate’?
+[7.376s]    70 |         while (!terminate) {
+[7.376s]       |                 ^~~~~~~~~
+[7.376s]       |                 std::terminate
+[7.376s] In file included from /usr/include/c++/9/new:40,
+[7.377s]                  from /usr/include/c++/9/ext/new_allocator.h:33,
+[7.377s]                  from /usr/include/x86_64-linux-gnu/c++/9/bits/c++allocator.h:33,
+[7.377s]                  from /usr/include/c++/9/bits/allocator.h:46,
+[7.377s]                  from /usr/include/c++/9/memory:63,
+[7.377s]                  from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:144,
+[7.377s]                  from /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:1:
+[7.377s] /usr/include/c++/9/exception:76:8: note: ‘std::terminate’ declared here
+[7.377s]    76 |   void terminate() _GLIBCXX_USE_NOEXCEPT __attribute__ ((__noreturn__));
+[7.377s]       |        ^~~~~~~~~
+[7.378s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:71:13: error: ‘c’ was not declared in this scope
+[7.378s]    71 |             c = getch(); // Non-blocking key press detection
+[7.378s]       |             ^
+[7.378s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:74:54: error: expected ‘;’ before ‘}’ token
+[7.378s]    74 |                 send_takeoff_land_request(0.0, false)
+[7.378s]       |                                                      ^
+[7.378s]       |                                                      ;
+[7.378s]    75 |             } else if (c == 'q') {
+[7.378s]       |             ~                                         
+[7.379s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function ‘char TemplateDroneControl::getch()’:
+[7.379s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:85:32: warning: missing initializer for member ‘termios::c_oflag’ [-Wmissing-field-initializers]
+[7.379s]    85 |         struct termios old = {0};
+[7.379s]       |                                ^
+[7.380s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:85:32: warning: missing initializer for member ‘termios::c_cflag’ [-Wmissing-field-initializers]
+[7.382s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:85:32: warning: missing initializer for member ‘termios::c_lflag’ [-Wmissing-field-initializers]
+[7.386s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:85:32: warning: missing initializer for member ‘termios::c_line’ [-Wmissing-field-initializers]
+[7.387s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:85:32: warning: missing initializer for member ‘termios::c_cc’ [-Wmissing-field-initializers]
+[7.387s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:85:32: warning: missing initializer for member ‘termios::c_ispeed’ [-Wmissing-field-initializers]
+[7.388s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:85:32: warning: missing initializer for member ‘termios::c_ospeed’ [-Wmissing-field-initializers]
+[7.388s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function ‘void TemplateDroneControl::state_cb(mavros_msgs::msg::State_<std::allocator<void> >::SharedPtr)’:
+[7.388s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:120:9: error: ‘state_’ was not declared in this scope; did you mean ‘state_cb’?
+[7.388s]   120 |         state_ = current_state_.mode.c_str()
+[7.388s]       |         ^~~~~~
+[7.388s]       |         state_cb
+[7.389s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:122:21: error: expected primary-expression before ‘==’ token
+[7.389s]   122 |         if (state_) == "GUIDED"{
+[7.389s]       |                     ^~
+[7.389s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function ‘void TemplateDroneControl::send_takeoff_land_request(float, bool)’:
+[7.389s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:171:81: error: ‘future’ was not declared in this scope; did you mean ‘std::future’?
+[7.389s]   171 |         if (rclcpp::spin_until_future_complete(this->get_node_base_interface(), future) ==
+[7.389s]       |                                                                                 ^~~~~~
+[7.389s]       |                                                                                 std::future
+[7.389s] In file included from /opt/ros/foxy/include/rclcpp/executors.hpp:18,
+[7.389s]                  from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+[7.389s]                  from /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:1:
+[7.389s] /usr/include/c++/9/future:125:11: note: ‘std::future’ declared here
+[7.390s]   125 |     class future;
+[7.390s]       |           ^~~~~~
+[7.390s] make[2]: *** [CMakeFiles/template_drone_control_node.dir/build.make:63: CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o] Error 1
+[7.390s] make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/template_drone_control_node.dir/all] Error 2
+[7.390s] make: *** [Makefile:141: all] Error 2
+[7.390s] Invoked command in '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control -- -j12 -l12

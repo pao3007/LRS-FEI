@@ -1,0 +1,37 @@
+[35m[1mScanning dependencies of target template_drone_control_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o[0m
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function ‘char TemplateDroneControl::getch()’:
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:79:24: error: aggregate ‘TemplateDroneControl::getch()::termios old’ has incomplete type and cannot be defined
+   79 |         struct termios old;
+      |                        ^~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:80:9: error: ‘tcgetattr’ was not declared in this scope
+   80 |         tcgetattr(0, &old);
+      |         ^~~~~~~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:83:25: error: ‘ICANON’ was not declared in this scope
+   83 |         old.c_lflag &= ~ICANON;
+      |                         ^~~~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:84:25: error: ‘ECHO’ was not declared in this scope
+   84 |         old.c_lflag &= ~ECHO;
+      |                         ^~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:85:18: error: ‘VMIN’ was not declared in this scope
+   85 |         old.c_cc[VMIN] = 1;
+      |                  ^~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:86:18: error: ‘VTIME’ was not declared in this scope; did you mean ‘ETIME’?
+   86 |         old.c_cc[VTIME] = 0;
+      |                  ^~~~~
+      |                  ETIME
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:87:26: error: ‘TCSANOW’ was not declared in this scope
+   87 |         if (tcsetattr(0, TCSANOW, &old) < 0)
+      |                          ^~~~~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:87:13: error: ‘tcsetattr’ was not declared in this scope
+   87 |         if (tcsetattr(0, TCSANOW, &old) < 0)
+      |             ^~~~~~~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:93:26: error: ‘TCSADRAIN’ was not declared in this scope
+   93 |         if (tcsetattr(0, TCSADRAIN, &old) < 0)
+      |                          ^~~~~~~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:93:13: error: ‘tcsetattr’ was not declared in this scope
+   93 |         if (tcsetattr(0, TCSADRAIN, &old) < 0)
+      |             ^~~~~~~~~
+make[2]: *** [CMakeFiles/template_drone_control_node.dir/build.make:63: CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/template_drone_control_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

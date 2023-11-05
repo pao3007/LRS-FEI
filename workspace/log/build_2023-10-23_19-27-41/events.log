@@ -1,0 +1,175 @@
+[0.000000] (-) TimerEvent: {}
+[0.001844] (template_drone_control) JobQueued: {'identifier': 'template_drone_control', 'dependencies': OrderedDict()}
+[0.001931] (template_drone_control) JobStarted: {'identifier': 'template_drone_control'}
+[0.032155] (template_drone_control) JobProgress: {'identifier': 'template_drone_control', 'progress': 'cmake'}
+[0.034095] (template_drone_control) JobProgress: {'identifier': 'template_drone_control', 'progress': 'build'}
+[0.038181] (template_drone_control) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control', '--', '-j12', '-l12'], 'cwd': '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'lrs-ubuntu'), ('LC_TIME', 'sk_SK.UTF-8'), ('SSH_AGENT_PID', '1679'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/lrs-ubuntu'), ('OLDPWD', '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'sk_SK.UTF-8'), ('MANAGERPID', '1483'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=6f14269f5acb012838f1dcc96536a681'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'lrs-ubuntu'), ('JOURNAL_STREAM', '8:47198'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lrs-ubuntu'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/home/lrs-ubuntu/fei_lrs_gazebo/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/lib/ccache:/home/lrs-ubuntu/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/home/lrs-ubuntu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/lrs:@/tmp/.ICE-unix/1717,unix/lrs:/tmp/.ICE-unix/1717'), ('INVOCATION_ID', 'a1dc2adc8fb54e038f2e877e9e3dc4f8'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'sk_SK.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c506c52c_2353_447d_810a_be959ef5a642'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'sk_SK.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.97'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'sk_SK.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'sk_SK.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'sk_SK.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=6f14269f5acb012838f1dcc96536a681'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'sk_SK.UTF-8'), ('LC_PAPER', 'sk_SK.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.099255] (-) TimerEvent: {}
+[0.200099] (-) TimerEvent: {}
+[0.223246] (template_drone_control) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target template_drone_control_node\x1b[0m\n'}
+[0.283308] (template_drone_control) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o\x1b[0m\n'}
+[0.300735] (-) TimerEvent: {}
+[0.401307] (-) TimerEvent: {}
+[0.502975] (-) TimerEvent: {}
+[0.603656] (-) TimerEvent: {}
+[0.704420] (-) TimerEvent: {}
+[0.805468] (-) TimerEvent: {}
+[0.906449] (-) TimerEvent: {}
+[1.007270] (-) TimerEvent: {}
+[1.107985] (-) TimerEvent: {}
+[1.208513] (-) TimerEvent: {}
+[1.308913] (-) TimerEvent: {}
+[1.409461] (-) TimerEvent: {}
+[1.510982] (-) TimerEvent: {}
+[1.612144] (-) TimerEvent: {}
+[1.712674] (-) TimerEvent: {}
+[1.813510] (-) TimerEvent: {}
+[1.914588] (-) TimerEvent: {}
+[2.016139] (-) TimerEvent: {}
+[2.117456] (-) TimerEvent: {}
+[2.218150] (-) TimerEvent: {}
+[2.318971] (-) TimerEvent: {}
+[2.419592] (-) TimerEvent: {}
+[2.519956] (-) TimerEvent: {}
+[2.621063] (-) TimerEvent: {}
+[2.721778] (-) TimerEvent: {}
+[2.822712] (-) TimerEvent: {}
+[2.923640] (-) TimerEvent: {}
+[3.024619] (-) TimerEvent: {}
+[3.125513] (-) TimerEvent: {}
+[3.226328] (-) TimerEvent: {}
+[3.327672] (-) TimerEvent: {}
+[3.428829] (-) TimerEvent: {}
+[3.529302] (-) TimerEvent: {}
+[3.630013] (-) TimerEvent: {}
+[3.730817] (-) TimerEvent: {}
+[3.831715] (-) TimerEvent: {}
+[3.933221] (-) TimerEvent: {}
+[4.034181] (-) TimerEvent: {}
+[4.134646] (-) TimerEvent: {}
+[4.235547] (-) TimerEvent: {}
+[4.336858] (-) TimerEvent: {}
+[4.437943] (-) TimerEvent: {}
+[4.539497] (-) TimerEvent: {}
+[4.641221] (-) TimerEvent: {}
+[4.742388] (-) TimerEvent: {}
+[4.843084] (-) TimerEvent: {}
+[4.943831] (-) TimerEvent: {}
+[5.045496] (-) TimerEvent: {}
+[5.146512] (-) TimerEvent: {}
+[5.247322] (-) TimerEvent: {}
+[5.348238] (-) TimerEvent: {}
+[5.449200] (-) TimerEvent: {}
+[5.549685] (-) TimerEvent: {}
+[5.650841] (-) TimerEvent: {}
+[5.751794] (-) TimerEvent: {}
+[5.852323] (-) TimerEvent: {}
+[5.953442] (-) TimerEvent: {}
+[6.053957] (-) TimerEvent: {}
+[6.155038] (-) TimerEvent: {}
+[6.256313] (-) TimerEvent: {}
+[6.357306] (-) TimerEvent: {}
+[6.458132] (-) TimerEvent: {}
+[6.559408] (-) TimerEvent: {}
+[6.659938] (-) TimerEvent: {}
+[6.760484] (-) TimerEvent: {}
+[6.861372] (-) TimerEvent: {}
+[6.963066] (-) TimerEvent: {}
+[7.064479] (-) TimerEvent: {}
+[7.165965] (-) TimerEvent: {}
+[7.267308] (-) TimerEvent: {}
+[7.368398] (-) TimerEvent: {}
+[7.469173] (-) TimerEvent: {}
+[7.570364] (-) TimerEvent: {}
+[7.671081] (-) TimerEvent: {}
+[7.771552] (-) TimerEvent: {}
+[7.873279] (-) TimerEvent: {}
+[7.974332] (-) TimerEvent: {}
+[8.075256] (-) TimerEvent: {}
+[8.176725] (-) TimerEvent: {}
+[8.277628] (-) TimerEvent: {}
+[8.378564] (-) TimerEvent: {}
+[8.479310] (-) TimerEvent: {}
+[8.581253] (-) TimerEvent: {}
+[8.682818] (-) TimerEvent: {}
+[8.784120] (-) TimerEvent: {}
+[8.885702] (-) TimerEvent: {}
+[8.987359] (-) TimerEvent: {}
+[9.088528] (-) TimerEvent: {}
+[9.190080] (-) TimerEvent: {}
+[9.291313] (-) TimerEvent: {}
+[9.391923] (-) TimerEvent: {}
+[9.492877] (-) TimerEvent: {}
+[9.594549] (-) TimerEvent: {}
+[9.696060] (-) TimerEvent: {}
+[9.797155] (-) TimerEvent: {}
+[9.898448] (-) TimerEvent: {}
+[10.000100] (-) TimerEvent: {}
+[10.101059] (-) TimerEvent: {}
+[10.202077] (-) TimerEvent: {}
+[10.302962] (-) TimerEvent: {}
+[10.404880] (-) TimerEvent: {}
+[10.506077] (-) TimerEvent: {}
+[10.607749] (-) TimerEvent: {}
+[10.709416] (-) TimerEvent: {}
+[10.810198] (-) TimerEvent: {}
+[10.910695] (-) TimerEvent: {}
+[11.011883] (-) TimerEvent: {}
+[11.112376] (-) TimerEvent: {}
+[11.212668] (-) TimerEvent: {}
+[11.313024] (-) TimerEvent: {}
+[11.413699] (-) TimerEvent: {}
+[11.515236] (-) TimerEvent: {}
+[11.616254] (-) TimerEvent: {}
+[11.716765] (-) TimerEvent: {}
+[11.817405] (-) TimerEvent: {}
+[11.859529] (template_drone_control) StderrLine: {'line': b'/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In constructor \xe2\x80\x98TemplateDroneControl::TemplateDroneControl()\xe2\x80\x99:\n'}
+[11.860236] (template_drone_control) StderrLine: {'line': b'/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:23:31: error: \xe2\x80\x98ros2\xe2\x80\x99 was not declared in this scope\n'}
+[11.860575] (template_drone_control) StderrLine: {'line': b'   23 |         arming_client_ = this-ros2 mavros how to sent position command >create_client<mavros_msgs::srv::CommandBool>("mavros/cmd/arming");\n'}
+[11.860784] (template_drone_control) StderrLine: {'line': b'      |                               ^~~~\n'}
+[11.860953] (template_drone_control) StderrLine: {'line': b'/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:56:38: error: expected primary-expression before \xe2\x80\x98:\xe2\x80\x99 token\n'}
+[11.861051] (template_drone_control) StderrLine: {'line': b'   56 |                     if (!armed_check):\n'}
+[11.861184] (template_drone_control) StderrLine: {'line': b'      |                                      ^\n'}
+[11.861275] (template_drone_control) StderrLine: {'line': b'/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function \xe2\x80\x98void TemplateDroneControl::send_position_command(float, float, float, float)\xe2\x80\x99:\n'}
+[11.861348] (template_drone_control) StderrLine: {'line': b'/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:70:58: error: expected \xe2\x80\x98;\xe2\x80\x99 before \xe2\x80\x98e_z\xe2\x80\x99\n'}
+[11.861450] (template_drone_control) StderrLine: {'line': b'   70 |         e_x = abs(current_local_pos_.pose.position.x - x)\n'}
+[11.861762] (template_drone_control) StderrLine: {'line': b'      |                                                          ^\n'}
+[11.861888] (template_drone_control) StderrLine: {'line': b'      |                                                          ;\n'}
+[11.861976] (template_drone_control) StderrLine: {'line': b'   71 |         e_z = abs(current_local_pos_.pose.position.z - z)\n'}
+[11.862062] (template_drone_control) StderrLine: {'line': b'      |         ~~~                                               \n'}
+[11.862130] (template_drone_control) StderrLine: {'line': b'/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:69:20: warning: unused variable \xe2\x80\x98e_z\xe2\x80\x99 [-Wunused-variable]\n'}
+[11.862246] (template_drone_control) StderrLine: {'line': b'   69 |         float e_x, e_z, e_y;\n'}
+[11.862495] (template_drone_control) StderrLine: {'line': b'      |                    ^~~\n'}
+[11.862625] (template_drone_control) StderrLine: {'line': b'/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:69:25: warning: unused variable \xe2\x80\x98e_y\xe2\x80\x99 [-Wunused-variable]\n'}
+[11.862754] (template_drone_control) StderrLine: {'line': b'   69 |         float e_x, e_z, e_y;\n'}
+[11.862903] (template_drone_control) StderrLine: {'line': b'      |                         ^~~\n'}
+[11.863064] (template_drone_control) StderrLine: {'line': b'/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:67:47: warning: unused parameter \xe2\x80\x98y\xe2\x80\x99 [-Wunused-parameter]\n'}
+[11.863167] (template_drone_control) StderrLine: {'line': b'   67 |     void send_position_command(float x, float y, float z, float max_e)\n'}
+[11.863290] (template_drone_control) StderrLine: {'line': b'      |                                         ~~~~~~^\n'}
+[11.863398] (template_drone_control) StderrLine: {'line': b'/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:67:56: warning: unused parameter \xe2\x80\x98z\xe2\x80\x99 [-Wunused-parameter]\n'}
+[11.863454] (template_drone_control) StderrLine: {'line': b'   67 |     void send_position_command(float x, float y, float z, float max_e)\n'}
+[11.863509] (template_drone_control) StderrLine: {'line': b'      |                                                  ~~~~~~^\n'}
+[11.863563] (template_drone_control) StderrLine: {'line': b'/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:67:65: warning: unused parameter \xe2\x80\x98max_e\xe2\x80\x99 [-Wunused-parameter]\n'}
+[11.863618] (template_drone_control) StderrLine: {'line': b'   67 |     void send_position_command(float x, float y, float z, float max_e)\n'}
+[11.863671] (template_drone_control) StderrLine: {'line': b'      |                                                           ~~~~~~^~~~~\n'}
+[11.863723] (template_drone_control) StderrLine: {'line': b'/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function \xe2\x80\x98void TemplateDroneControl::send_land_request()\xe2\x80\x99:\n'}
+[11.863780] (template_drone_control) StderrLine: {'line': b'/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:186:24: error: expected \xe2\x80\x98;\xe2\x80\x99 before \xe2\x80\x98while\xe2\x80\x99\n'}
+[11.863835] (template_drone_control) StderrLine: {'line': b'  186 |     send_arming_request\n'}
+[11.863895] (template_drone_control) StderrLine: {'line': b'      |                        ^\n'}
+[11.863948] (template_drone_control) StderrLine: {'line': b'      |                        ;\n'}
+[11.864019] (template_drone_control) StderrLine: {'line': b'  187 |         while (!arming_client_->wait_for_service(std::chrono::seconds(1))) {\n'}
+[11.864087] (template_drone_control) StderrLine: {'line': b'      |         ~~~~~           \n'}
+[11.864142] (template_drone_control) StderrLine: {'line': b'/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:186:5: error: invalid use of non-static member function \xe2\x80\x98void TemplateDroneControl::send_arming_request(bool)\xe2\x80\x99\n'}
+[11.864198] (template_drone_control) StderrLine: {'line': b'  186 |     send_arming_request\n'}
+[11.864250] (template_drone_control) StderrLine: {'line': b'      |     ^~~~~~~~~~~~~~~~~~~\n'}
+[11.864303] (template_drone_control) StderrLine: {'line': b'/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:142:10: note: declared here\n'}
+[11.864361] (template_drone_control) StderrLine: {'line': b'  142 |     void send_arming_request(bool arm)\n'}
+[11.864414] (template_drone_control) StderrLine: {'line': b'      |          ^~~~~~~~~~~~~~~~~~~\n'}
+[11.864467] (template_drone_control) StderrLine: {'line': b'make[2]: *** [CMakeFiles/template_drone_control_node.dir/build.make:63: CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o] Error 1\n'}
+[11.864528] (template_drone_control) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/template_drone_control_node.dir/all] Error 2\n'}
+[11.864584] (template_drone_control) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[11.865422] (template_drone_control) CommandEnded: {'returncode': 2}
+[11.917713] (-) TimerEvent: {}
+[12.013955] (template_drone_control) JobEnded: {'identifier': 'template_drone_control', 'rc': 2}
+[12.017953] (-) TimerEvent: {}
+[12.030116] (-) EventReactorShutdown: {}

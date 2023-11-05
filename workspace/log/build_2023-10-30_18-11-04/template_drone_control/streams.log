@@ -1,0 +1,25 @@
+[0.032s] Invoking command in '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control -- -j12 -l12
+[0.162s] [35m[1mScanning dependencies of target template_drone_control_node[0m
+[0.236s] [ 50%] [32mBuilding CXX object CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o[0m
+[7.005s] In file included from /opt/ros/foxy/include/rclcpp/client.hpp:40,
+[7.005s]                  from /opt/ros/foxy/include/rclcpp/callback_group.hpp:23,
+[7.005s]                  from /opt/ros/foxy/include/rclcpp/any_executable.hpp:20,
+[7.005s]                  from /opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24,
+[7.005s]                  from /opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18,
+[7.005s]                  from /opt/ros/foxy/include/rclcpp/executor_options.hpp:20,
+[7.005s]                  from /opt/ros/foxy/include/rclcpp/executor.hpp:33,
+[7.006s]                  from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26,
+[7.006s]                  from /opt/ros/foxy/include/rclcpp/executors.hpp:21,
+[7.006s]                  from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+[7.006s]                  from /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:1:
+[7.006s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function ‘void TemplateDroneControl::local_pos_cb(geometry_msgs::msg::PoseStamped_<std::allocator<void> >::SharedPtr)’:
+[7.006s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:201:106: error: ‘struct TemplateDroneControl::GlobalPose’ has no member named ‘position’
+[7.006s]   201 |         RCLCPP_INFO(this->get_logger(), "Current Local Position: %f, %f, %f", global_pose.x, global_pose.position.y, global_pose.position.z);
+[7.006s]       |                                                                                                          ^~~~~~~~
+[7.006s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:201:130: error: ‘struct TemplateDroneControl::GlobalPose’ has no member named ‘position’
+[7.006s]   201 |         RCLCPP_INFO(this->get_logger(), "Current Local Position: %f, %f, %f", global_pose.x, global_pose.position.y, global_pose.position.z);
+[7.006s]       |                                                                                                                                  ^~~~~~~~
+[7.007s] make[2]: *** [CMakeFiles/template_drone_control_node.dir/build.make:63: CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o] Error 1
+[7.007s] make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/template_drone_control_node.dir/all] Error 2
+[7.007s] make: *** [Makefile:141: all] Error 2
+[7.012s] Invoked command in '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control -- -j12 -l12

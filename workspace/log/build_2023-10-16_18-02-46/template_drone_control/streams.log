@@ -1,0 +1,52 @@
+[0.031s] Invoking command in '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control -- -j12 -l12
+[0.107s] [35m[1mScanning dependencies of target template_drone_control_node[0m
+[0.158s] [ 50%] [32mBuilding CXX object CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o[0m
+[7.567s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function ‘void TemplateDroneControl::send_takeoff_land_request(float, bool)’:
+[7.568s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:161:61: error: ‘client’ in namespace ‘rclcpp’ does not name a type; did you mean ‘Client’?
+[7.568s]   161 |         std::shared_future<std::shared_ptr<typename rclcpp::client::ClientT<mavros_msgs::srv::CommandTOL>::SharedResponse>> future;
+[7.568s]       |                                                             ^~~~~~
+[7.568s]       |                                                             Client
+[7.568s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:161:67: error: expected template-argument before ‘::’ token
+[7.568s]   161 |         std::shared_future<std::shared_ptr<typename rclcpp::client::ClientT<mavros_msgs::srv::CommandTOL>::SharedResponse>> future;
+[7.568s]       |                                                                   ^~
+[7.569s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:161:67: error: expected ‘>’ before ‘::’ token
+[7.569s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:161:122: error: template argument 1 is invalid
+[7.569s]   161 |         std::shared_future<std::shared_ptr<typename rclcpp::client::ClientT<mavros_msgs::srv::CommandTOL>::SharedResponse>> future;
+[7.569s]       |                                                                                                                          ^~
+[7.569s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:161:125: error: template argument 1 is invalid
+[7.569s]   161 |         std::shared_future<std::shared_ptr<typename rclcpp::client::ClientT<mavros_msgs::srv::CommandTOL>::SharedResponse>> future;
+[7.569s]       |                                                                                                                             ^~~~~~
+[7.570s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:165:13: error: ‘future’ was not declared in this scope; did you mean ‘std::future’?
+[7.570s]   165 |             future = takeoff_client_->async_send_request(request);
+[7.570s]       |             ^~~~~~
+[7.571s]       |             std::future
+[7.571s] In file included from /opt/ros/foxy/include/rclcpp/executors.hpp:18,
+[7.572s]                  from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+[7.573s]                  from /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:1:
+[7.573s] /usr/include/c++/9/future:125:11: note: ‘std::future’ declared here
+[7.573s]   125 |     class future;
+[7.573s]       |           ^~~~~~
+[7.573s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:168:13: error: ‘future’ was not declared in this scope; did you mean ‘std::future’?
+[7.574s]   168 |             future = land_client_->async_send_request(request);
+[7.574s]       |             ^~~~~~
+[7.574s]       |             std::future
+[7.574s] In file included from /opt/ros/foxy/include/rclcpp/executors.hpp:18,
+[7.574s]                  from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+[7.574s]                  from /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:1:
+[7.574s] /usr/include/c++/9/future:125:11: note: ‘std::future’ declared here
+[7.574s]   125 |     class future;
+[7.574s]       |           ^~~~~~
+[7.574s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:172:81: error: ‘future’ was not declared in this scope; did you mean ‘std::future’?
+[7.574s]   172 |         if (rclcpp::spin_until_future_complete(this->get_node_base_interface(), future) == rclcpp::executor::FutureReturnCode::SUCCESS) {
+[7.574s]       |                                                                                 ^~~~~~
+[7.575s]       |                                                                                 std::future
+[7.575s] In file included from /opt/ros/foxy/include/rclcpp/executors.hpp:18,
+[7.576s]                  from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+[7.576s]                  from /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:1:
+[7.576s] /usr/include/c++/9/future:125:11: note: ‘std::future’ declared here
+[7.577s]   125 |     class future;
+[7.581s]       |           ^~~~~~
+[7.581s] make[2]: *** [CMakeFiles/template_drone_control_node.dir/build.make:63: CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o] Error 1
+[7.581s] make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/template_drone_control_node.dir/all] Error 2
+[7.581s] make: *** [Makefile:141: all] Error 2
+[7.581s] Invoked command in '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control -- -j12 -l12

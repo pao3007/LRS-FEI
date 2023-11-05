@@ -1,0 +1,21 @@
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function ‘void TemplateDroneControl::send_land_request(float)’:
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:324:17: error: ‘flaot’ was not declared in this scope; did you mean ‘float’?
+  324 |                 flaot err = abs(global_pose.z - alt);
+      |                 ^~~~~
+      |                 float
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:325:24: error: ‘err’ was not declared in this scope; did you mean ‘erf’?
+  325 |                 while (err > soft_precision)
+      |                        ^~~
+      |                        erf
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function ‘void TemplateDroneControl::send_takeoff_request(float)’:
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:365:17: error: ‘flaot’ was not declared in this scope; did you mean ‘float’?
+  365 |                 flaot err = abs(global_pose.z - alt);
+      |                 ^~~~~
+      |                 float
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:366:24: error: ‘err’ was not declared in this scope; did you mean ‘erf’?
+  366 |                 while (err > soft_precision)
+      |                        ^~~
+      |                        erf
+make[2]: *** [CMakeFiles/template_drone_control_node.dir/build.make:63: CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/template_drone_control_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

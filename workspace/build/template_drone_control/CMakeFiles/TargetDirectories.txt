@@ -1,0 +1,10 @@
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control/CMakeFiles/install/strip.dir
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control/CMakeFiles/install/local.dir
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control/CMakeFiles/edit_cache.dir
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control/CMakeFiles/test.dir
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control/CMakeFiles/install.dir
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control/CMakeFiles/list_install_components.dir
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control/CMakeFiles/rebuild_cache.dir
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control/CMakeFiles/template_drone_control_uninstall.dir
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control/CMakeFiles/template_drone_control_node.dir
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control/CMakeFiles/uninstall.dir

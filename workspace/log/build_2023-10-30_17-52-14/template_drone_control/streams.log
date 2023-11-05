@@ -1,0 +1,96 @@
+[0.024s] Invoking command in '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control -- -j12 -l12
+[0.092s] [35m[1mScanning dependencies of target template_drone_control_node[0m
+[0.131s] [ 50%] [32mBuilding CXX object CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o[0m
+[6.254s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In constructor ‘TemplateDroneControl::TemplateDroneControl()’:
+[6.255s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:50:39: error: no matching function for call to ‘TemplateDroneControl::send_land_request()’
+[6.255s]    50 |                     send_land_request();
+[6.255s]       |                                       ^
+[6.255s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:296:10: note: candidate: ‘void TemplateDroneControl::send_land_request(float)’
+[6.255s]   296 |     void send_land_request(float alt)
+[6.255s]       |          ^~~~~~~~~~~~~~~~~
+[6.255s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:296:10: note:   candidate expects 1 argument, 0 provided
+[6.255s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function ‘void TemplateDroneControl::move_to_position()’:
+[6.255s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:69:34: error: ‘points’ was not declared in this scope; did you mean ‘point’?
+[6.256s]    69 |         for (const auto& point : points) {
+[6.256s]       |                                  ^~~~~~
+[6.256s]       |                                  point
+[6.256s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function ‘void TemplateDroneControl::rotate_360_blaze_it()’:
+[6.256s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:92:9: error: ‘tf2’ has not been declared
+[6.256s]    92 |         tf2::Quaternion q;
+[6.256s]       |         ^~~
+[6.256s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:93:9: error: ‘q’ was not declared in this scope
+[6.256s]    93 |         q.setRPY(0, 0, yaw);
+[6.256s]       |         ^
+[6.256s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function ‘void TemplateDroneControl::global_to_local(float, float)’:
+[6.256s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:139:42: error: expected primary-expression before ‘.’ token
+[6.256s]   139 |         float local_target_x = GlobalPose.x;
+[6.256s]       |                                          ^
+[6.256s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:139:15: warning: unused variable ‘local_target_x’ [-Wunused-variable]
+[6.256s]   139 |         float local_target_x = GlobalPose.x;
+[6.256s]       |               ^~~~~~~~~~~~~~
+[6.257s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:138:32: warning: unused parameter ‘x’ [-Wunused-parameter]
+[6.257s]   138 |     void global_to_local(float x, float y) {
+[6.257s]       |                          ~~~~~~^
+[6.257s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:138:41: warning: unused parameter ‘y’ [-Wunused-parameter]
+[6.257s]   138 |     void global_to_local(float x, float y) {
+[6.257s]       |                                   ~~~~~~^
+[6.258s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function ‘void TemplateDroneControl::rotate_drone(float, float, float, float, float)’:
+[6.258s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:148:9: error: ‘tf2’ has not been declared
+[6.260s]   148 |         tf2::Quaternion q;
+[6.261s]       |         ^~~
+[6.263s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:149:9: error: ‘q’ was not declared in this scope
+[6.265s]   149 |         q.setRPY(0, 0, target_yaw);
+[6.267s]       |         ^
+[6.267s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:155:9: error: ‘tf2’ has not been declared
+[6.267s]   155 |         tf2::Quaternion q(
+[6.268s]       |         ^~~
+[6.268s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:163:9: error: ‘tf2’ has not been declared
+[6.268s]   163 |         tf2::Matrix3x3 m(q);
+[6.268s]       |         ^~~
+[6.268s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:164:9: error: ‘m’ was not declared in this scope; did you mean ‘tm’?
+[6.269s]   164 |         m.getRPY(roll, pitch, yaw);
+[6.269s]       |         ^
+[6.269s]       |         tm
+[6.269s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:166:9: error: ‘yaw_err’ was not declared in this scope
+[6.269s]   166 |         yaw_err = abs(current_yaw - target_yaw);
+[6.269s]       |         ^~~~~~~
+[6.269s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:169:13: error: ‘tf2’ has not been declared
+[6.270s]   169 |             tf2::Quaternion q(
+[6.270s]       |             ^~~
+[6.270s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:177:13: error: ‘tf2’ has not been declared
+[6.270s]   177 |             tf2::Matrix3x3 m(q);
+[6.270s]       |             ^~~
+[6.270s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function ‘void TemplateDroneControl::local_pos_cb(geometry_msgs::msg::PoseStamped_<std::allocator<void> >::SharedPtr)’:
+[6.270s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:192:19: error: expected unqualified-id before ‘.’ token
+[6.271s]   192 |         GlobalPose.x = StartPose.x - current_local_pos_.pose.position.x;
+[6.271s]       |                   ^
+[6.271s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:193:19: error: expected unqualified-id before ‘.’ token
+[6.271s]   193 |         GlobalPose.y = StartPose.y - current_local_pos_.pose.position.y;
+[6.271s]       |                   ^
+[6.271s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:194:19: error: expected unqualified-id before ‘.’ token
+[6.271s]   194 |         GlobalPose.z = StartPose.z + current_local_pos_.pose.position.z;
+[6.271s]       |                   ^
+[6.272s] In file included from /opt/ros/foxy/include/rclcpp/client.hpp:40,
+[6.272s]                  from /opt/ros/foxy/include/rclcpp/callback_group.hpp:23,
+[6.272s]                  from /opt/ros/foxy/include/rclcpp/any_executable.hpp:20,
+[6.272s]                  from /opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24,
+[6.272s]                  from /opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18,
+[6.272s]                  from /opt/ros/foxy/include/rclcpp/executor_options.hpp:20,
+[6.272s]                  from /opt/ros/foxy/include/rclcpp/executor.hpp:33,
+[6.272s]                  from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26,
+[6.272s]                  from /opt/ros/foxy/include/rclcpp/executors.hpp:21,
+[6.273s]                  from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+[6.273s]                  from /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:1:
+[6.273s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:203:89: error: expected primary-expression before ‘.’ token
+[6.273s]   203 |         RCLCPP_INFO(this->get_logger(), "Current Local Position: %f, %f, %f", GlobalPose.x, GlobalPose.position.y, GlobalPose.position.z);
+[6.273s]       |                                                                                         ^
+[6.273s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:203:103: error: expected primary-expression before ‘.’ token
+[6.273s]   203 |         RCLCPP_INFO(this->get_logger(), "Current Local Position: %f, %f, %f", GlobalPose.x, GlobalPose.position.y, GlobalPose.position.z);
+[6.273s]       |                                                                                                       ^
+[6.273s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:203:126: error: expected primary-expression before ‘.’ token
+[6.273s]   203 |         RCLCPP_INFO(this->get_logger(), "Current Local Position: %f, %f, %f", GlobalPose.x, GlobalPose.position.y, GlobalPose.position.z);
+[6.273s]       |                                                                                                                              ^
+[6.274s] make[2]: *** [CMakeFiles/template_drone_control_node.dir/build.make:63: CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o] Error 1
+[6.274s] make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/template_drone_control_node.dir/all] Error 2
+[6.274s] make: *** [Makefile:141: all] Error 2
+[6.274s] Invoked command in '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control -- -j12 -l12
