@@ -207,11 +207,11 @@ private:
         m.getRPY(roll, pitch, yaw);
         float current_yaw = yaw;
         float target_yaw = current_yaw + yaw_radian;
-        if (target_yaw > 3.14){
-            target_yaw -= 6.28;
-        }else if (target_yaw < -3.14)
+        if (target_yaw > M_PI){
+            target_yaw -= M_PI*2;
+        }else if (target_yaw < -M_PI)
         {
-            target_yaw += 6.28;
+            target_yaw += M_PI*2;
         }
         tf2::Quaternion q;  
         q.setRPY(0, 0, target_yaw);
@@ -274,11 +274,11 @@ private:
         tf2::Matrix3x3 m(q_current);
         m.getRPY(roll, pitch, yaw);
         float current_yaw = yaw;
-        if (target_yaw > 3.14){
-            target_yaw -= 6.28;
-        }else if (target_yaw < -3.14)
+        if (target_yaw > M_PI){
+            target_yaw -= M_PI*2;
+        }else if (target_yaw < -M_PI)
         {
-            target_yaw += 6.28;
+            target_yaw += M_PI*2;
         }
 
         float yaw_err = abs(current_yaw - target_yaw);
