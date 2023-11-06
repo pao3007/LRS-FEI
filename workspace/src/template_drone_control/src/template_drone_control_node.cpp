@@ -118,6 +118,14 @@ private:
             {
                 land_takeoff();
             }
+            else if (point.action == "yaw180")
+            {
+                yaw_degree(180);
+            }
+            else if (point.action == "yaw90")
+            {
+                yaw_degree(90);
+            }
         }
     }
 
@@ -183,6 +191,54 @@ private:
             std::this_thread::sleep_for(20ms);
         }
         RCLCPP_INFO(this->get_logger(), "FINISHED moving to the local position");
+    }
+
+    rotate_drone_action(float yaw_degree) {
+        float yaw_radian = yaw_degree * (M_PI / 180.0);
+        tf2::Quaternion q_current(
+            current_local_pos_.pose.orientation.x,
+            current_local_pos_.pose.orientation.y,
+            current_local_pos_.pose.orientation.z,
+            current_local_pos_.pose.orientation.w
+        );
+        double roll, pitch, yaw;
+        tf2::Matrix3x3 m(q_current);
+        m.getRPY(roll, pitch, yaw);
+        float current_yaw = yaw;
+        float target_yaw = current_yaw + yaw_radian;
+        if (target_yaw > 3.14){
+            target_yaw -= 6.28;
+        }else if (target_yaw < -3.14)
+        {
+            target_yaw += 6.28;
+        }
+        tf2::Quaternion q;  
+        q.setRPY(0, 0, target_yaw);
+        msg.pose.orientation.x = q.x();
+        msg.pose.orientation.y = q.y();
+        msg.pose.orientation.z = q.z();
+        msg.pose.orientation.w = q.w();
+        msg.pose.position.x = current_local_pos_.pose.position.x;
+        msg.pose.position.y = current_local_pos_.pose.position.y;
+        msg.pose.position.z = current_local_pos_.pose.position.z;
+        float yaw_err = abs(current_yaw - target_yaw);
+        while(yaw_err > precision)
+        {
+            q_current.setX(current_local_pos_.pose.orientation.x);
+            q_current.setY(current_local_pos_.pose.orientation.y);
+            q_current.setZ(current_local_pos_.pose.orientation.z);
+            q_current.setW(current_local_pos_.pose.orientation.w);
+
+            m.setRotation(q_current);
+            m.getRPY(roll, pitch, yaw);
+            current_yaw = yaw;
+            yaw_err = abs(current_yaw - target_yaw);
+
+            local_pos_pub_->publish(msg);
+            rclcpp::spin_some(this->get_node_base_interface());
+            std::this_thread::sleep_for(20ms);
+        }
+        
     }
 
     tf2::Quaternion rotate_drone(float target_x, float target_y, float current_x, float current_y, float precision) {
