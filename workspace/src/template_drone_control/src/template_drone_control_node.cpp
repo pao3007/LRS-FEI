@@ -13,6 +13,7 @@
 #include <tf2_geometry_msgs/tf2_geometry_msgs.h>
 #include <math.h>
 #include <tuple>
+#include <Python.h>
 
 using namespace std::chrono_literals;
 
@@ -508,10 +509,57 @@ private:
     }
     // tu nacitavam body do listu
     void create_points(){
-        list_of_points.push_back({13.599, 2.49, 1.0, "", "soft"});
+        /*list_of_points.push_back({13.599, 2.49, 1.0, "", "soft"});
         list_of_points.push_back({12.599, 2.49, 1.0, "landtakeoff", "soft"});
         list_of_points.push_back({12.599, 1.49, 1.0, "", "soft"});
-        list_of_points.push_back({13.599, 1.49, 1.0, "land", "soft"});
+        list_of_points.push_back({13.599, 1.49, 1.0, "land", "soft"});*/
+        Py_Initialize();
+        // Execute the Python script
+        PyRun_SimpleString("exec(open('./script.py').read())");
+        // Clean up and close the Python interpreter.
+        Py_Finalize();
+        load_points_from_csv()
+        
+    }
+    void load_points_from_csv(const std::string& file_path) {
+        std::ifstream file(file_path);
+        
+        if (!file.is_open()) {
+            std::cerr << "Error opening file: " << file_path << std::endl;
+            return;
+        }
+    
+        std::string line;
+        while (std::getline(file, line)) {
+            std::istringstream iss(line);
+            std::string token;
+            Point point;
+            int tokenIndex = 0;
+    
+            while (std::getline(iss, token, ',')) {
+                // Trim leading/trailing whitespace from the token, if necessary
+                // Left as an exercise to the reader or can be handled if needed
+    
+                switch (tokenIndex) {
+                    case 0: point.x = std::stod(token); break;
+                    case 1: point.y = std::stod(token); break;
+                    case 2: point.z = std::stod(token); break;
+                    case 3: point.action = token; break;
+                    case 4: point.precision = token; break;
+                    default: break; // Extra tokens, could be an error if not expected
+                }
+                ++tokenIndex;
+            }
+    
+            if (tokenIndex != 5) {
+                std::cerr << "Error: Incorrect number of values in line: " << line << std::endl;
+                continue; // Skip malformed line
+            }
+    
+            list_of_points.push_back(point);
+        }
+        
+        file.close();
     }
 
     bool isCharAvailable() {
@@ -565,8 +613,8 @@ private:
     bool armed_check;
     bool land_check;
     bool takeoff_check;
-    float hard_precision = 0.03;
-    float soft_precision = 0.075;
+    float hard_precision = 0.02;
+    float soft_precision = 0.05;
     char c;
     bool terminate = false;
     float current_yaw;
