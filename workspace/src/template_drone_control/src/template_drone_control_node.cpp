@@ -239,6 +239,8 @@ private:
             rclcpp::spin_some(this->get_node_base_interface());
             std::this_thread::sleep_for(20ms);
         }
+
+        my_wait(100);
         
     }
 
