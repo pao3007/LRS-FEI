@@ -1,0 +1,4 @@
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function ‘void TemplateDroneControl::action_do_circle()’:
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:188:15: warning: unused variable ‘z’ [-Wunused-variable]
+  188 |         float z = current_local_pos_.pose.position.z;
+      |               ^

@@ -1,0 +1,29 @@
+[0.012s] Invoking command in '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control -- -j12 -l12
+[0.057s] [35m[1mScanning dependencies of target template_drone_control_node[0m
+[0.085s] [ 50%] [32mBuilding CXX object CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o[0m
+[6.973s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function ‘void TemplateDroneControl::send_position_command(float, float, float, float)’:
+[6.973s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:346:13: error: ‘doueble’ was not declared in this scope; did you mean ‘double’?
+[6.973s]   346 |             doueble velocityX = pCX(0) + pCX(1)*pow(t,2) + pCX(2)*pow(t,3) + pCX(3)*pow(t,4);
+[6.973s]       |             ^~~~~~~
+[6.973s]       |             double
+[6.973s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:347:20: error: expected ‘;’ before ‘velocityY’
+[6.973s]   347 |             doueble velocityY = pCY(0) + pCY(1)*pow(t,2) + pCY(2)*pow(t,3) + pCY(3)*pow(t,4);
+[6.973s]       |                    ^~~~~~~~~~
+[6.974s]       |                    ;
+[6.974s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:348:20: error: expected ‘;’ before ‘velocityZ’
+[6.974s]   348 |             doueble velocityZ = pCZ(0) + pCZ(1)*pow(t,2) + pCZ(2)*pow(t,3) + pCZ(3)*pow(t,4);
+[6.974s]       |                    ^~~~~~~~~~
+[6.974s]       |                    ;
+[6.974s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:349:35: error: ‘velocityX’ was not declared in this scope
+[6.974s]   349 |             setpoint.velocity.x = velocityX;
+[6.974s]       |                                   ^~~~~~~~~
+[6.974s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:350:35: error: ‘velocityY’ was not declared in this scope
+[6.974s]   350 |             setpoint.velocity.y = velocityY;
+[6.974s]       |                                   ^~~~~~~~~
+[6.974s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:351:35: error: ‘velocityZ’ was not declared in this scope
+[6.974s]   351 |             setpoint.velocity.z = velocityZ;
+[6.974s]       |                                   ^~~~~~~~~
+[6.974s] make[2]: *** [CMakeFiles/template_drone_control_node.dir/build.make:63: CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o] Error 1
+[6.974s] make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/template_drone_control_node.dir/all] Error 2
+[6.974s] make: *** [Makefile:141: all] Error 2
+[6.978s] Invoked command in '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control -- -j12 -l12

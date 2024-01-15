@@ -1,0 +1,59 @@
+[35m[1mScanning dependencies of target template_drone_control_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o[0m
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function ‘void TemplateDroneControl::send_position_command(float, float, float, float)’:
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:324:32: error: ‘max’ was not declared in this scope
+  324 |         float big_e = max(e_z, max(e_x, e_y));
+      |                                ^~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:324:32: note: suggested alternatives:
+In file included from /usr/include/c++/9/algorithm:62,
+                 from /opt/ros/foxy/include/rclcpp/executor.hpp:18,
+                 from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26,
+                 from /opt/ros/foxy/include/rclcpp/executors.hpp:21,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+                 from /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:1:
+/usr/include/c++/9/bits/stl_algo.h:3468:5: note:   ‘std::max’
+ 3468 |     max(initializer_list<_Tp> __l, _Compare __comp)
+      |     ^~~
+In file included from /opt/ros/foxy/include/kdl/frames.hpp:129,
+                 from /opt/ros/foxy/include/tf2_geometry_msgs/tf2_geometry_msgs.h:47,
+                 from /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:14:
+/opt/ros/foxy/include/kdl/utilities/utility.h:198:15: note:   ‘KDL::max’
+  198 | inline double max(double a,double b) {
+      |               ^~~
+In file included from /usr/include/eigen3/Eigen/Core:411,
+                 from /usr/include/eigen3/Eigen/Dense:1,
+                 from /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:18:
+/usr/include/eigen3/Eigen/src/Core/arch/CUDA/Half.h:516:45: note:   ‘Eigen::half_impl::max’
+  516 | EIGEN_STRONG_INLINE EIGEN_DEVICE_FUNC half (max)(const half& a, const half& b) {
+      |                                             ^~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:324:23: error: ‘max’ was not declared in this scope
+  324 |         float big_e = max(e_z, max(e_x, e_y));
+      |                       ^~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:324:23: note: suggested alternatives:
+In file included from /usr/include/c++/9/algorithm:62,
+                 from /opt/ros/foxy/include/rclcpp/executor.hpp:18,
+                 from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26,
+                 from /opt/ros/foxy/include/rclcpp/executors.hpp:21,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+                 from /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:1:
+/usr/include/c++/9/bits/stl_algo.h:3468:5: note:   ‘std::max’
+ 3468 |     max(initializer_list<_Tp> __l, _Compare __comp)
+      |     ^~~
+In file included from /opt/ros/foxy/include/kdl/frames.hpp:129,
+                 from /opt/ros/foxy/include/tf2_geometry_msgs/tf2_geometry_msgs.h:47,
+                 from /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:14:
+/opt/ros/foxy/include/kdl/utilities/utility.h:198:15: note:   ‘KDL::max’
+  198 | inline double max(double a,double b) {
+      |               ^~~
+In file included from /usr/include/eigen3/Eigen/Core:411,
+                 from /usr/include/eigen3/Eigen/Dense:1,
+                 from /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:18:
+/usr/include/eigen3/Eigen/src/Core/arch/CUDA/Half.h:516:45: note:   ‘Eigen::half_impl::max’
+  516 | EIGEN_STRONG_INLINE EIGEN_DEVICE_FUNC half (max)(const half& a, const half& b) {
+      |                                             ^~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:350:13: warning: unused variable ‘tmp’ [-Wunused-variable]
+  350 |         int tmp = 0;
+      |             ^~~
+make[2]: *** [CMakeFiles/template_drone_control_node.dir/build.make:63: CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/template_drone_control_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

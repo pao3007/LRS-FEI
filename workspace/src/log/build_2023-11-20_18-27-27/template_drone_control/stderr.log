@@ -1,0 +1,8 @@
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function ‘void TemplateDroneControl::send_position_command(float, float, float, float)’:
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:190:9: error: ‘CLCPP_INFO’ was not declared in this scope; did you mean ‘RCLCPP_INFO’?
+  190 |         CLCPP_INFO(this->get_logger(), "COMMAND FINISHED press: \n q > to quit \n t > to takeoff \n l > to land \n m > to move drone to specified position \n n > to navigate auto.");
+      |         ^~~~~~~~~~
+      |         RCLCPP_INFO
+make[2]: *** [CMakeFiles/template_drone_control_node.dir/build.make:63: CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/template_drone_control_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

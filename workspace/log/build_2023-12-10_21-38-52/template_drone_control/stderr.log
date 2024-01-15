@@ -1,0 +1,7 @@
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function ‘void TemplateDroneControl::send_position_command(float, float, float, float)’:
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:344:16: warning: variable ‘velocityY’ set but not used [-Wunused-but-set-variable]
+  344 |         double velocityY;
+      |                ^~~~~~~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:345:16: warning: variable ‘velocityZ’ set but not used [-Wunused-but-set-variable]
+  345 |         double velocityZ;
+      |                ^~~~~~~~~

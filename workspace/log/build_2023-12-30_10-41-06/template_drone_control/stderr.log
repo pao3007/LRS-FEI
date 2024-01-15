@@ -1,0 +1,17 @@
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function ‘void TemplateDroneControl::send_position_command(float, float, float, float)’:
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:339:50: error: ‘tf’ was not declared in this scope; did you mean ‘tf2’?
+  339 |         pCX = calculatePolynomialCoefficients(t0,tf,p0x,x,v0,vf,a0,af);
+      |                                                  ^~
+      |                                                  tf2
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:328:16: warning: unused variable ‘tfx’ [-Wunused-variable]
+  328 |         double tfx = e_x * time_to_reach;
+      |                ^~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:329:16: warning: unused variable ‘tfy’ [-Wunused-variable]
+  329 |         double tfy = e_z * time_to_reach;
+      |                ^~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:330:16: warning: unused variable ‘tfz’ [-Wunused-variable]
+  330 |         double tfz = e_y * time_to_reach;
+      |                ^~~
+make[2]: *** [CMakeFiles/template_drone_control_node.dir/build.make:63: CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/template_drone_control_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

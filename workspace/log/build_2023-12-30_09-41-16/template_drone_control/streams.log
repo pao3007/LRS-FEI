@@ -1,0 +1,17 @@
+[0.015s] Invoking command in '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control -- -j12 -l12
+[0.053s] [35m[1mScanning dependencies of target template_drone_control_node[0m
+[0.087s] [ 50%] [32mBuilding CXX object CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o[0m
+[7.679s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function ‘void TemplateDroneControl::send_position_command(float, float, float, float)’:
+[7.679s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:355:13: error: ‘posX’ was not declared in this scope
+[7.680s]   355 |             posX = pCX(0) + pCX(1)*t + pCX(2)*pow(t,2) + pCX(3)*pow(t,3) + pCX(4)*pow(t,4) + pCX(5)*pow(t,5);
+[7.680s]       |             ^~~~
+[7.680s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:356:13: error: ‘posY’ was not declared in this scope
+[7.680s]   356 |             posY = pCY(0) + pCY(1)*t + pCY(2)*pow(t,2) + pCY(3)*pow(t,3) + pCY(4)*pow(t,4) + pCY(5)*pow(t,5);
+[7.680s]       |             ^~~~
+[7.680s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:357:13: error: ‘posZ’ was not declared in this scope
+[7.680s]   357 |             posZ = pCZ(0) + pCZ(1)*t + pCZ(2)*pow(t,2) + pCZ(3)*pow(t,3) + pCZ(4)*pow(t,4) + pCZ(5)*pow(t,5);
+[7.680s]       |             ^~~~
+[7.680s] make[2]: *** [CMakeFiles/template_drone_control_node.dir/build.make:63: CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o] Error 1
+[7.681s] make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/template_drone_control_node.dir/all] Error 2
+[7.681s] make: *** [Makefile:141: all] Error 2
+[7.683s] Invoked command in '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control -- -j12 -l12

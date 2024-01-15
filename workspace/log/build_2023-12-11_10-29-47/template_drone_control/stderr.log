@@ -1,0 +1,11 @@
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:66:5: error: ‘Eigen’ does not name a type
+   66 |     Eigen::VectorXd calculatePolynomialCoefficients(
+      |     ^~~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function ‘double TemplateDroneControl::getVelocityX(double) const’:
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:92:32: error: ‘positionCoefficients’ was not declared in this scope; did you mean ‘positionCoefficientsX’?
+   92 |         for (size_t i = 1; i < positionCoefficients.size(); ++i) {
+      |                                ^~~~~~~~~~~~~~~~~~~~
+      |                                positionCoefficientsX
+make[2]: *** [CMakeFiles/template_drone_control_node.dir/build.make:63: CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/template_drone_control_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

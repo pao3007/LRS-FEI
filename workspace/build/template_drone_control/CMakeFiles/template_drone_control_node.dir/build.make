@@ -79,6 +79,7 @@ template_drone_control_node_EXTERNAL_OBJECTS =
 
 template_drone_control_node: CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o
 template_drone_control_node: CMakeFiles/template_drone_control_node.dir/build.make
+template_drone_control_node: /usr/lib/x86_64-linux-gnu/libpython3.8.so
 template_drone_control_node: /opt/ros/foxy/lib/librclcpp.so
 template_drone_control_node: /opt/ros/foxy/lib/libmavros_msgs__rosidl_typesupport_introspection_c.so
 template_drone_control_node: /opt/ros/foxy/lib/libmavros_msgs__rosidl_typesupport_c.so

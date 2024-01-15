@@ -1,0 +1,25 @@
+[0.023s] Invoking command in '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control -- -j12 -l12
+[0.059s] [35m[1mScanning dependencies of target template_drone_control_node[0m
+[0.097s] [ 50%] [32mBuilding CXX object CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o[0m
+[6.992s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In constructor ‘TemplateDroneControl::TemplateDroneControl()’:
+[6.993s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:51:24: error: ‘MyDroneNode’ has not been declared
+[6.993s]    51 |             std::bind(&MyDroneNode::localSetpointCallback, this, std::placeholders::_1));
+[6.993s]       |                        ^~~~~~~~~~~
+[6.993s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function ‘void TemplateDroneControl::send_position_command(float, float, float, float)’:
+[6.993s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:349:16: warning: unused variable ‘accX’ [-Wunused-variable]
+[6.993s]   349 |         double accX;
+[6.993s]       |                ^~~~
+[6.993s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:350:16: warning: unused variable ‘accY’ [-Wunused-variable]
+[6.993s]   350 |         double accY;
+[6.993s]       |                ^~~~
+[6.993s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:351:16: warning: unused variable ‘accZ’ [-Wunused-variable]
+[6.993s]   351 |         double accZ;
+[6.993s]       |                ^~~~
+[6.993s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function ‘void TemplateDroneControl::localSetpointCallback(mavros_msgs::msg::PositionTarget_<std::allocator<void> >::SharedPtr)’:
+[6.993s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:791:40: error: ‘using _header_type = struct std_msgs::msg::Header_<std::allocator<void> >’ {aka ‘struct std_msgs::msg::Header_<std::allocator<void> >’} has no member named ‘seq’
+[6.993s]   791 |         ss << "  Seq: " << msg->header.seq << "\n";
+[6.993s]       |                                        ^~~
+[6.993s] make[2]: *** [CMakeFiles/template_drone_control_node.dir/build.make:63: CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o] Error 1
+[6.993s] make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/template_drone_control_node.dir/all] Error 2
+[6.993s] make: *** [Makefile:141: all] Error 2
+[6.996s] Invoked command in '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control -- -j12 -l12

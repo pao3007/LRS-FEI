@@ -1,0 +1,26 @@
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function ‘void TemplateDroneControl::send_position_command(float, float, float, float)’:
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:346:16: warning: variable ‘velocityX’ set but not used [-Wunused-but-set-variable]
+  346 |         double velocityX;
+      |                ^~~~~~~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:347:16: warning: variable ‘velocityY’ set but not used [-Wunused-but-set-variable]
+  347 |         double velocityY;
+      |                ^~~~~~~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:348:16: warning: variable ‘velocityZ’ set but not used [-Wunused-but-set-variable]
+  348 |         double velocityZ;
+      |                ^~~~~~~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:349:16: warning: unused variable ‘accX’ [-Wunused-variable]
+  349 |         double accX;
+      |                ^~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:350:16: warning: unused variable ‘accY’ [-Wunused-variable]
+  350 |         double accY;
+      |                ^~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:351:16: warning: unused variable ‘accZ’ [-Wunused-variable]
+  351 |         double accZ;
+      |                ^~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function ‘void TemplateDroneControl::localSetpointCallback(mavros_msgs::msg::PositionTarget_<std::allocator<void> >::SharedPtr)’:
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:791:40: error: ‘using _header_type = struct std_msgs::msg::Header_<std::allocator<void> >’ {aka ‘struct std_msgs::msg::Header_<std::allocator<void> >’} has no member named ‘seq’
+  791 |         ss << "  Seq: " << msg->header.seq << "\n";
+      |                                        ^~~
+make[2]: *** [CMakeFiles/template_drone_control_node.dir/build.make:63: CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/template_drone_control_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

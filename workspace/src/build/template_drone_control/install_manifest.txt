@@ -1,0 +1,16 @@
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/install/template_drone_control/lib/template_drone_control/template_drone_control_node
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/install/template_drone_control/share/ament_index/resource_index/package_run_dependencies/template_drone_control
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/install/template_drone_control/share/ament_index/resource_index/parent_prefix_path/template_drone_control
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/install/template_drone_control/share/template_drone_control/environment/ament_prefix_path.sh
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/install/template_drone_control/share/template_drone_control/environment/ament_prefix_path.dsv
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/install/template_drone_control/share/template_drone_control/environment/path.sh
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/install/template_drone_control/share/template_drone_control/environment/path.dsv
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/install/template_drone_control/share/template_drone_control/local_setup.bash
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/install/template_drone_control/share/template_drone_control/local_setup.sh
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/install/template_drone_control/share/template_drone_control/local_setup.zsh
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/install/template_drone_control/share/template_drone_control/local_setup.dsv
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/install/template_drone_control/share/template_drone_control/package.dsv
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/install/template_drone_control/share/ament_index/resource_index/packages/template_drone_control
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/install/template_drone_control/share/template_drone_control/cmake/template_drone_controlConfig.cmake
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/install/template_drone_control/share/template_drone_control/cmake/template_drone_controlConfig-version.cmake
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/install/template_drone_control/share/template_drone_control/package.xml

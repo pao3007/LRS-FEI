@@ -1,0 +1,30 @@
+[35m[1mScanning dependencies of target template_drone_control_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o[0m
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function ‘void TemplateDroneControl::send_position_command(float, float, float, float)’:
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:314:79: error: expected ‘;’ before ‘setpoint’
+  314 |         setpoint.type_mask = mavros_msgs::msg::PositionTarget::IGNORE_YAW_RATE
+      |                                                                               ^
+      |                                                                               ;
+  315 |         setpoint.coordinate_frame = mavros_msgs::msg::PositionTarget::FRAME_LOCAL_NED
+      |         ~~~~~~~~                                                               
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:319:18: error: ‘roll’ was not declared in this scope
+  319 |         m.getRPY(roll, pitch, yaw);
+      |                  ^~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:319:24: error: ‘pitch’ was not declared in this scope
+  319 |         m.getRPY(roll, pitch, yaw);
+      |                        ^~~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:319:31: error: ‘yaw’ was not declared in this scope
+  319 |         m.getRPY(roll, pitch, yaw);
+      |                               ^~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:355:13: error: ‘posX’ was not declared in this scope
+  355 |             posX = pCX(0) + pCX(1)*t + pCX(2)*pow(t,2) + pCX(3)*pow(t,3) + pCX(4)*pow(t,4) + pCX(5)*pow(t,5);
+      |             ^~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:356:13: error: ‘posY’ was not declared in this scope
+  356 |             posY = pCY(0) + pCY(1)*t + pCY(2)*pow(t,2) + pCY(3)*pow(t,3) + pCY(4)*pow(t,4) + pCY(5)*pow(t,5);
+      |             ^~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:357:13: error: ‘posZ’ was not declared in this scope
+  357 |             posZ = pCZ(0) + pCZ(1)*t + pCZ(2)*pow(t,2) + pCZ(3)*pow(t,3) + pCZ(4)*pow(t,4) + pCZ(5)*pow(t,5)
+      |             ^~~~
+make[2]: *** [CMakeFiles/template_drone_control_node.dir/build.make:63: CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/template_drone_control_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

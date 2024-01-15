@@ -1,0 +1,66 @@
+[0.015s] Invoking command in '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control -- -j12 -l12
+[0.056s] [35m[1mScanning dependencies of target template_drone_control_node[0m
+[0.092s] [ 50%] [32mBuilding CXX object CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o[0m
+[3.639s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:162:15: error: ‘Point’ was not declared in this scope; did you mean ‘geometry_msgs::msg::Point’?
+[3.639s]   162 |     std::list<Point> list_of_circle_points(float droneX, float droneY, float radius, int numPoints) {
+[3.639s]       |               ^~~~~
+[3.639s]       |               geometry_msgs::msg::Point
+[3.639s] In file included from /opt/ros/foxy/include/geometry_msgs/msg/detail/pose__struct.hpp:19,
+[3.639s]                  from /opt/ros/foxy/include/geometry_msgs/msg/detail/pose_stamped__struct.hpp:21,
+[3.639s]                  from /opt/ros/foxy/include/geometry_msgs/msg/pose_stamped.hpp:7,
+[3.639s]                  from /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:2:
+[3.639s] /opt/ros/foxy/include/geometry_msgs/msg/detail/point__struct.hpp:149:7: note: ‘geometry_msgs::msg::Point’ declared here
+[3.639s]   149 | using Point =
+[3.639s]       |       ^~~~~
+[3.639s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:162:20: error: template argument 1 is invalid
+[3.640s]   162 |     std::list<Point> list_of_circle_points(float droneX, float droneY, float radius, int numPoints) {
+[3.640s]       |                    ^
+[3.640s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:162:20: error: template argument 2 is invalid
+[3.640s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function ‘int TemplateDroneControl::list_of_circle_points(float, float, float, int)’:
+[3.640s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:176:12: error: cannot convert ‘std::__cxx11::list<TemplateDroneControl::Point>’ to ‘int’ in return
+[3.640s]   176 |     return waypoints;
+[3.640s]       |            ^~~~~~~~~
+[3.640s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function ‘void TemplateDroneControl::action_do_circle()’:
+[3.640s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:183:119: error: no match for ‘operator=’ (operand types are ‘std::__cxx11::list<TemplateDroneControl::Point>’ and ‘int’)
+[3.640s]   183 |         waypoints = list_of_circle_points(current_local_pos_.pose.position.x, current_local_pos_.pose.position.y, 2, 8);
+[3.640s]       |                                                                                                                       ^
+[3.641s] In file included from /usr/include/c++/9/list:64,
+[3.641s]                  from /opt/ros/foxy/include/rclcpp/executor.hpp:23,
+[3.641s]                  from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26,
+[3.641s]                  from /opt/ros/foxy/include/rclcpp/executors.hpp:21,
+[3.641s]                  from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+[3.641s]                  from /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:1:
+[3.641s] /usr/include/c++/9/bits/list.tcc:267:5: note: candidate: ‘std::__cxx11::list<_Tp, _Alloc>& std::__cxx11::list<_Tp, _Alloc>::operator=(const std::__cxx11::list<_Tp, _Alloc>&) [with _Tp = TemplateDroneControl::Point; _Alloc = std::allocator<TemplateDroneControl::Point>]’
+[3.642s]   267 |     list<_Tp, _Alloc>::
+[3.642s]       |     ^~~~~~~~~~~~~~~~~
+[3.642s] /usr/include/c++/9/bits/list.tcc:268:27: note:   no known conversion for argument 1 from ‘int’ to ‘const std::__cxx11::list<TemplateDroneControl::Point>&’
+[3.643s]   268 |     operator=(const list& __x)
+[3.643s]       |               ~~~~~~~~~~~~^~~
+[3.643s] In file included from /usr/include/c++/9/list:63,
+[3.643s]                  from /opt/ros/foxy/include/rclcpp/executor.hpp:23,
+[3.644s]                  from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26,
+[3.645s]                  from /opt/ros/foxy/include/rclcpp/executors.hpp:21,
+[3.645s]                  from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+[3.645s]                  from /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:1:
+[3.645s] /usr/include/c++/9/bits/stl_list.h:849:7: note: candidate: ‘std::__cxx11::list<_Tp, _Alloc>& std::__cxx11::list<_Tp, _Alloc>::operator=(std::__cxx11::list<_Tp, _Alloc>&&) [with _Tp = TemplateDroneControl::Point; _Alloc = std::allocator<TemplateDroneControl::Point>]’
+[3.645s]   849 |       operator=(list&& __x)
+[3.646s]       |       ^~~~~~~~
+[3.646s] /usr/include/c++/9/bits/stl_list.h:849:24: note:   no known conversion for argument 1 from ‘int’ to ‘std::__cxx11::list<TemplateDroneControl::Point>&&’
+[3.646s]   849 |       operator=(list&& __x)
+[3.646s]       |                 ~~~~~~~^~~
+[3.646s] /usr/include/c++/9/bits/stl_list.h:867:7: note: candidate: ‘std::__cxx11::list<_Tp, _Alloc>& std::__cxx11::list<_Tp, _Alloc>::operator=(std::initializer_list<_Tp>) [with _Tp = TemplateDroneControl::Point; _Alloc = std::allocator<TemplateDroneControl::Point>]’
+[3.646s]   867 |       operator=(initializer_list<value_type> __l)
+[3.646s]       |       ^~~~~~~~
+[3.646s] /usr/include/c++/9/bits/stl_list.h:867:46: note:   no known conversion for argument 1 from ‘int’ to ‘std::initializer_list<TemplateDroneControl::Point>’
+[3.646s]   867 |       operator=(initializer_list<value_type> __l)
+[3.646s]       |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+[3.646s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:201:13: error: ‘e_x’ was not declared in this scope
+[3.646s]   201 |             e_x = abs(current_local_pos_.pose.position.x - waypoint.x);
+[3.646s]       |             ^~~
+[3.646s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:202:13: error: ‘e_y’ was not declared in this scope
+[3.646s]   202 |             e_y = abs(current_local_pos_.pose.position.y - waypoint.y);
+[3.646s]       |             ^~~
+[3.646s] make[2]: *** [CMakeFiles/template_drone_control_node.dir/build.make:63: CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o] Error 1
+[3.646s] make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/template_drone_control_node.dir/all] Error 2
+[3.647s] make: *** [Makefile:141: all] Error 2
+[3.647s] Invoked command in '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control -- -j12 -l12

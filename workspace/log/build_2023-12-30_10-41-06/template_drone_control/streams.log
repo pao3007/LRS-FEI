@@ -1,0 +1,21 @@
+[0.059s] Invoking command in '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control -- -j12 -l12
+[0.215s] [35m[1mScanning dependencies of target template_drone_control_node[0m
+[0.312s] [ 50%] [32mBuilding CXX object CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o[0m
+[18.557s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function ‘void TemplateDroneControl::send_position_command(float, float, float, float)’:
+[18.557s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:339:50: error: ‘tf’ was not declared in this scope; did you mean ‘tf2’?
+[18.557s]   339 |         pCX = calculatePolynomialCoefficients(t0,tf,p0x,x,v0,vf,a0,af);
+[18.557s]       |                                                  ^~
+[18.557s]       |                                                  tf2
+[18.557s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:328:16: warning: unused variable ‘tfx’ [-Wunused-variable]
+[18.557s]   328 |         double tfx = e_x * time_to_reach;
+[18.558s]       |                ^~~
+[18.558s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:329:16: warning: unused variable ‘tfy’ [-Wunused-variable]
+[18.558s]   329 |         double tfy = e_z * time_to_reach;
+[18.558s]       |                ^~~
+[18.558s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:330:16: warning: unused variable ‘tfz’ [-Wunused-variable]
+[18.558s]   330 |         double tfz = e_y * time_to_reach;
+[18.558s]       |                ^~~
+[18.558s] make[2]: *** [CMakeFiles/template_drone_control_node.dir/build.make:63: CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o] Error 1
+[18.559s] make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/template_drone_control_node.dir/all] Error 2
+[18.559s] make: *** [Makefile:141: all] Error 2
+[18.569s] Invoked command in '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control -- -j12 -l12

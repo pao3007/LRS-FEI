@@ -1,0 +1,82 @@
+[35m[1mScanning dependencies of target template_drone_control_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o[0m
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:162:15: error: ‘Point’ was not declared in this scope; did you mean ‘geometry_msgs::msg::Point’?
+  162 |     std::list<Point> list_of_circle_points(float droneX, float droneY, float radius, int numPoints) {
+      |               ^~~~~
+      |               geometry_msgs::msg::Point
+In file included from /opt/ros/foxy/include/geometry_msgs/msg/detail/pose__struct.hpp:19,
+                 from /opt/ros/foxy/include/geometry_msgs/msg/detail/pose_stamped__struct.hpp:21,
+                 from /opt/ros/foxy/include/geometry_msgs/msg/pose_stamped.hpp:7,
+                 from /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:2:
+/opt/ros/foxy/include/geometry_msgs/msg/detail/point__struct.hpp:149:7: note: ‘geometry_msgs::msg::Point’ declared here
+  149 | using Point =
+      |       ^~~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:162:20: error: template argument 1 is invalid
+  162 |     std::list<Point> list_of_circle_points(float droneX, float droneY, float radius, int numPoints) {
+      |                    ^
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:162:20: error: template argument 2 is invalid
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function ‘int TemplateDroneControl::list_of_circle_points(float, float, float, int)’:
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:176:12: error: cannot convert ‘std::__cxx11::list<TemplateDroneControl::Point>’ to ‘int’ in return
+  176 |     return waypoints;
+      |            ^~~~~~~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function ‘void TemplateDroneControl::action_do_circle()’:
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:183:119: error: no match for ‘operator=’ (operand types are ‘std::__cxx11::list<TemplateDroneControl::Point>’ and ‘int’)
+  183 |         waypoints = list_of_circle_points(current_local_pos_.pose.position.x, current_local_pos_.pose.position.y, 2, 8);
+      |                                                                                                                       ^
+In file included from /usr/include/c++/9/list:64,
+                 from /opt/ros/foxy/include/rclcpp/executor.hpp:23,
+                 from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26,
+                 from /opt/ros/foxy/include/rclcpp/executors.hpp:21,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+                 from /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:1:
+/usr/include/c++/9/bits/list.tcc:267:5: note: candidate: ‘std::__cxx11::list<_Tp, _Alloc>& std::__cxx11::list<_Tp, _Alloc>::operator=(const std::__cxx11::list<_Tp, _Alloc>&) [with _Tp = TemplateDroneControl::Point; _Alloc = std::allocator<TemplateDroneControl::Point>]’
+  267 |     list<_Tp, _Alloc>::
+      |     ^~~~~~~~~~~~~~~~~
+/usr/include/c++/9/bits/list.tcc:268:27: note:   no known conversion for argument 1 from ‘int’ to ‘const std::__cxx11::list<TemplateDroneControl::Point>&’
+  268 |     operator=(const list& __x)
+      |               ~~~~~~~~~~~~^~~
+In file included from /usr/include/c++/9/list:63,
+                 from /opt/ros/foxy/include/rclcpp/executor.hpp:23,
+                 from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26,
+                 from /opt/ros/foxy/include/rclcpp/executors.hpp:21,
+                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+                 from /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:1:
+/usr/include/c++/9/bits/stl_list.h:849:7: note: candidate: ‘std::__cxx11::list<_Tp, _Alloc>& std::__cxx11::list<_Tp, _Alloc>::operator=(std::__cxx11::list<_Tp, _Alloc>&&) [with _Tp = TemplateDroneControl::Point; _Alloc = std::allocator<TemplateDroneControl::Point>]’
+  849 |       operator=(list&& __x)
+      |       ^~~~~~~~
+/usr/include/c++/9/bits/stl_list.h:849:24: note:   no known conversion for argument 1 from ‘int’ to ‘std::__cxx11::list<TemplateDroneControl::Point>&&’
+  849 |       operator=(list&& __x)
+      |                 ~~~~~~~^~~
+/usr/include/c++/9/bits/stl_list.h:867:7: note: candidate: ‘std::__cxx11::list<_Tp, _Alloc>& std::__cxx11::list<_Tp, _Alloc>::operator=(std::initializer_list<_Tp>) [with _Tp = TemplateDroneControl::Point; _Alloc = std::allocator<TemplateDroneControl::Point>]’
+  867 |       operator=(initializer_list<value_type> __l)
+      |       ^~~~~~~~
+/usr/include/c++/9/bits/stl_list.h:867:46: note:   no known conversion for argument 1 from ‘int’ to ‘std::initializer_list<TemplateDroneControl::Point>’
+  867 |       operator=(initializer_list<value_type> __l)
+      |                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:192:35: error: ‘x’ was not declared in this scope
+  192 |             msg.pose.position.x = x;
+      |                                   ^
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:193:35: error: ‘y’ was not declared in this scope; did you mean ‘yn’?
+  193 |             msg.pose.position.y = y;
+      |                                   ^
+      |                                   yn
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:194:35: error: ‘z’ was not declared in this scope
+  194 |             msg.pose.position.z = z;
+      |                                   ^
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:202:13: error: ‘e_x’ was not declared in this scope
+  202 |             e_x = abs(current_local_pos_.pose.position.x - x);
+      |             ^~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:203:13: error: ‘e_y’ was not declared in this scope
+  203 |             e_y = abs(current_local_pos_.pose.position.y - y);
+      |             ^~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function ‘void TemplateDroneControl::send_arming_request(bool)’:
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:493:20: error: expected ‘;’ before ‘do’
+  493 |     {soft_precision
+      |                    ^
+      |                    ;
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:493:6: warning: statement has no effect [-Wunused-value]
+  493 |     {soft_precision
+      |      ^~~~~~~~~~~~~~
+make[2]: *** [CMakeFiles/template_drone_control_node.dir/build.make:63: CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/template_drone_control_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

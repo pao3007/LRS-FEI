@@ -1,0 +1,185 @@
+[0.000000] (-) TimerEvent: {}
+[0.000154] (template_drone_control) JobQueued: {'identifier': 'template_drone_control', 'dependencies': OrderedDict()}
+[0.000573] (template_drone_control) JobStarted: {'identifier': 'template_drone_control'}
+[0.012884] (template_drone_control) JobProgress: {'identifier': 'template_drone_control', 'progress': 'cmake'}
+[0.013434] (template_drone_control) JobProgress: {'identifier': 'template_drone_control', 'progress': 'build'}
+[0.013879] (template_drone_control) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control', '--', '-j12', '-l12'], 'cwd': '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'lrs-ubuntu'), ('LC_TIME', 'sk_SK.UTF-8'), ('SSH_AGENT_PID', '1896'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/lrs-ubuntu'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'sk_SK.UTF-8'), ('MANAGERPID', '1698'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=156483a7b21ddca2891286756575fbae'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'lrs-ubuntu'), ('JOURNAL_STREAM', '8:46254'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lrs-ubuntu'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/home/lrs-ubuntu/fei_lrs_gazebo/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/usr/lib/ccache:/home/lrs-ubuntu/ardupilot/Tools/autotest:/opt/gcc-arm-none-eabi-10-2020-q4-major/bin:/home/lrs-ubuntu/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/lrs:@/tmp/.ICE-unix/1982,unix/lrs:/tmp/.ICE-unix/1982'), ('INVOCATION_ID', '677bd296ed0d4081b4f4a92b3e61a7fc'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'sk_SK.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/825c1f59_1dc1_44b2_b43f_858a03fd9a30'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'sk_SK.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.91'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('LC_NAME', 'sk_SK.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'sk_SK.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'sk_SK.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=156483a7b21ddca2891286756575fbae'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('LC_NUMERIC', 'sk_SK.UTF-8'), ('LC_PAPER', 'sk_SK.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.066754] (template_drone_control) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target template_drone_control_node\x1b[0m\n'}
+[0.099681] (-) TimerEvent: {}
+[0.123459] (template_drone_control) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o\x1b[0m\n'}
+[0.200519] (-) TimerEvent: {}
+[0.300804] (-) TimerEvent: {}
+[0.403971] (-) TimerEvent: {}
+[0.504290] (-) TimerEvent: {}
+[0.604571] (-) TimerEvent: {}
+[0.704894] (-) TimerEvent: {}
+[0.805167] (-) TimerEvent: {}
+[0.905451] (-) TimerEvent: {}
+[1.005729] (-) TimerEvent: {}
+[1.107156] (-) TimerEvent: {}
+[1.207474] (-) TimerEvent: {}
+[1.307980] (-) TimerEvent: {}
+[1.408270] (-) TimerEvent: {}
+[1.508575] (-) TimerEvent: {}
+[1.608877] (-) TimerEvent: {}
+[1.709181] (-) TimerEvent: {}
+[1.812805] (-) TimerEvent: {}
+[1.913131] (-) TimerEvent: {}
+[2.013415] (-) TimerEvent: {}
+[2.113717] (-) TimerEvent: {}
+[2.214012] (-) TimerEvent: {}
+[2.314363] (-) TimerEvent: {}
+[2.414641] (-) TimerEvent: {}
+[2.514927] (-) TimerEvent: {}
+[2.615189] (-) TimerEvent: {}
+[2.715450] (-) TimerEvent: {}
+[2.815714] (-) TimerEvent: {}
+[2.915974] (-) TimerEvent: {}
+[3.016246] (-) TimerEvent: {}
+[3.116520] (-) TimerEvent: {}
+[3.216793] (-) TimerEvent: {}
+[3.317062] (-) TimerEvent: {}
+[3.417332] (-) TimerEvent: {}
+[3.517604] (-) TimerEvent: {}
+[3.617876] (-) TimerEvent: {}
+[3.718160] (-) TimerEvent: {}
+[3.818436] (-) TimerEvent: {}
+[3.918702] (-) TimerEvent: {}
+[4.018974] (-) TimerEvent: {}
+[4.119256] (-) TimerEvent: {}
+[4.219531] (-) TimerEvent: {}
+[4.319805] (-) TimerEvent: {}
+[4.420080] (-) TimerEvent: {}
+[4.520346] (-) TimerEvent: {}
+[4.620613] (-) TimerEvent: {}
+[4.720885] (-) TimerEvent: {}
+[4.821162] (-) TimerEvent: {}
+[4.921439] (-) TimerEvent: {}
+[5.021715] (-) TimerEvent: {}
+[5.121991] (-) TimerEvent: {}
+[5.222273] (-) TimerEvent: {}
+[5.322550] (-) TimerEvent: {}
+[5.422829] (-) TimerEvent: {}
+[5.523110] (-) TimerEvent: {}
+[5.623388] (-) TimerEvent: {}
+[5.723666] (-) TimerEvent: {}
+[5.823955] (-) TimerEvent: {}
+[5.924225] (-) TimerEvent: {}
+[6.024497] (-) TimerEvent: {}
+[6.124769] (-) TimerEvent: {}
+[6.225040] (-) TimerEvent: {}
+[6.325310] (-) TimerEvent: {}
+[6.425571] (-) TimerEvent: {}
+[6.525838] (-) TimerEvent: {}
+[6.626131] (-) TimerEvent: {}
+[6.726412] (-) TimerEvent: {}
+[6.826700] (-) TimerEvent: {}
+[6.926986] (-) TimerEvent: {}
+[7.027273] (-) TimerEvent: {}
+[7.127563] (-) TimerEvent: {}
+[7.227831] (-) TimerEvent: {}
+[7.328104] (-) TimerEvent: {}
+[7.428382] (-) TimerEvent: {}
+[7.528678] (-) TimerEvent: {}
+[7.628952] (-) TimerEvent: {}
+[7.729294] (-) TimerEvent: {}
+[7.829579] (-) TimerEvent: {}
+[7.929842] (-) TimerEvent: {}
+[8.028205] (template_drone_control) StderrLine: {'line': b'/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function \xe2\x80\x98void TemplateDroneControl::send_position_command(float, float, float, float)\xe2\x80\x99:\n'}
+[8.030878] (template_drone_control) StderrLine: {'line': b'/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:303:43: error: \xe2\x80\x98mavros_msgs::PositionTarget\xe2\x80\x99 has not been declared\n'}
+[8.031008] (-) TimerEvent: {}
+[8.031124] (template_drone_control) StderrLine: {'line': b'  303 |         setpoint.type_mask = mavros_msgs::PositionTarget::IGNORE_AFX |\n'}
+[8.031194] (template_drone_control) StderrLine: {'line': b'      |                                           ^~~~~~~~~~~~~~\n'}
+[8.031251] (template_drone_control) StderrLine: {'line': b'/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:304:38: error: \xe2\x80\x98mavros_msgs::PositionTarget\xe2\x80\x99 has not been declared\n'}
+[8.031306] (template_drone_control) StderrLine: {'line': b'  304 |                         mavros_msgs::PositionTarget::IGNORE_AFY |\n'}
+[8.031361] (template_drone_control) StderrLine: {'line': b'      |                                      ^~~~~~~~~~~~~~\n'}
+[8.031415] (template_drone_control) StderrLine: {'line': b'/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:305:38: error: \xe2\x80\x98mavros_msgs::PositionTarget\xe2\x80\x99 has not been declared\n'}
+[8.031470] (template_drone_control) StderrLine: {'line': b'  305 |                         mavros_msgs::PositionTarget::IGNORE_AFZ |\n'}
+[8.031523] (template_drone_control) StderrLine: {'line': b'      |                                      ^~~~~~~~~~~~~~\n'}
+[8.031580] (template_drone_control) StderrLine: {'line': b'/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:306:38: error: \xe2\x80\x98mavros_msgs::PositionTarget\xe2\x80\x99 has not been declared\n'}
+[8.031634] (template_drone_control) StderrLine: {'line': b'  306 |                         mavros_msgs::PositionTarget::FORCE;\n'}
+[8.031687] (template_drone_control) StderrLine: {'line': b'      |                                      ^~~~~~~~~~~~~~\n'}
+[8.031741] (template_drone_control) StderrLine: {'line': b'/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:310:18: error: \xe2\x80\x98using PositionTarget = struct mavros_msgs::msg::PositionTarget_<std::allocator<void> >\xe2\x80\x99 {aka \xe2\x80\x98struct mavros_msgs::msg::PositionTarget_<std::allocator<void> >\xe2\x80\x99} has no member named \xe2\x80\x98orientation\xe2\x80\x99\n'}
+[8.031798] (template_drone_control) StderrLine: {'line': b'  310 |         setpoint.orientation.x = q.x();\n'}
+[8.031852] (template_drone_control) StderrLine: {'line': b'      |                  ^~~~~~~~~~~\n'}
+[8.031905] (template_drone_control) StderrLine: {'line': b'/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:311:18: error: \xe2\x80\x98using PositionTarget = struct mavros_msgs::msg::PositionTarget_<std::allocator<void> >\xe2\x80\x99 {aka \xe2\x80\x98struct mavros_msgs::msg::PositionTarget_<std::allocator<void> >\xe2\x80\x99} has no member named \xe2\x80\x98orientation\xe2\x80\x99\n'}
+[8.031976] (template_drone_control) StderrLine: {'line': b'  311 |         setpoint.orientation.y = q.y();\n'}
+[8.032031] (template_drone_control) StderrLine: {'line': b'      |                  ^~~~~~~~~~~\n'}
+[8.032084] (template_drone_control) StderrLine: {'line': b'/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:312:18: error: \xe2\x80\x98using PositionTarget = struct mavros_msgs::msg::PositionTarget_<std::allocator<void> >\xe2\x80\x99 {aka \xe2\x80\x98struct mavros_msgs::msg::PositionTarget_<std::allocator<void> >\xe2\x80\x99} has no member named \xe2\x80\x98orientation\xe2\x80\x99\n'}
+[8.032139] (template_drone_control) StderrLine: {'line': b'  312 |         setpoint.orientation.z = q.z();\n'}
+[8.032192] (template_drone_control) StderrLine: {'line': b'      |                  ^~~~~~~~~~~\n'}
+[8.032245] (template_drone_control) StderrLine: {'line': b'/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:313:18: error: \xe2\x80\x98using PositionTarget = struct mavros_msgs::msg::PositionTarget_<std::allocator<void> >\xe2\x80\x99 {aka \xe2\x80\x98struct mavros_msgs::msg::PositionTarget_<std::allocator<void> >\xe2\x80\x99} has no member named \xe2\x80\x98orientation\xe2\x80\x99\n'}
+[8.032305] (template_drone_control) StderrLine: {'line': b'  313 |         setpoint.orientation.w = q.w();\n'}
+[8.032359] (template_drone_control) StderrLine: {'line': b'      |                  ^~~~~~~~~~~\n'}
+[8.032412] (template_drone_control) StderrLine: {'line': b'/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:322:20: error: \xe2\x80\x98msg\xe2\x80\x99 was not declared in this scope\n'}
+[8.032467] (template_drone_control) StderrLine: {'line': b'  322 |         position = msg;\n'}
+[8.032520] (template_drone_control) StderrLine: {'line': b'      |                    ^~~\n'}
+[8.032573] (template_drone_control) StderrLine: {'line': b'/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:322:20: note: suggested alternatives:\n'}
+[8.032632] (template_drone_control) StderrLine: {'line': b'In file included from /opt/ros/foxy/include/builtin_interfaces/msg/duration.hpp:7,\n'}
+[8.032686] (template_drone_control) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/duration.hpp:20,\n'}
+[8.032740] (template_drone_control) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/qos.hpp:20,\n'}
+[8.032793] (template_drone_control) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/node_interfaces/node_graph_interface.hpp:31,\n'}
+[8.032846] (template_drone_control) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/client.hpp:34,\n'}
+[8.032899] (template_drone_control) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/callback_group.hpp:23,\n'}
+[8.032956] (template_drone_control) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/any_executable.hpp:20,\n'}
+[8.033009] (template_drone_control) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24,\n'}
+[8.033065] (template_drone_control) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18,\n'}
+[8.033120] (template_drone_control) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/executor_options.hpp:20,\n'}
+[8.033174] (template_drone_control) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/executor.hpp:33,\n'}
+[8.033227] (template_drone_control) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26,\n'}
+[8.033282] (template_drone_control) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/executors.hpp:21,\n'}
+[8.033336] (template_drone_control) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,\n'}
+[8.033390] (template_drone_control) StderrLine: {'line': b'                 from /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:1:\n'}
+[8.033443] (template_drone_control) StderrLine: {'line': b'/opt/ros/foxy/include/builtin_interfaces/msg/detail/duration__struct.hpp:26:11: note:   \xe2\x80\x98builtin_interfaces::msg\xe2\x80\x99\n'}
+[8.033499] (template_drone_control) StderrLine: {'line': b'   26 | namespace msg\n'}
+[8.033552] (template_drone_control) StderrLine: {'line': b'      |           ^~~\n'}
+[8.033608] (template_drone_control) StderrLine: {'line': b'In file included from /opt/ros/foxy/include/statistics_msgs/msg/detail/metrics_message__struct.hpp:22,\n'}
+[8.033664] (template_drone_control) StderrLine: {'line': b'                 from /opt/ros/foxy/include/statistics_msgs/msg/metrics_message.hpp:7,\n'}
+[8.033717] (template_drone_control) StderrLine: {'line': b'                 from /opt/ros/foxy/include/libstatistics_collector/collector/generate_statistics_message.hpp:21,\n'}
+[8.033774] (template_drone_control) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23,\n'}
+[8.033827] (template_drone_control) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/subscription.hpp:50,\n'}
+[8.033879] (template_drone_control) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/any_executable.hpp:25,\n'}
+[8.033937] (template_drone_control) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24,\n'}
+[8.033995] (template_drone_control) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18,\n'}
+[8.034049] (template_drone_control) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/executor_options.hpp:20,\n'}
+[8.034101] (template_drone_control) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/executor.hpp:33,\n'}
+[8.034153] (template_drone_control) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26,\n'}
+[8.034206] (template_drone_control) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/executors.hpp:21,\n'}
+[8.034259] (template_drone_control) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,\n'}
+[8.034312] (template_drone_control) StderrLine: {'line': b'                 from /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:1:\n'}
+[8.034365] (template_drone_control) StderrLine: {'line': b'/opt/ros/foxy/include/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:26:11: note:   \xe2\x80\x98statistics_msgs::msg\xe2\x80\x99\n'}
+[8.034418] (template_drone_control) StderrLine: {'line': b'   26 | namespace msg\n'}
+[8.034470] (template_drone_control) StderrLine: {'line': b'      |           ^~~\n'}
+[8.034524] (template_drone_control) StderrLine: {'line': b'In file included from /opt/ros/foxy/include/rcl_interfaces/msg/list_parameters_result.hpp:7,\n'}
+[8.034581] (template_drone_control) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/node.hpp:34,\n'}
+[8.034634] (template_drone_control) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[8.034687] (template_drone_control) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/executors.hpp:22,\n'}
+[8.034741] (template_drone_control) StderrLine: {'line': b'                 from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,\n'}
+[8.034793] (template_drone_control) StderrLine: {'line': b'                 from /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:1:\n'}
+[8.034846] (template_drone_control) StderrLine: {'line': b'/opt/ros/foxy/include/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp:26:11: note:   \xe2\x80\x98rcl_interfaces::msg\xe2\x80\x99\n'}
+[8.034898] (template_drone_control) StderrLine: {'line': b'   26 | namespace msg\n'}
+[8.034949] (template_drone_control) StderrLine: {'line': b'      |           ^~~\n'}
+[8.035002] (template_drone_control) StderrLine: {'line': b'In file included from /opt/ros/foxy/include/geometry_msgs/msg/detail/pose_stamped__struct.hpp:19,\n'}
+[8.035055] (template_drone_control) StderrLine: {'line': b'                 from /opt/ros/foxy/include/geometry_msgs/msg/pose_stamped.hpp:7,\n'}
+[8.035110] (template_drone_control) StderrLine: {'line': b'                 from /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:2:\n'}
+[8.035164] (template_drone_control) StderrLine: {'line': b'/opt/ros/foxy/include/std_msgs/msg/detail/header__struct.hpp:30:11: note:   \xe2\x80\x98std_msgs::msg\xe2\x80\x99\n'}
+[8.035220] (template_drone_control) StderrLine: {'line': b'   30 | namespace msg\n'}
+[8.035272] (template_drone_control) StderrLine: {'line': b'      |           ^~~\n'}
+[8.035324] (template_drone_control) StderrLine: {'line': b'In file included from /opt/ros/foxy/include/geometry_msgs/msg/detail/pose__struct.hpp:19,\n'}
+[8.035377] (template_drone_control) StderrLine: {'line': b'                 from /opt/ros/foxy/include/geometry_msgs/msg/detail/pose_stamped__struct.hpp:21,\n'}
+[8.035433] (template_drone_control) StderrLine: {'line': b'                 from /opt/ros/foxy/include/geometry_msgs/msg/pose_stamped.hpp:7,\n'}
+[8.035486] (template_drone_control) StderrLine: {'line': b'                 from /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:2:\n'}
+[8.035540] (template_drone_control) StderrLine: {'line': b'/opt/ros/foxy/include/geometry_msgs/msg/detail/point__struct.hpp:26:11: note:   \xe2\x80\x98geometry_msgs::msg\xe2\x80\x99\n'}
+[8.035593] (template_drone_control) StderrLine: {'line': b'   26 | namespace msg\n'}
+[8.035650] (template_drone_control) StderrLine: {'line': b'      |           ^~~\n'}
+[8.035706] (template_drone_control) StderrLine: {'line': b'In file included from /opt/ros/foxy/include/mavros_msgs/msg/state.hpp:7,\n'}
+[8.035762] (template_drone_control) StderrLine: {'line': b'                 from /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:3:\n'}
+[8.035818] (template_drone_control) StderrLine: {'line': b'/opt/ros/foxy/include/mavros_msgs/msg/detail/state__struct.hpp:30:11: note:   \xe2\x80\x98mavros_msgs::msg\xe2\x80\x99\n'}
+[8.035874] (template_drone_control) StderrLine: {'line': b'   30 | namespace msg\n'}
+[8.035937] (template_drone_control) StderrLine: {'line': b'      |           ^~~\n'}
+[8.036260] (template_drone_control) StderrLine: {'line': b'make[2]: *** [CMakeFiles/template_drone_control_node.dir/build.make:63: CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o] Error 1\n'}
+[8.036459] (template_drone_control) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/template_drone_control_node.dir/all] Error 2\n'}
+[8.036603] (template_drone_control) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[8.039548] (template_drone_control) CommandEnded: {'returncode': 2}
+[8.070670] (template_drone_control) JobEnded: {'identifier': 'template_drone_control', 'rc': 2}
+[8.081193] (-) EventReactorShutdown: {}

@@ -1,0 +1,89 @@
+[0.020s] Invoking command in '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control -- -j12 -l12
+[0.075s] [35m[1mScanning dependencies of target template_drone_control_node[0m
+[0.104s] [ 50%] [32mBuilding CXX object CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o[0m
+[8.125s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function ‘void TemplateDroneControl::send_position_command(float, float, float, float)’:
+[8.125s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:304:38: error: expected unqualified-id before ‘:’ token
+[8.125s]   304 |                         mavros_msgs:::msg::PositionTarget::IGNORE_AFY |
+[8.126s]       |                                      ^
+[8.126s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:310:18: error: ‘using PositionTarget = struct mavros_msgs::msg::PositionTarget_<std::allocator<void> >’ {aka ‘struct mavros_msgs::msg::PositionTarget_<std::allocator<void> >’} has no member named ‘orientation’
+[8.126s]   310 |         setpoint.orientation.x = q.x();
+[8.126s]       |                  ^~~~~~~~~~~
+[8.126s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:311:18: error: ‘using PositionTarget = struct mavros_msgs::msg::PositionTarget_<std::allocator<void> >’ {aka ‘struct mavros_msgs::msg::PositionTarget_<std::allocator<void> >’} has no member named ‘orientation’
+[8.126s]   311 |         setpoint.orientation.y = q.y();
+[8.126s]       |                  ^~~~~~~~~~~
+[8.126s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:312:18: error: ‘using PositionTarget = struct mavros_msgs::msg::PositionTarget_<std::allocator<void> >’ {aka ‘struct mavros_msgs::msg::PositionTarget_<std::allocator<void> >’} has no member named ‘orientation’
+[8.126s]   312 |         setpoint.orientation.z = q.z();
+[8.126s]       |                  ^~~~~~~~~~~
+[8.126s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:313:18: error: ‘using PositionTarget = struct mavros_msgs::msg::PositionTarget_<std::allocator<void> >’ {aka ‘struct mavros_msgs::msg::PositionTarget_<std::allocator<void> >’} has no member named ‘orientation’
+[8.126s]   313 |         setpoint.orientation.w = q.w();
+[8.126s]       |                  ^~~~~~~~~~~
+[8.126s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:322:20: error: ‘msg’ was not declared in this scope
+[8.126s]   322 |         position = msg;
+[8.126s]       |                    ^~~
+[8.126s] /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:322:20: note: suggested alternatives:
+[8.127s] In file included from /opt/ros/foxy/include/builtin_interfaces/msg/duration.hpp:7,
+[8.127s]                  from /opt/ros/foxy/include/rclcpp/duration.hpp:20,
+[8.127s]                  from /opt/ros/foxy/include/rclcpp/qos.hpp:20,
+[8.127s]                  from /opt/ros/foxy/include/rclcpp/node_interfaces/node_graph_interface.hpp:31,
+[8.128s]                  from /opt/ros/foxy/include/rclcpp/client.hpp:34,
+[8.128s]                  from /opt/ros/foxy/include/rclcpp/callback_group.hpp:23,
+[8.128s]                  from /opt/ros/foxy/include/rclcpp/any_executable.hpp:20,
+[8.128s]                  from /opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24,
+[8.128s]                  from /opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18,
+[8.128s]                  from /opt/ros/foxy/include/rclcpp/executor_options.hpp:20,
+[8.128s]                  from /opt/ros/foxy/include/rclcpp/executor.hpp:33,
+[8.129s]                  from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26,
+[8.129s]                  from /opt/ros/foxy/include/rclcpp/executors.hpp:21,
+[8.129s]                  from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+[8.129s]                  from /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:1:
+[8.129s] /opt/ros/foxy/include/builtin_interfaces/msg/detail/duration__struct.hpp:26:11: note:   ‘builtin_interfaces::msg’
+[8.129s]    26 | namespace msg
+[8.129s]       |           ^~~
+[8.129s] In file included from /opt/ros/foxy/include/statistics_msgs/msg/detail/metrics_message__struct.hpp:22,
+[8.129s]                  from /opt/ros/foxy/include/statistics_msgs/msg/metrics_message.hpp:7,
+[8.129s]                  from /opt/ros/foxy/include/libstatistics_collector/collector/generate_statistics_message.hpp:21,
+[8.129s]                  from /opt/ros/foxy/include/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23,
+[8.130s]                  from /opt/ros/foxy/include/rclcpp/subscription.hpp:50,
+[8.130s]                  from /opt/ros/foxy/include/rclcpp/any_executable.hpp:25,
+[8.130s]                  from /opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24,
+[8.130s]                  from /opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18,
+[8.130s]                  from /opt/ros/foxy/include/rclcpp/executor_options.hpp:20,
+[8.130s]                  from /opt/ros/foxy/include/rclcpp/executor.hpp:33,
+[8.130s]                  from /opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26,
+[8.130s]                  from /opt/ros/foxy/include/rclcpp/executors.hpp:21,
+[8.130s]                  from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+[8.130s]                  from /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:1:
+[8.130s] /opt/ros/foxy/include/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:26:11: note:   ‘statistics_msgs::msg’
+[8.131s]    26 | namespace msg
+[8.131s]       |           ^~~
+[8.131s] In file included from /opt/ros/foxy/include/rcl_interfaces/msg/list_parameters_result.hpp:7,
+[8.131s]                  from /opt/ros/foxy/include/rclcpp/node.hpp:34,
+[8.131s]                  from /opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28,
+[8.131s]                  from /opt/ros/foxy/include/rclcpp/executors.hpp:22,
+[8.131s]                  from /opt/ros/foxy/include/rclcpp/rclcpp.hpp:146,
+[8.131s]                  from /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:1:
+[8.131s] /opt/ros/foxy/include/rcl_interfaces/msg/detail/list_parameters_result__struct.hpp:26:11: note:   ‘rcl_interfaces::msg’
+[8.131s]    26 | namespace msg
+[8.131s]       |           ^~~
+[8.131s] In file included from /opt/ros/foxy/include/geometry_msgs/msg/detail/pose_stamped__struct.hpp:19,
+[8.131s]                  from /opt/ros/foxy/include/geometry_msgs/msg/pose_stamped.hpp:7,
+[8.131s]                  from /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:2:
+[8.132s] /opt/ros/foxy/include/std_msgs/msg/detail/header__struct.hpp:30:11: note:   ‘std_msgs::msg’
+[8.133s]    30 | namespace msg
+[8.133s]       |           ^~~
+[8.133s] In file included from /opt/ros/foxy/include/geometry_msgs/msg/detail/pose__struct.hpp:19,
+[8.133s]                  from /opt/ros/foxy/include/geometry_msgs/msg/detail/pose_stamped__struct.hpp:21,
+[8.133s]                  from /opt/ros/foxy/include/geometry_msgs/msg/pose_stamped.hpp:7,
+[8.133s]                  from /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:2:
+[8.134s] /opt/ros/foxy/include/geometry_msgs/msg/detail/point__struct.hpp:26:11: note:   ‘geometry_msgs::msg’
+[8.134s]    26 | namespace msg
+[8.134s]       |           ^~~
+[8.134s] In file included from /opt/ros/foxy/include/mavros_msgs/msg/state.hpp:7,
+[8.134s]                  from /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:3:
+[8.134s] /opt/ros/foxy/include/mavros_msgs/msg/detail/state__struct.hpp:30:11: note:   ‘mavros_msgs::msg’
+[8.134s]    30 | namespace msg
+[8.134s]       |           ^~~
+[8.134s] make[2]: *** [CMakeFiles/template_drone_control_node.dir/build.make:63: CMakeFiles/template_drone_control_node.dir/src/template_drone_control_node.cpp.o] Error 1
+[8.134s] make[1]: *** [CMakeFiles/Makefile2:105: CMakeFiles/template_drone_control_node.dir/all] Error 2
+[8.134s] make: *** [Makefile:141: all] Error 2
+[8.135s] Invoked command in '/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/build/template_drone_control -- -j12 -l12

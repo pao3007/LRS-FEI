@@ -1,0 +1,7 @@
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp: In member function ‘tf2::Quaternion TemplateDroneControl::rotate_drone(float, float, float, float, float)’:
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:396:15: warning: unused variable ‘yaw_err’ [-Wunused-variable]
+  396 |         float yaw_err = abs(current_yaw - target_yaw);
+      |               ^~~~~~~
+/home/lrs-ubuntu/Desktop/LRS/LRS-FEI/workspace/src/template_drone_control/src/template_drone_control_node.cpp:359:106: warning: unused parameter ‘precision’ [-Wunused-parameter]
+  359 |     tf2::Quaternion rotate_drone(float target_x, float target_y, float current_x, float current_y, float precision) {
+      |                                                                                                    ~~~~~~^~~~~~~~~
